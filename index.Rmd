@@ -17,7 +17,7 @@ github-repo: rstudio/bookdown-demo
 site: bookdown::bookdown_site
 ---
 
-```{r echo = FALSE}
+```{r echo = FALSE, , include = FALSE}
 path_req <- "/home/david/NextCloud/David-Tesi/eReuseMetrics/code/requirements"
 source(file.path(path_req,"libraries.R"))
 ```
