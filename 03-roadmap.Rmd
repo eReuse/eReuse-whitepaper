@@ -1,0 +1,360 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Roadmap
+
+All actions will be described in detail in the following sections of this chapter. We divide the actions into two types, transversal and vertical actions. The transversal actions, which we also call building blocks, are a basic unit or component from which vertical actions are built up. Vertical actions or requirements are what we want the participants of the ecosystem to be able to do.
+
+Outputs, outcomes and impact are terms used to describe change at different levels. Outputs are the products, goods and/or services which result from a development intervention. These are designed to produce outcomes -- the short- to medium-term effects of an intervention -- and eventually impacts. Whilst the terms are in common use, there is great inconsistency in how they are interpreted.
+
+<!-- Activities: Actions taken or work performed through which inputs, such as funds, technical assistance and other types of resources, are mobilised to produce specific outputs. -->
+
+<!-- Outputs: The products, capital goods and services which result from a development intervention; may also include changes resulting from the intervention which are relevant to the achievement of outcomes. -->
+
+<!-- Outcomes: The likely or achieved short-term and medium-term effects of an intervention’s outputs.  -->
+
+<!-- Impact: Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.  -->
+
+<!-- Most organisations understand the key difference between the things they do (activities) and the ultimate changes they wish to help bring about (impact). But the distinction is not always helpful. In order to achieve desired long-term changes, there may be many steps between an organisation’s activities and the desired impact. The results chain (see below) attempts to categorise these steps by  -->
+
+<!-- breaking them down into manageable stages – inputs,  activities, outputs, outcomes and impact.  -->
+
+<!-- The preferred solution of the author, in a desire for a less complicated life, is to define outputs as the services or products delivered that are largely within the control of an agency; impact as the lasting or significant changes in people’s lives brought about by an intervention or interventions; and outcomes as everything in between. -->
+
+<!-- In this results chain, inputs are used in order to carry out activities. Activities lead to services or products delivered (outputs). The outputs start to bring about change (outcomes) and eventually this will (hopefully) contribute to the impact. For example, if an organisation was providing seeds to farmers, the seeds themselves, any transport costs, staff costs etc. would be inputs. Activities  -->
+
+<!-- undertaken would include travelling to the field to deliver seeds and, possibly, conduct training with farmers. The outputs could be the seeds distributed and the people trained. The outcomes could be that the farmers plant the seeds, the seeds grow into crops, the crops are harvested, and then eaten or sold. This would contribute to the desired impact, which might be a better standard of living  -->
+
+<!-- in the long-term for farmers and their families. -->
+
+<!-- Another term that is commonly used is ‘results’. Results is defined by OECD DAC as the “output, outcome or impact (intended or unintended, positive and/or negative) of a development intervention”. ‘Results’ is defined differently by different organisations. Some only use it to describe actual achievements whilst others use it to describe predicted change.  -->
+
+## Expected impact: Extend device lifetime and ensure final recycling
+
+> Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.
+
+The intended impact is to extend device lifetime and ensure final recycling. The principle of circular economy is to try extend devices lifetime as long as possible avoiding the premature recycling.Recycling should only take place at the end of their useful life and at that point try to recover as much as possible of the raw materials they contain.
+
+The intended impact understood as long-term effects produced by our intervention tecnological roadmap and others activities 
+
+1.  Increase devices lifetime through increasing durability, reparability, reusability and upgradeability.
+2.  Increase proper recycling.
+
+The expected outcomes understood as achieved short-term and medium-term effects of an intervention’s outputs:
+
+
+```{r tableoutcomes, echo = FALSE}
+o1 <- c("o1","Devices are in use rather that stored",
+        "X","","","","","")
+o2 <- c("o2","Allocation criteria of devices according its service",
+        "X","","","","","")
+o3 <- c("o3","Increase procurement of second-hand devices and product-as-service",
+        "X","X","","","","")
+o4 <- c("o4","Criteria for buying devices is more focused on durability and reparability",
+        "X","X","","","","")
+o5 <- c("o5","Share data on devices circularity",
+        "X","X","X","X","X","X")
+
+o6 <- c("o6","Only dispose for external reuse those devices that are not reusable internally",
+        "","","X","","","")
+
+o7 <- c("o7","Consumers dispose with impact accountable ITADs/refurbishers",
+        "","","X","","","")
+o8 <- c("o8","Prioritize disposal for reuse rather that disposal for recycling",
+        "","","X","","","")
+o9 <- c("o9","Circular economy accountable",
+        "","","X","X","","X")
+o10 <- c("o10","Trace refurbished devices until recycling",
+        "","","X","X","","")
+
+o11 <- c("o11","Financially compensated for collecting low reuse potential devices",
+        "","","X","","","")
+
+o12 <- c("o12","Reduce exporting of non-durable and non-repairable devices",
+        "","","","X","","")
+
+o13 <- c("o13","Devices easily openable and no software locks",
+        "X","X","X","X","X","X")
+
+o14 <- c("o14","Batteries that are easily removable and replaceable without special tools",
+        "X","X","X","X","X","X")
+
+o15 <- c("o15","Continued operating system support",
+        "X","X","X","X","X","X")
+
+o16 <- c("o16","Spare parts and repair information that are accessible to everyone",
+        "","","","","","")
+
+o17 <- c("o17","Repairs affordable and accessible (cost of spare parts)",
+        "","","","","","")
+
+o18 <- c("o18","Compare reparability information of devices",
+        "","","","","","")
+
+o19 <- c("o19","Devices can be fully disassembled with an standard tool",
+        "","","","","","X")
+
+o20 <- c("o20","Receive only devices without reuse potential",
+        "","","","","","X")
+
+o21 <- c("o21","Report final recycling of devices",
+        "","","","","","X")
+
+o22 <- c("o22","Reduce costs of dissasembly",
+        "","","","","","X")
+
+
+m <-matrix(c(o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15,o16,o17,o18,o19,o20,o21,o22), byrow = TRUE, nrow = 22)
+df <- as.data.frame(m)
+colnames(df)<-c("Id","Outcome","A","B","C","D","E","F")
+
+if(is_latex_output()) {
+format_out <- "latex"
+} else if(is_html_output()) {
+format_out <- "html"
+} else format_out <- "none"
+
+df_table <- df %>% 
+kable(format= format_out, booktabs=TRUE, format.args =  list(decimal.mark = ".", big.mark = ","),
+      caption = "Expected outcomes by groups", linesep ="") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  kable_classic_2(full_width = F) %>%
+  footnote(general = "Here is a general comments of the table. ",
+           number = c("Consumers of type business A; ", 
+                      "Consumers of type particulars B; ", 
+                      "Consumers of type business disposing for reuse C; ",
+                      "Refurbishers/ITADs D; ",
+                      "Repairers E; ", 
+                      "Recylers F; "
+                      )
+           )  
+
+# TODO
+# fer un transpose per cada outcome y rbinds de tots
+```
+
+
+```{r tableOutcomesPrint, echo = FALSE, fig.align="center", fig.cap = "Community expected outcomes"}
+df_table
+```
+
+## Expected outputs: Information building blocks, conditions or capabilities 
+
+>  interventions required for to implement the above outcomes
+
+a. Information systems and tools
+
+    1. Digital inventory for full-lifecycle traceability with digital twins instances and product passport
+    
+    2. A verifiable, private and decentralized data registry for devices, documents and organizations
+    
+    3. Tools for auditing compliance, quality of devices and impact of organizations and products
+    
+    4. Tools and sensors to update digital twins instances
+    
+    5. Data compliance for devices data erasure
+    
+b. Circular economy accountability
+
+    1. Impact measurement framework
+    
+    2. Consumption accountability on lifetime extension and recycling
+    
+    3. Reuse and recycling accountability
+    
+    4. Product accountability on quality, durability and reuse potential
+
+c. Incentives for circularity
+
+    1. Update digital twins inventory
+    
+    2. Share devices lifecycle and durability data
+    
+    3. Prioritize reuse rather than recycling
+    
+    4. Ensure final recycling in certified recycling facilities
+
+## Information systems and tools
+
+### Digital inventory for full-lifecycle traceability with digital twins instances and product passport
+
+Along its lifetime from assembly to recycling, a device may need to move to different operating states, locations and its ownership change. This pose the need to have an up-to-date inventory of devices and to be able to transfer information between owners, from the initial manufacturer to the final recycler. 
+
+Digital twins are precise, virtual copies of machines or systems. Driven by data collected from sensors and software in real time. Digital twins instances is data on the description of a physical object; data on components in the present time, information on the processes performed in all time periods, test results, records of repairs, operational data, monitoring parameters, etc...
+
+Devices move to different locations, and they are reused by different users and organisations. Because of this, devices are registered in different ITAMS and referenced by other systems like GRD or DCP. Synthetic identifiers, like internal database identifiers [@Waltermire2011], cannot be used outside an organisation as they cannot be regenerated if lost, and serial numbers are not always unique [ereuse2015]. Although they could work in a few cases, that defeats reliable global traceability. eReuse.org proposes a HID to track devices or components. It results from the concatenation of the manufacturer name, the model and serial number of a device, for example acer-aod270-lusga_0d0242201212c7614. These HIDs are typically attached in stickers or printed on the devices.
+
+The device passport allows refurbishers and their partners (retailers and recyclers) to track the traceability of reused products and to be able to report whether they have been finally recycled in a waste management centre.
+
+eReuse consider that a device identifier is candidate for a Digital Product Passport if: 1. standard and globally unique: the ID must be unique and able to interface with systems around the world 2. self-generated on a internal and unmutable device information: it must be able to be generated from internal components with low frequency of replacement and that the concatenation results in a potentially unique identifier 3. is an anonymous id: if you have the device physically and permissions you can generate the id
+
+#### Unique Hardware Identifier
+
+eReuse consider a valid process of creating the passport if we can ensure the veracity of the information, that means: 1. the collection of the hardware information has been performed with open software tools 2. the executed software has not been modified
+
+By collecting this information using software tools that can read it, we can ensure the veracity of the information. that a device will always have a unique machine identifier.
+
+Point 2 (serial components) and point 3 (anonymisation) require us to create two identifiers. A first identifier that we call Unique Hardware Identifier (UHI) that will be known by the users that interact with the device (who physically have it) and a Digital Product Passport that will be an anonymisation of the UHI.
+
+The values needed to create a unique machine identifier are: i) the brand, ii) the model, iii) the serial number and iv) the network card identifier of the device or the motherboard id. With these four identifiers we can ensure that the identifier is globally unique. For example the following identifier
+
+desktop-hewlett-packard-hp_compaq_8000_elite_sff-czc038bqt9-00:23:24:13:a5:37 Figura 15: Unique Hardware Identifier (UHI)
+
+#### Anonimized Unique Hardware Identifier
+
+Before sending the UHI to a partner it should be anonimized. The anonymisation process is carried out by a hash function. As a result of applying the hash function (in this case SHA-256), the resulting unique and anonymised hardware identifier has been:
+
+e71f2e95da5455b4d8d27077b7b9e1919df918d11e7b69a2905f7da14cd35359
+
+Figura 16: Anonimized Unique Hardware Identifier (AUHI)
+
+hash function: És un algorisme o funció per sumaritzar [https://ca.wikipedia.org/wiki/Funció_hash](https://ca.wikipedia.org/wiki/Funció_hash){.uri} per detalls).
+
+#### Creating the Digital Product Passport
+
+Una vez se tiene el AUHI ya es posible crear un DPP. Debe mandarse el AUHI a un servidor de DPPs que te devolverá un código único. Este servidor anotará quien es el holder, issuer y el verificados.
+
+Holder: Holders are the owners of digital identities. They have ultimate control over their data and choose how much and with whom they share their data with.
+
+Issuers: Issuers are trusted third parties or authorities that generate and issue credentials to holders, such as health records or identity documents.
+
+Verifiers: Verifiers
+
+Verifiers are any third parties that need to verify the authenticity of a holder's data. A verifier might, for example, need to validate that the holder is who they say they are
+
+From the machine identifier with the hash function applied (figure 16) from the previous step we will do a whole series of steps to create a passport number.
+
+que sigui fàcilment llegible per als centres de reutilització, les col·laboradores i les usuàries finals que l'hauran de portar a un punt autoritzat per fer-ne el reciclatge. eReuse defineix un protocol per a crear aquest passaport però alhora també posa a disposició les eines necessàries en programari lliure que expliquem a continuació.
+
+10
+
+1.  Registre al sistema d'inventaris. El centre de reutilització ha de registrar el dispositiu amb unes eines que recullen informació invariable del maquinari i aplicar una funció establerta de hash. eReuse posa a disposició tant les eines per recollir la informació com el sistema de traçabilitat d'inventaris.
+
+2.  Creació d'un número de passaport no vinculat. El centre de reutilització crearà al seu sistema d'inventaris una etiqueta de tipus passaport de producte. Ha d'anar a l'opció "tags" de tipus "unnamed tags" (veure següent figura). En aquest moment es fa una petició al sistema de passaports d'eReuse i aquest li retorna un número de passaport únic (per exemple: DFR53). Aquest número encara no té cap dispositiu assignat.
+
+3.  Vinculació d'un passport a un dispositiu. Al seu sistema d'inventaris, el centre selecciona el dispositiu i el número de passaport que li vol assignar. I envia aquesta informació (identificador de maquinari anonimitzat amb la funció de hash i el número de passport). El sistema de passports d'eReuse fa aquest vincle. És clau que la informació quedi anonimitzada per tal que eReuse no pugui saber de quin dispositiu en realitat es tracta.
+
+4.  Regeneració del número de passaport. si les consumidores finals o nous centres de reutilització / reciclatge extreuen l'etiqueta amb el número de passaport, ha de ser posible autogenerar el número inicial. El procés de regeneració és similar a l'anterior, però en aquest cas, quan el nou usuari vulgui associar el dispositiu amb el número de passaport, el sistema de passaports d'eReuse li farà saber que ja existeix 11 un número de passaport per aquell dispositiu i li retornarà.
+
+Figura 17: Creació del passaport del producte
+
+
+### Data registries for devices, documents and organizations
+
+Traceability relies on sharing good quality data with several derived requirements: a) Trust (for sources) on the precision and reliability of the data provided by sources (about devices, partici- pants, actions). b) Quality (for data) in the precision and detail of the data[^roadmap-1]. c) Quantity (for data) to generate enough information. d) Cost (for devices) of obtaining enough good quality information (tools can reduce the cost and increase the quality and trust, typically in terms of time). e) Privacy (for participants) in protecting and preserving personal data.
+
+[^roadmap-1]: Data quality: "Data are of high quality if they are fit for their intended uses in operations, decision making, and planning. Data are fit for use if they are free of defects and possess desired features" [@redman2001data].
+
+
+A verifiable, private and decentralized data registry for devices, documents and organizations
+
+#### Inmutability
+
+Immutability means unchangeability. Immutable data is a piece of information in a database that cannot be (or shouldn't be) deleted or modified after it's creation. Most traditional databases store data in a mutable format, meaning the database overwrites the older data when new data is available. This is where Distributed Ledger Technologies (DLTs) or blockchains come into play. Immutability is one of the key features of DLTs. It is a replicated and synchronised digital registry, where it is written by consensus of the participants, distributed to different locations and organisations, without a central administrator, which structures the data and operations in such a way that only data can be added but it is not possible to modify those already accepted. It is impossible for any entity (for example, a government or corporation) to manipulate,replace, or falsify data stored on a DLT.
+
+#### Verifiability
+
+Verifiability is an action to be able to confirm that a fact/data is supported by an attestation at a certain moment. As will be explained in the chapter on technology for ensuring the verifiability we use a block explorer of the DLT where it is possible to search the entries of the registry that correspond to a determined event or device, to provide a set of registered attestations that allow to confirm some facts that appear in a document, as for example a certificate of an action or set of actions during the life or multiple lives of a device.
+
+#### Privacy of personal and business data
+
+When Product Owners (companies, governments or individuals) need to get rid of their digital devices to have a new life (reuse), they transfer it to ITADs/Refurbishers and Recyclers. If the device is reused then the circularity of the product owner increases, if it is recycled prematurely then it drops. In the process of data collection for impact accounting, the refurbisher must request data from his customers and suppliers, and in turn, to them request to the following actors of the reverse supply chain until the final recycler.
+
+The problem we have is how reconciling business privacy with being able to measure social and environmental impact. The Refurbishers / Retailers / ITADs / Recyclers / Trade-in actors of the reverse-supply chain are in competition to reach Product Owners, Final Users, and commodity refiners so they do not feel comfortable in openly sharing this data.
+
+Hechos a demostrar sin tener que revelar la información de negocioes y Final users:
+
+-   El refurbisher debe poder demostrar que se ha reutilizado un dispositivo:
+
+    -   Sin tener que revelar la identidad del Final User
+    -   Que se ha reutilizado por parte de un segmento específico ( ONG, particular en situación vulnerable)
+
+-   El refurbisher debe poder demostrar que
+
+Como el refurbisher puede saber si un dispositivo se ha reciclado finalmente? La verdad es que \* El reciclador va a querer comunicar al refurbisher en que refineria ha reciclado el dispositivo?
+
+Como puede el reciclador demostrar que se ha reciclado sin tener que revelar quien lo ha hecho?
+
+Necesitamos the entidades que hagan
+
+he know your customer or know your client guidelines in financial services require that professionals make an effort to verify the identity, suitability, and risks involved with maintaining a business relationship. The procedures fit within the broader scope of a bank's anti-money laundering policy.
+
+On the one hand, the devices, actors and end-users must be completely anonymous and, on the other hand, impact accounting must provide guarantees of trust, verifiability, irreversibility and tamper proof to ensure sellers/donors that positive impact is generated if they divert their devices to reuse streams.
+
+Our last requirement is ensure the privacy of data. This is where privacy must be reconciled with the ability to account for impact. Data if its not protected could disclose the actors business privacy or personal information, but if its not accountable that do no allow to account the circular impact generated such as extended life time and final recycling.
+
+In this verification that is only possible with certain data, but without the data, only with a summary/signature). In short, the function that a notary or notary public performs.
+
+Tal com veurem al capítol de tecnologia, Per la immutabilitat fem servir el que en anglès s'anomena "distributed ledger technology" (DLT) o "blockchain",
+
+The data of the traceability systems of the entities federated in eReuse are in decentralised systems that should preserve business privacy.
+
+un dels requeriments que tenim es fer ús de d'un llibre de registre digital fent servir tecnología blockchain per tal d'assegurar la seva immutabilitat (no poder canviar el passat). i verificabilitat (poder confirmar que un fet està suportat per un atestat en un cert moment que només és possible amb certes dades, però sense les dades, només amb un resum/signatura). En resum, la funció que fa un notari o fedatari.
+
+Per la verificabilitat fem servir un explorador de blocs de la DLT on es poden cercar les entrades del registre que corresponen a un esdeveniment o dispositiu determinat, per aportar un conjunt d'atestats registrats que permeten confirmar uns fets que consten a un document, com per exemple un certificat d'una acció o conjunt d'accions durant la vida o múltiples vides d'un dispositius is the blockchain.
+
+In this action we justify the need to implement a blockchain and explain the one that has been developed in the framework of the project, as well as the mechanisms followed by reuse centres to self-certify and those undertaken by third parties to carry out auditing processes.
+
+
+
+### Tools for auditing compliance, quality of devices and impact of organizations and products
+
+An audit aims to establish whether information systems are maintaining the integrity of stored and communicated data. There are certain requirements that the refurbishers' system must have in order to allow for this being audited in impact. The requirements are inmutability, verificability and privacy of the data. This is where Distributed Ledger Technology comes into play. In this section we will look at the properties that these technologies provide to justify their use.
+
+Required features for data:
+
+> Inmutability, verificability and privacy of the data
+
+
+### Tools and sensors to update digital twins instances
+
+### Data compliance for devices data erasure
+
+
+## Circular economy accountability
+
+Measuring circularity indicators pro- motes a transition towards a circular economy, as it builds the knowledge base for environmental action and sustainability; it helps achieving requirement R2 (Utility maximisation) through data analysis and reporting. Open data allows any internal or external participant to assess different indicators about digital devices, such as statistics about different cycles, and durability of different groups of devices. This requires collecting a specific set of required data and providing mechanisms for data extraction (for transparency) and data aggregation functions (to preserve privacy) when dealing with more private data. These requirements are in line with the recent European action plan for the circular economy, but also relevant to bootstrap an inclusive economy in developed and developing countries which keeps devices longer at higher values creating both socio-economic development and lower environmental impact.
+
+### Impact measurement framework
+
+There are two main challenges to fostering the circular economy of digital devices: on the one hand, when owners want to dispose of their device they should opt for dispose for reuse instead of dispose for recycling; but who do you turn to for guarantees of reuse? on the other hand, when consumers requiere a device they should opt for second-hand devices regardless of their economic situation. The latter will be possible if second-hand devices have a proven quality and a long durability that could make consumers do not resent them, so it should be as repairable (replacement of worn components), upgradeable (adding new components) and upgradable (they can work with current operating systems and applications) as possible.
+
+Product Owners and Refurbishers can play a central role in stimulating disposal and demand for reuse. In an analogy to impact investment, Product Owners invest with their disposed assets in those refurbishers that will provide the greatest guarantee of impact, or at least are accountable. Refurbishers will have to account for the impact they generate, so it is essential for them to use a common framework for impact measurement methodology that can be verified by Product Owners and other parties. In addition to being able to measure the impact generated by organisations, it is necessary to have information on how reusable the devices are, this information is useful for refurbishers and for consumers who choose to consume second-hand.
+
+#### Standards, certifications, methodologies and metrics
+
+The numerous interpretations of circular economy and impact objectives have posed a challenge to Product Owners and refurbishers seeking to align around a shared set of goals. Because there are no clear specific objectives yet we suggest trying to answer the day-to-day questions for which foresee an impact on circularity principles and to the UN Sustainable Development Goals. In addition to the objectives, our framework should provide content in the following categories: standards, certifications, methodologies and metrics. These building blocks come into play at different stages of the impact management process.
+
+#### How do we measure performance: metrics and indicators
+
+Discarded devices by public or private administrations (Product Owners) are collected and refurbished or recycled if it has been detected that there is no demand. When the Product Owner requires impact data such as lifetime extension they request a report from the refurbisher. This impact data in turn feeds into the product owner metrics to calculate their circularity performance.
+
+We need to know what works, what doesn't and why and that means turning to metrics. The field of metrics can be difficult to navigate due to the variety of terms and definitions used. What is the difference between a metric and an indicator [@Verstraeten-Jochemsen2020]
+
+-   **Metric** are standarized definitions for measuring and comparing impact. Is a method we employ to understand change over time across a number of dimensions. We use it as a catch-all term to describe the method used to measure something, the resulting values, as well as a calculated or combined set of indicators.
+
+-   **Indicator** is a crucial element of a metric, referring to a single value and its unit, and used to indicate (hence the name) a specific trend or performance.
+
+#### Are there specific methodologies and tools for measuring
+
+Methodologies and tools are instruments for facilitating the diligence, assessment, monitoring and reporting of impact. Many of the metrics considered are partly or fully automated using the eReuse software that enable easy application and reduce the risk of errors.
+
+#### Are there an standarized way of measuring reuse and recycling performance
+
+Standards are metrics that have gone a certain degree of scrutiny and testing, and are commonly accepted as a standardised way of measuring. Technically, one can consider both 'informal' standards and standards that have officially been documented and published by standardisation organizations. Today there is no standard method to measure reuse and recycling so we can consider the eReuse standard as informal in the absence of adaptation to future standards as they emerge.
+
+#### How federated members can be assessed in reuse and recycling
+
+A certificate is a specific type of standard that can not be applied by the organisation itself but requires a third party to assess whether the company's performance has been according to a certain standard. They usually result in a product label being issued by the third party.
+
+
+### Consumption accountability on lifetime extension and recycling
+    
+### Reuse and recycling accountability
+    
+### Product accountability on quality, durability and reuse potential
+
+

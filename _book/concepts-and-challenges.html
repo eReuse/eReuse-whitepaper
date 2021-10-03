@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Concepts and Challenges | eReuse.org and Digital Product Passport</title>
+  <meta name="description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Concepts and Challenges | eReuse.org and Digital Product Passport" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Concepts and Challenges | eReuse.org and Digital Product Passport" />
+  
+  <meta name="twitter:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  
+
+<meta name="author" content="eReuse.org" />
+
+
+<meta name="date" content="2021-09-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="our-cluster.html"/>
+<link rel="next" href="credentials.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="ereuse.html"><a href="ereuse.html"><i class="fa fa-check"></i><b>2</b> eReuse</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ereuse.html"><a href="ereuse.html#collaboration-to-avoid-premature-recycling"><i class="fa fa-check"></i><b>2.1</b> Collaboration to avoid premature recycling</a></li>
+<li class="chapter" data-level="2.2" data-path="ereuse.html"><a href="ereuse.html#why-electronics-are-not-affordable-and-not-sustainable"><i class="fa fa-check"></i><b>2.2</b> Why Electronics are not affordable and not sustainable</a></li>
+<li class="chapter" data-level="2.3" data-path="ereuse.html"><a href="ereuse.html#what-we-can-do-today-reuse-and-ensure-recycling"><i class="fa fa-check"></i><b>2.3</b> What we can do today: reuse and ensure recycling</a></li>
+<li class="chapter" data-level="2.4" data-path="ereuse.html"><a href="ereuse.html#how-we-do-it-bootstap-circular-economy-ecosystems-with-impact-accounting"><i class="fa fa-check"></i><b>2.4</b> How we do it: bootstap circular economy ecosystems with impact accounting</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="our-activity.html"><a href="our-activity.html"><i class="fa fa-check"></i><b>3</b> Our activity</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="our-activity.html"><a href="our-activity.html#bootstraping-circular-economy-ecosystems"><i class="fa fa-check"></i><b>3.1</b> Bootstraping circular economy ecosystems</a></li>
+<li class="chapter" data-level="3.2" data-path="our-activity.html"><a href="our-activity.html#accreditation-circularity-of-members-ecosystems-and-devices"><i class="fa fa-check"></i><b>3.2</b> Accreditation circularity of members, ecosystems and devices</a></li>
+<li class="chapter" data-level="3.3" data-path="our-activity.html"><a href="our-activity.html#coordinate-open-source-resources-roadmap-for-reusing-electronics"><i class="fa fa-check"></i><b>3.3</b> Coordinate open-source resources roadmap for reusing electronics</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="our-cluster.html"><a href="our-cluster.html"><i class="fa fa-check"></i><b>4</b> Our Cluster</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="our-cluster.html"><a href="our-cluster.html#refurbishers-and-resellers"><i class="fa fa-check"></i><b>4.1</b> Refurbishers and Resellers</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="our-cluster.html"><a href="our-cluster.html#solidanca.cat"><i class="fa fa-check"></i><b>4.1.1</b> Solidanca.cat</a></li>
+<li class="chapter" data-level="4.1.2" data-path="our-cluster.html"><a href="our-cluster.html#reutilitza.upc.edu"><i class="fa fa-check"></i><b>4.1.2</b> Reutilitza.upc.edu</a></li>
+<li class="chapter" data-level="4.1.3" data-path="our-cluster.html"><a href="our-cluster.html#pontsolidari.org"><i class="fa fa-check"></i><b>4.1.3</b> Pontsolidari.org</a></li>
+<li class="chapter" data-level="4.1.4" data-path="our-cluster.html"><a href="our-cluster.html#trinijove.org"><i class="fa fa-check"></i><b>4.1.4</b> Trinijove.org</a></li>
+<li class="chapter" data-level="4.1.5" data-path="our-cluster.html"><a href="our-cluster.html#andromines.net"><i class="fa fa-check"></i><b>4.1.5</b> Andromines.net</a></li>
+<li class="chapter" data-level="4.1.6" data-path="our-cluster.html"><a href="our-cluster.html#reciclanet.org"><i class="fa fa-check"></i><b>4.1.6</b> Reciclanet.org</a></li>
+<li class="chapter" data-level="4.1.7" data-path="our-cluster.html"><a href="our-cluster.html#elkartenet.eus"><i class="fa fa-check"></i><b>4.1.7</b> Elkartenet.eus</a></li>
+<li class="chapter" data-level="4.1.8" data-path="our-cluster.html"><a href="our-cluster.html#ieselcalamot.com"><i class="fa fa-check"></i><b>4.1.8</b> Ieselcalamot.com</a></li>
+<li class="chapter" data-level="4.1.9" data-path="our-cluster.html"><a href="our-cluster.html#labdoo.org"><i class="fa fa-check"></i><b>4.1.9</b> Labdoo.org</a></li>
+<li class="chapter" data-level="4.1.10" data-path="our-cluster.html"><a href="our-cluster.html#marianao.net"><i class="fa fa-check"></i><b>4.1.10</b> Marianao.net</a></li>
+<li class="chapter" data-level="4.1.11" data-path="our-cluster.html"><a href="our-cluster.html#engrunes.org"><i class="fa fa-check"></i><b>4.1.11</b> Engrunes.org</a></li>
+<li class="chapter" data-level="4.1.12" data-path="our-cluster.html"><a href="our-cluster.html#donalo.org"><i class="fa fa-check"></i><b>4.1.12</b> Donalo.org</a></li>
+<li class="chapter" data-level="4.1.13" data-path="our-cluster.html"><a href="our-cluster.html#abacus.coop"><i class="fa fa-check"></i><b>4.1.13</b> Abacus.coop</a></li>
+<li class="chapter" data-level="4.1.14" data-path="our-cluster.html"><a href="our-cluster.html#reutilizak.org"><i class="fa fa-check"></i><b>4.1.14</b> Reutilizak.org</a></li>
+<li class="chapter" data-level="4.1.15" data-path="our-cluster.html"><a href="our-cluster.html#ongdreamit.org"><i class="fa fa-check"></i><b>4.1.15</b> Ongdreamit.org</a></li>
+<li class="chapter" data-level="4.1.16" data-path="our-cluster.html"><a href="our-cluster.html#fundesplai.org"><i class="fa fa-check"></i><b>4.1.16</b> Fundesplai.org</a></li>
+<li class="chapter" data-level="4.1.17" data-path="our-cluster.html"><a href="our-cluster.html#hubuntu.es"><i class="fa fa-check"></i><b>4.1.17</b> Hubuntu.es</a></li>
+<li class="chapter" data-level="4.1.18" data-path="our-cluster.html"><a href="our-cluster.html#tau.org.ar"><i class="fa fa-check"></i><b>4.1.18</b> Tau.org.ar</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="our-cluster.html"><a href="our-cluster.html#partners"><i class="fa fa-check"></i><b>4.2</b> Partners</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="our-cluster.html"><a href="our-cluster.html#right-to-repair-europe"><i class="fa fa-check"></i><b>4.2.1</b> Right to Repair Europe</a></li>
+<li class="chapter" data-level="4.2.2" data-path="our-cluster.html"><a href="our-cluster.html#zero-waste-europe"><i class="fa fa-check"></i><b>4.2.2</b> Zero Waste Europe</a></li>
+<li class="chapter" data-level="4.2.3" data-path="our-cluster.html"><a href="our-cluster.html#the-restart-project"><i class="fa fa-check"></i><b>4.2.3</b> The Restart Project</a></li>
+<li class="chapter" data-level="4.2.4" data-path="our-cluster.html"><a href="our-cluster.html#association-for-progressive-communications"><i class="fa fa-check"></i><b>4.2.4</b> Association for Progressive Communications</a></li>
+<li class="chapter" data-level="4.2.5" data-path="our-cluster.html"><a href="our-cluster.html#universitat-politècnica-de-catalunya"><i class="fa fa-check"></i><b>4.2.5</b> Universitat Politècnica de Catalunya</a></li>
+<li class="chapter" data-level="4.2.6" data-path="our-cluster.html"><a href="our-cluster.html#usody"><i class="fa fa-check"></i><b>4.2.6</b> Usody</a></li>
+<li class="chapter" data-level="4.2.7" data-path="our-cluster.html"><a href="our-cluster.html#jamgo"><i class="fa fa-check"></i><b>4.2.7</b> Jamgo</a></li>
+<li class="chapter" data-level="4.2.8" data-path="our-cluster.html"><a href="our-cluster.html#electronics-watch"><i class="fa fa-check"></i><b>4.2.8</b> Electronics Watch</a></li>
+<li class="chapter" data-level="4.2.9" data-path="our-cluster.html"><a href="our-cluster.html#sustainable-digital-infraestructure-alliance"><i class="fa fa-check"></i><b>4.2.9</b> Sustainable Digital Infraestructure Alliance</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="our-cluster.html"><a href="our-cluster.html#circuits"><i class="fa fa-check"></i><b>4.3</b> Circuits</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="our-cluster.html"><a href="our-cluster.html#background."><i class="fa fa-check"></i><b>4.3.1</b> Background.</a></li>
+<li class="chapter" data-level="4.3.2" data-path="our-cluster.html"><a href="our-cluster.html#collaborative-circuits"><i class="fa fa-check"></i><b>4.3.2</b> Collaborative Circuits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html"><i class="fa fa-check"></i><b>5</b> Concepts and Challenges</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#what-is-the-reuse-of-electronics"><i class="fa fa-check"></i><b>5.1</b> What is the reuse of electronics?</a></li>
+<li class="chapter" data-level="5.2" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#what-is-the-circular-economy-of-electronics"><i class="fa fa-check"></i><b>5.2</b> What is the Circular Economy of Electronics?</a></li>
+<li class="chapter" data-level="5.3" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#how-to-measure-the-circular-economy-of-electronics"><i class="fa fa-check"></i><b>5.3</b> How to measure the circular economy of electronics?</a></li>
+<li class="chapter" data-level="5.4" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#diferences-between-a-metric-indicator-tool-standard-or-certificate"><i class="fa fa-check"></i><b>5.4</b> Diferences between a metric, indicator, tool, standard or certificate?</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#metric"><i class="fa fa-check"></i><b>5.4.1</b> METRIC</a></li>
+<li class="chapter" data-level="5.4.2" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#indicator"><i class="fa fa-check"></i><b>5.4.2</b> INDICATOR</a></li>
+<li class="chapter" data-level="5.4.3" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#tool"><i class="fa fa-check"></i><b>5.4.3</b> TOOL</a></li>
+<li class="chapter" data-level="5.4.4" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#standard"><i class="fa fa-check"></i><b>5.4.4</b> STANDARD</a></li>
+<li class="chapter" data-level="5.4.5" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#certificate"><i class="fa fa-check"></i><b>5.4.5</b> CERTIFICATE</a></li>
+<li class="chapter" data-level="5.4.6" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#els-conceptes-de-immutabilitat-i-verificabilitat-de-la-informació"><i class="fa fa-check"></i><b>5.4.6</b> Els conceptes de immutabilitat i verificabilitat de la informació</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#challenges"><i class="fa fa-check"></i><b>5.5</b> Challenges</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#quality-uncertainty"><i class="fa fa-check"></i><b>5.5.1</b> Quality uncertainty</a></li>
+<li class="chapter" data-level="5.5.2" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#impact-accounting"><i class="fa fa-check"></i><b>5.5.2</b> Impact accounting</a></li>
+<li class="chapter" data-level="5.5.3" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#preserve-business-privacy"><i class="fa fa-check"></i><b>5.5.3</b> Preserve business privacy</a></li>
+<li class="chapter" data-level="5.5.4" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#refurbishers"><i class="fa fa-check"></i><b>5.5.4</b> Refurbishers</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#principals-reptes-dels-centres-de-reutilització"><i class="fa fa-check"></i><b>5.6</b> Principals reptes dels centres de reutilització</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#incentivar-la-demanda-de-dispositius-reacondicionats"><i class="fa fa-check"></i><b>5.6.1</b> Incentivar la demanda de dispositius reacondicionats</a></li>
+<li class="chapter" data-level="5.6.2" data-path="concepts-and-challenges.html"><a href="concepts-and-challenges.html#incentivar-la-recollida-de-dispositius-a-reacondicionar"><i class="fa fa-check"></i><b>5.6.2</b> Incentivar la recollida de dispositius a reacondicionar</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="credentials.html"><a href="credentials.html"><i class="fa fa-check"></i><b>6</b> Credentials</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="credentials.html"><a href="credentials.html#refurbishment-quality"><i class="fa fa-check"></i><b>6.1</b> Refurbishment quality</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="credentials.html"><a href="credentials.html#especificacions"><i class="fa fa-check"></i><b>6.1.1</b> Especificacions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="credentials.html"><a href="credentials.html#classificació"><i class="fa fa-check"></i><b>6.1.2</b> Classificació</a></li>
+<li class="chapter" data-level="6.1.3" data-path="credentials.html"><a href="credentials.html#procés-de-reacondicionat"><i class="fa fa-check"></i><b>6.1.3</b> Procés de reacondicionat</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="credentials.html"><a href="credentials.html#informes-de-reutilització-i-reciclatge"><i class="fa fa-check"></i><b>6.2</b> Informes de reutilització i reciclatge</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="credentials.html"><a href="credentials.html#passaport-del-dispositiu"><i class="fa fa-check"></i><b>6.2.1</b> Passaport del dispositiu</a></li>
+<li class="chapter" data-level="6.2.2" data-path="credentials.html"><a href="credentials.html#informe-de-reutilització"><i class="fa fa-check"></i><b>6.2.2</b> Informe de reutilització</a></li>
+<li class="chapter" data-level="6.2.3" data-path="credentials.html"><a href="credentials.html#informe-de-reciclatge"><i class="fa fa-check"></i><b>6.2.3</b> Informe de reciclatge</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="credentials.html"><a href="credentials.html#compartir-la-circularitat-dels-models-de-dispositius"><i class="fa fa-check"></i><b>6.3</b> Compartir la circularitat dels models de dispositius</a></li>
+<li class="chapter" data-level="6.4" data-path="credentials.html"><a href="credentials.html#mesurar-limpacte-social-i-circular."><i class="fa fa-check"></i><b>6.4</b> Mesurar l’impacte social i circular.</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>7</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>7.1</b> Footnotes</a></li>
+<li class="chapter" data-level="7.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>7.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="use-cases.html"><a href="use-cases.html"><i class="fa fa-check"></i><b>8</b> Use Cases</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="use-cases.html"><a href="use-cases.html#els-processos-destampa-de-dades-i-auditoria-a-la-blockchain-de-ereuse"><i class="fa fa-check"></i><b>8.0.1</b> Els processos d’estampa de dades i auditoria a la blockchain de eReuse</a></li>
+<li class="chapter" data-level="8.1" data-path="use-cases.html"><a href="use-cases.html#procés-de-certificació-dels-informes"><i class="fa fa-check"></i><b>8.1</b> Procés de certificació dels informes</a></li>
+<li class="chapter" data-level="8.2" data-path="use-cases.html"><a href="use-cases.html#procés-de-verificació-dels-informes-per-part-dauditors"><i class="fa fa-check"></i><b>8.2</b> Procés de verificació dels informes per part d’auditors</a></li>
+<li class="chapter" data-level="8.3" data-path="use-cases.html"><a href="use-cases.html#procés-dautoacreditació-en-el-distintiu-de-ereuse"><i class="fa fa-check"></i><b>8.3</b> Procés d’autoacreditació en el distintiu de eReuse</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>9</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>9.1</b> Equations</a></li>
+<li class="chapter" data-level="9.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>9.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="9.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>9.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>10</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>10.1</b> Publishing</a></li>
+<li class="chapter" data-level="10.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>10.2</b> 404 pages</a></li>
+<li class="chapter" data-level="10.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>10.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">eReuse.org and Digital Product Passport</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="concepts-and-challenges" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Concepts and Challenges</h1>
+<p>What eReuse federated members have in common is that we share a definition of circular economy and metrics to measure our transition to a circular economy. Together we identified the challenges to be overcome and defined the technology roadmap that will help us in this process.</p>
+<div id="what-is-the-reuse-of-electronics" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> What is the reuse of electronics?</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figreuseelectronics"></span>
+<img src="figs/26.jpg" alt="Citizen and professional reuse of digital devices" width="100%" />
+<p class="caption">
+Figure 5.1: Citizen and professional reuse of digital devices
+</p>
+</div>
+<p>The reuse of electronic devices such as desktops, laptops or mobile
+phones is applied to devices that have already been manufactured and are
+no longer in use (disposed) and will be recycled unless they are
+“disposed for reuse” by doing any of the following actions refurbish,
+recondition, repair, upgrade and used again by the same final user or
+redistributed to other users.</p>
+<p>We say a device or component is reusable if it has or may have use value
+for someone:</p>
+<ul>
+<li><p>If the use value of the device is high enough, it means that there
+is somewhere a potential user for that device as it is, and only a
+basic refurbishing processes is required, such as basic repair,
+erasing data and restoring the operating system (this is represented
+as citizen reuse loop in figure <a href="concepts-and-challenges.html#fig:figreuseelectronics">5.1</a>.</p></li>
+<li><p>If the use value is too low, its use value can be increased through
+advanced refurbishing processes: repairing, replacing damaged
+components and updating/ugrading. This is represented as
+professional reuse loop in the figure.</p></li>
+</ul>
+<p>The reuse process ends when after a few years the device or component
+reaches disposal for recyling state, which means its use value then, or
+through potential improvements, does not allow its reuse again. The
+cycle reach recycling to recover (reuse) raw materials and manufacture
+new components.</p>
+</div>
+<div id="what-is-the-circular-economy-of-electronics" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> What is the Circular Economy of Electronics?</h2>
+<p>The circular economy is the vision of a new economy that aims to meet
+society’s needs within the limits of negative impact in order to have a
+healthy planet with sufficient resources for future generations. Today,
+we are far from achieving this vision, in 2020 our economy will be only
+9% circular (Circle Economy, 2019).</p>
+<p>The circular economy is a new paradigm to change the current consumption
+model based on buy, use and throw away. The purpose of the circular
+economy in electronics is, first, to preserve in use the products and
+components that have been already manufactured, and second, to recover
+raw materials when devices are no longer repairable and functional.</p>
+<p>Circularity means making self-sufficient system that does not require inputs of raw materials and does not have losses. Losses are: raw materials that ends up mixed in iron or steel (because perform a basic recycling process), non-potentially recoverable materials due to the chemical characteristics of the elements - the entropy backfire, because its highest Termodynamic Rarity<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> or waste that ends up in landfills.</p>
+<p>In circular economy, products and materials are seen as assets,
+businesses are seen as its users, that should repair, upgrade and reuse
+their devices and materials to maintain them in use as much as possible.</p>
+<p>To make and scale a circular economy, businesses, governments, and
+society must work together. But today it is uncertain if reused digital
+devices may end up being exported illegally and potentially polluting
+the environment. Such risk and slippage is the main drawback in the
+promotion and the practice of reuse in public and private organisations.</p>
+<p>The circular economy is a new paradigm to change the current consumption
+model based on buy, use and throw away. Circular economy in electronics
+is, first, to preserve in use the products and components that have been
+already manufactured, and second, to recover raw materials when devices
+are no longer repairable and functional.</p>
+<p>Circularity means making self-sufficient system that does not require
+inputs of raw materials and does not have losses. losses are waste that
+ends up in landfills where materials cannot be recovered.</p>
+<p>In circular economy, products and materials are seen as assets,
+businesses are seen as its users, that should repair, upgrade and reuse
+their devices and materials to maintain them in use as much as possible.</p>
+<p>We define the Circular Economy of electronics reuse as the result of
+performing all viable reuse processes until the use value of devices
+does not allow further reuse, and that at the end of any reused device
+is recycled.</p>
+<p>Therefore, there are three principles that are key to achieving Circular
+Economy of electronics: Reduce, Reuse and Recycling. we should ensure at
+the time of recycling devices have low use value, so there is no
+premature recycling.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figcirculareconomy"></span>
+<img src="figs/26.jpg" alt="Circular Economy Challenge" width="100%" />
+<p class="caption">
+Figure 5.2: Circular Economy Challenge
+</p>
+</div>
+</div>
+<div id="how-to-measure-the-circular-economy-of-electronics" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> How to measure the circular economy of electronics?</h2>
+<p>The basic concept of a circular economy depicts a production and
+consumption system that relies on the recycling, re-use, repair,
+remanufacturing, sharing of products, changing the consumption patterns
+and new business models and systems.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>We need to know what works, what doesn’t and why and that means turning
+to metrics. However, it is at this point that the comparison with
+history stops. The innovation towards circular business models will
+require different measurements and metrics than the ones that we
+developed to monitor and innovate the linear economy.</p>
+<p>Metrics that can be used to measure your transition towards a circular
+business model are often confused with sustainability metrics. If you
+regard sustainability as the end goal, circular economy is a means
+towards achieving that goal. Therefore, it is very relevant for business
+to not only measure its performance in the transition to a circular
+economy but to also adopt sustainability metrics to measure the impact
+it is hoping to have by doing so. The field of sustainability science,
+and the metrics related to that field, is much more mature and has
+produced many standardized methodologies and metrics such as Life Cycle
+Analysis (LCA) and reporting on the SDGs. <span class="citation"><a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">Verstraeten-Jochemsen, Baars, and Daniels</a> (<a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">2020</a>)</span></p>
+<p>Comentar que el foco es extensión del tiempo de vida de los dispositivos
+y su reciclaje no prematuro. Reciclar un valor de uso medio no es una
+buena práctica.</p>
+</div>
+<div id="diferences-between-a-metric-indicator-tool-standard-or-certificate" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Diferences between a metric, indicator, tool, standard or certificate?</h2>
+<p>FROM <span class="citation"><a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">Verstraeten-Jochemsen, Baars, and Daniels</a> (<a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">2020</a>)</span></p>
+<p>The field of metrics can be difficult to navigate due to the variety of
+terms and definitions used. What is the difference between a metric and
+an indicator, and is a standard or a certificate more suitable for your
+needs? Here’s what we mean with the various terms that we use in our
+search for the ideal metric for your business:</p>
+<div id="metric" class="section level3" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> METRIC</h3>
+<p>A metric is a method we employ to understand change over time across a
+number of dimensions. We use it as a catch-all term to describe the method
+used to measure something, the resulting values, as well as a calculated
+or combined set of indicators.</p>
+</div>
+<div id="indicator" class="section level3" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> INDICATOR</h3>
+<p>The indicator is a crucial element of a metric, referring to a single value
+and its unit, and used to indicate (hence the name) a specific trend or performance.</p>
+</div>
+<div id="tool" class="section level3" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> TOOL</h3>
+<p>Many of the metrics considered are partly or fully automated in
+online or offline tools that enable easy application and reduce the
+risk of errors. In the context of this publication, tools can therefore be
+considered automated metrics.</p>
+</div>
+<div id="standard" class="section level3" number="5.4.4">
+<h3><span class="header-section-number">5.4.4</span> STANDARD</h3>
+<p>Metrics that have gone a certain degree of scrutiny and testing, and are
+commonly accepted as a standardised way of measuring, can be regarded
+as standards. Technically, one can consider both ‘informal’ standards
+and standards that have officially been documented and published by
+standardisation organizations but in the context of this publication, we will
+only use the term to refer to the latter.</p>
+</div>
+<div id="certificate" class="section level3" number="5.4.5">
+<h3><span class="header-section-number">5.4.5</span> CERTIFICATE</h3>
+<p>A certificate is a specific type of standard that can not be applied by
+the organisation itself but requires a third party to assess whether the
+company’s performance has been according to a certain standard. They
+usually result in a product label being issued by the third party.</p>
+<p>[Circular Metrics for Business - PACE]</p>
+<p>para perimtir la autocertificación Proponemos un proceso de autocertificación que a diferencia de los sistemas tradicionales permite
+a una organización</p>
+<p>How to Chain-of-custody and impact verification</p>
+<p>In general, in a accredition certification process, a third party is
+required to carry out an audit process in order to assess whether the
+data collected and accredited on the performance of the centre has
+followed the standard. Our proposal is to take advantage of blockchain
+technology in order to dispense with the need for an external audit. The
+data of the traceability systems of the entities federated in the Pangea
+circuit are in decentralised systems, so that Pangea or the donors of
+the equipment of the reuse centres do not know the details of the
+traceability data. When Pangea or a donor requires traceability or
+impact data, they request a report from the centre. What mechanism does
+Pangea have for auditing the data that the centre sends it? The answer
+is the blockchain. In this action we justify the need to implement a
+blockchain and explain the one that has been developed in the framework
+of the project, as well as the mechanisms followed by reuse centres to
+self-certify and those undertaken by third parties to carry out auditing
+processes.</p>
+<!-- En general, en un procés de certificació es requereix que una entitat tercera faci un procés d'auditoria per tal d'avaluar si les dades recollides i acreditades sobre el rendiment del centre ha seguit l'estàndard. La nostra proposta és beneficiar-se de la tecnología blockchain per a poder prescindir de la necessitat d'una auditoria externa. Les dades dels sistemes de traçabilitat de les entitats federades al circuit pangea estan en sistemes descentralitzats, tal que, Pangea o els donants dels equips dels centres de reutilització, no coneixen el detall de les dades de traçabilitat. Quan Pangea o un donant requereix les dades de traçabilitat o d'impacte demana al centre un informe. Quin mecanisme té Pangea per a auditar les dades que el centre -->
+<!-- li fa arribar? La resposta és la blockchain. En aquesta acció justifiquem la necessitat d'emprear una blockchain i expliquem la que ha estat desenvolupada en el marc del projecte, així com els mecanismes que segueixen els centres de reutilització per a autocertificar-se i els emprats per entitats terceres per realitzar processos d'auditoria. -->
+</div>
+<div id="els-conceptes-de-immutabilitat-i-verificabilitat-de-la-informació" class="section level3" number="5.4.6">
+<h3><span class="header-section-number">5.4.6</span> Els conceptes de immutabilitat i verificabilitat de la informació</h3>
+<p>Des de fa fa anys, eReuse ofereix un conjunt d’eines que automatitzen el
+procés de recollida segura i monitorització de la traçabilitat en la
+gestió de l’electrònica (veure descripció realitzada a l’acció 1). La
+contribució d’aquest projecte ha permès que aquestes dades es desin a un
+llibre de registre digital fent servir tecnología blockchain per tal
+d’assegurar la seva immutabilitat (no poder canviar el passat) i
+verificabilitat (poder confirmar que un fet està suportat per un atestat
+en un cert moment que només és possible amb certes dades, però sense les
+dades, només amb un resum/signatura). En resum, la funció que fa un
+notari o fedatari.</p>
+<p>Per la immutabilitat fem servir el que en anglès s’anomena “distributed
+ledger technology” (DLT) o “blockchain,” un registre digital replicat i
+sincronitzat, on s’escriu per consens dels participants, repartit a
+diversos llocs i organitzacions, sense un administrador central, que
+estructura les dades i operacions de manera que només es poden afegir
+dades però no es poden modificar les ja acceptades.</p>
+<p>Per la verificabilitat fem servir un explorador de blocs de la DLT on es
+poden cercar les entrades del registre que corresponen a un esdeveniment
+o dispositiu determinat, per aportar un conjunt d’atestats registrats
+que permeten confirmar uns fets que consten a un document, com per
+exemple un certificat d’una acció o conjunt d’accions durant la vida o
+múltiples vides d’un dispositius</p>
+</div>
+</div>
+<div id="challenges" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Challenges</h2>
+<div id="quality-uncertainty" class="section level3" number="5.5.1">
+<h3><span class="header-section-number">5.5.1</span> Quality uncertainty</h3>
+<p>That problem is called “The Market for Lemons: Quality Uncertainty and
+the Market Mechanism” <span class="citation">(<a href="#ref-AKERLOF1978" role="doc-biblioref">AKERLOF 1978</a>)</span> and it refers to issues that arise
+regarding the value of an investment or product due to asymmetric
+information possessed by the buyer and the seller. In use case the
+seller/donor (product owner or the refurbisher) has a product for which
+it wants to be able to transparently demonstrate the quality to the
+buyer. In order to minimise the problem the actions to be taken include
+trying to reduce information asymmetries and be able to stimulate demand
+and this involves generating sufficient confidence in the second-hand
+buyer about the quality of the devices before refurishement (Product
+owner to refurbisher) and after (refurbisher to final user).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figmugge"></span>
+<img src="figs/1g.png" alt="Circular Economy Challenge" width="100%" />
+<p class="caption">
+Figure 5.3: Circular Economy Challenge
+</p>
+</div>
+<p>In the case where the seller is a refurbisher and the buyer is an end
+user there are certain categories that are more valued than others.
+<span class="citation"><a href="#ref-Mugge2017" role="doc-biblioref">Mugge, Jockin, and Bocken</a> (<a href="#ref-Mugge2017" role="doc-biblioref">2017</a>)</span> investigated the potential of selling refurbished smartphones
+through a quantitative study. It conducted an online survey questioning
+250 respondents to study the impact generated from various incentives
+that reuse centres can undertake to improve the purchase intention of
+refurbished phones. Or to put it another way: the question is: how can
+the reuse market be stimulated? The results are given for 6 different
+user groups in Figure <a href="concepts-and-challenges.html#fig:figmugge">5.3</a>. The highest perceived
+incentive is a renewed (replaced) battery, followed by an assurance that
+software updates can be performed and that the performance of the item
+has been improved. In turn, this confirms the barriers or limitations to
+second-hand purchase in the case of mobiles: a low-performance battery,
+limited software support and general performance problems. The author
+comments that it is much easier to convince the “sustainability
+enthusiast,” as product-related incentives are less important. It is
+fair to say that “sustainability enthusiasts” are intrinsically
+motivated to make use of reuse options. For the “proud advanced user,”
+information and product incentives are much more important. This survey
+also shows that information about the refurbishment process, a rating
+system and quality certification are very important in attracting
+refurbished smartphones.</p>
+<!-- Mugge va investigar el potencial de vendre telèfons intel·ligents reacondicionats mitjançant un estudi quantitatiu. Va realitzar una enquesta en línia interrogant 250 enquestats per estudiar l’impacte generat a partir de diversos incentius que els centres de reutilització poden emprar per millorar la intenció de compra dels telèfons reacondicionats O dit d’una altra manera: la pregunta és: com es pot estimular el mercat de la reutilització? Els resultats es donen per a 6 grups d’usuaris diferents a la figura 1. L’incentiu més alt percebut és una bateria renovada (substituida), seguit per un assegurament que les actualitzacions del programari es podran realitzar i de que el rendiment de l’ítem ha estat millorat. Al seu torn, això ens confirma com són les barreres o limitacions a la compra de segona mà en cas dels mòbils: una bateria de baix rendiment, un suport de programari limitat i problemes generals de rendiment. L’autor comenta que és molt més fàcil convèncer a "l’entusiasta de la sostenibilitat", ja que els incentius relacionats amb el producte són menys importants. És just dir que els "entusiastes de la sostenibilitat" tenen una motivació intrínseca per fer ús de les opcions de reutilització. Per a l’orgullós usuari avançat", els incentius sobre la informació i el producte són molt més importants. Aquesta enquesta també demostra que la informació sobre el procés de reforma, un sistema de classificació i la certificació de qualitat són molt importants per a l'atracció de telèfons intel·ligents reformats. -->
+</div>
+<div id="impact-accounting" class="section level3" number="5.5.2">
+<h3><span class="header-section-number">5.5.2</span> Impact accounting</h3>
+<p>Els dispositius descartats per administracions públiques o privades, o
+altres, poden preparar-se o reacondicionar-se, o poden reciclar-se si
+s’ha detectat que no existeix demanda. Ambdós tenen costos i
+implicacions diferents i les opcions són clau per comptar amb un marge
+econòmic operatiu. El primer dels reptes és que els centres de
+reutilització i reciclatge puguin incentivar als donants de tipu empresa
+i administració pública per captar els dispositius amortitzats, tant
+siguin per reutilitzar o reciclar. A continuació presentem un recull
+d’articles que han fet énfasis en la conveniència de retroalimentar als
+donants amb informació sobre l’esborrat de dades i l’ impacte generat.
+Els consumidors estan disposats a donar els seus dispositius? Per
+respondre a aquesta pregunta farem ús de dos enquestes sobre la voluntat
+dels ciutadans de donar una segona vida als seus mòbils i les barreres
+existents. De la primera, Wilson,2017) 4 , tal i com es pot veure a la
+figura 2, conclou que el 50% dels estudiants que es canviaven el mòbil
+per un de nou conservaven l’antic. Per ser més concrets, L’enquesta de
+l’Eurobaròmetre (Comissió Europea 2020b) 5 revela que el 40% dels
+enquestats estaria disposat a oferir-l’ho a la reutilització/reciclatge
+sempre que no suposi cap risc de privadesa de dades.</p>
+<p>En un article recent, Poppelaars, 2020 6 ., ha revisat les experiències
+dels usuaris de programes comercials de recollida de telèfons mòbils i
+proporcionat recomanacions sobre com millorar-les. Conclouque si es
+facilitava el procediment de devolució amb més orientació i
+retroalimentació es podria millorar significativament l’experiència de
+l’usuari dels programes de recollida. Atès que els dispositius es
+mantenen en calaixos per diversos motius (per exemple, seguretat de les
+dades, solució de còpia de seguretat, entre d’altres.), els programes de
+recollida han de proposar alternatives interessants perquè els usuaris
+puguin mitigar els riscos esperats. Les incerteses sobre qüestions de
+privadesa i pèrdua de dades es poden reduir mostrant a l’usuari pas a
+pas com fer la còpia de seguretat i la transferència i l’eliminació de
+dades quan es prepara el telèfon per al seu enviament. Es podria
+proporcionar a l’usuari un certificat d’eliminació de dades. A més, per
+a generar una sensació de satisfacció al final dels processos de
+liquidació, és clau proporcionar una confirmació al consumidor a la
+recepció segura del dispositiu. A tall d’exemple, es poden comunicar
+alguns resultats confirmant la contribució ambiental positiva.</p>
+</div>
+<div id="preserve-business-privacy" class="section level3" number="5.5.3">
+<h3><span class="header-section-number">5.5.3</span> Preserve business privacy</h3>
+<p>The problem we have is how reconciling business privacy with being able
+to measure social and environmental impact. When companies, governments
+or individuals need to get rid of their computers and digital devices to
+have a new life (reuse), they do not know how to identify which
+ITADs/Refurbishers can promote a more circular economy. The Refurbishers
+/ Retailers / ITADs / Trade-in actors of the reverse-supply chain do not
+feel comfortable in openly sharing this traceability and suppliers data.
+All of them are in competition, or they might even be penalized, if one
+of their devices is not properly recycled at the end of its life. This
+results in most Electric and Electronic Equipment (EEE) being recycled
+even though the explicit demand for reuse.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figbusinessprivacy"></span>
+<img src="figs/28.jpg" alt="Impact accounting without affecting business privacy" width="100%" />
+<p class="caption">
+Figure 5.4: Impact accounting without affecting business privacy
+</p>
+</div>
+<p>The challenge is to give confidence to donors/sellers that their
+products will be managed in accordance with the principles of the
+circular economy, and to assure the actors in the reverse supply chain
+that their contacts will not be exposed and that they will not be
+penalised if there is no record of the final recycling of what they have
+managed. For example how can we know the extended durability of a device
+and whether it has been properly recycled without having to know the
+actors involved in the reverse-supply chain and who are the final users.
+To minimise the problem, on the one hand, the devices, actors and
+end-users must be completely anonymous and, on the other hand, there
+must be no possibility of discovery, and on the other hand the impact
+accounting must provide guarantees of trust, verifiability,
+irreversibility and tamper proof to ensure sellers/donors that positive
+impact is generated if they divert their devices to reuse streams.</p>
+<div id="increase-the-culture-of-reuse" class="section level4" number="5.5.3.1">
+<h4><span class="header-section-number">5.5.3.1</span> Increase the culture of reuse</h4>
+<p>The real paradigm shift will occur when ordinary citizens join the
+second-hand market. On the one hand, it is necessary to encourage
+collection; to promote that users who dispose of devices do so in local
+reuse centres that repair, improve and distribute quality second-hand
+products. On the other hand, it is necessary to encourage demand, so
+that everyone can consider second-hand consumption, regardless of their
+economic situation. The latter will be possible if second-hand devices
+have a long durability that could make consumers resent them, so it
+should be as repairable (replacement of worn components), upgradeable
+(adding new components) and upgradable (they can work with current
+operating systems and applications) as possible. This aspect is related
+to the first and second problem. We will be able to create a second-hand
+culture if we know how to generate trust in second-hand quality and
+impact accounting.</p>
+<!-- Per a poder transicionar ràpidament cap a l’economia circular hauríem d’ impulsar l’economia de la segona mà en tot els territoris i per a tot tipus de consumidor, doncs el canvi de paradigma real es donarà quan el ciutadà de a peu s’incorpori al mercat de segona mà. Per a -->
+<!-- que aquest sigui viable, d’una banda cal incentivar la recollida; promoure que els usuaris que es desfan des dispositius ho facin amb centres de reutilització d’àmbit local que reparen, milloren i distribueixen amb qualitat productes de segona mà. I de l’altre, cal incentivar la demanda, que tothom arribi a plantejar-se consumir de segona mà, amb independència de la seva situació econòmica. Això últim serà possible si els dispositius de segona mà no tenen algun tipus d’obsolescència programada objectiva que pugui fer que el consumidor se’n ressenteixi, per tant haurien de ser el màxim reparables (canvi de components espatllats), millorables (afegir nous components) i actualitzables (poden funcionar amb sistemes operatius i aplicacions vigents).  -->
+</div>
+</div>
+<div id="refurbishers" class="section level3" number="5.5.4">
+<h3><span class="header-section-number">5.5.4</span> Refurbishers</h3>
+</div>
+</div>
+<div id="principals-reptes-dels-centres-de-reutilització" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> Principals reptes dels centres de reutilització</h2>
+<p>A continuació, presentem els dos principals reptes per als centres de
+reutilització que ha detectat eReuse, ambdòs tenen una estreta relació
+amb la necessitat dels centres d’obtenir una certificació d’impacte de
+l’activitat i una certificació de qualitat dels dispositius
+reacondicionats.</p>
+<div id="incentivar-la-demanda-de-dispositius-reacondicionats" class="section level3" number="5.6.1">
+<h3><span class="header-section-number">5.6.1</span> Incentivar la demanda de dispositius reacondicionats</h3>
+</div>
+<div id="incentivar-la-recollida-de-dispositius-a-reacondicionar" class="section level3" number="5.6.2">
+<h3><span class="header-section-number">5.6.2</span> Incentivar la recollida de dispositius a reacondicionar</h3>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AKERLOF1978" class="csl-entry">
+AKERLOF, GEORGE A. 1978. <span>“<span>THE MARKET FOR <span>‘LEMONS’</span>: QUALITY UNCERTAINTY AND THE MARKET MECHANISM</span>.”</span> <em>Uncertainty in Economics</em>, January, 235–51. <a href="https://doi.org/10.1016/B978-0-12-214850-7.50022-X">https://doi.org/10.1016/B978-0-12-214850-7.50022-X</a>.
+</div>
+<div id="ref-Mugge2017" class="csl-entry">
+Mugge, Ruth, Boris Jockin, and Nancy Bocken. 2017. <span>“<span class="nocase">How to sell refurbished smartphones? An investigation of different customer groups and appropriate incentives</span>.”</span> <em>Journal of Cleaner Production</em> 147 (March): 284–96. <a href="https://doi.org/10.1016/J.JCLEPRO.2017.01.111">https://doi.org/10.1016/J.JCLEPRO.2017.01.111</a>.
+</div>
+<div id="ref-Verstraeten-Jochemsen2020" class="csl-entry">
+Verstraeten-Jochemsen, Jacco, Noah Baars, and Caspar von Daniels. 2020. <span>“<span class="nocase">Circular metrics for business - Finding opportunites in the circular economy</span>,”</span> no. October. <a href="https://www.circle-economy.com/resources/circular-metrics-for-business">https://www.circle-economy.com/resources/circular-metrics-for-business</a>.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Thermodynamic rarity (TR) is an indicator, based on
+exergy, used to measure the critically of raw materials, depending
+on their scarcity in the earth’s crust. Exergy is a property of a
+system relative to an associated reference state. It is the maximum
+work a system can deliver as it interacts with another large, but
+real, system, namely, a reservoir. Such a reservoir attracts the
+system toward degradation or entropy creation.<a href="concepts-and-challenges.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://ec.europa.eu/environment/ecoap/indicators/circular-economy-indicators_en" class="uri">https://ec.europa.eu/environment/ecoap/indicators/circular-economy-indicators_en</a><a href="concepts-and-challenges.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="our-cluster.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="credentials.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-concepts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
