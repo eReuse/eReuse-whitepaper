@@ -40,46 +40,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -137,7 +97,7 @@
 \makeatother
 \subtitle{Account and motivate reuse and recycling of digital devices}
 \author{\(^1\)Universitat Politècnica de Catalunya\\
-David Franquesa 1\footnote{Corresponding author: \href{mailto:david.franquesa@upc.edu}{\nolinkurl{david.franquesa@upc.edu}}}, Leandro Navarro \(^1\)}
+David Franquesa 1\footnote{Corresponding author: \href{mailto:david.franquesa@upc.edu}{\nolinkurl{david.franquesa@upc.edu}}}, Leandro Navarro 1\(^1\)}
 \date{2021-10-03}
 
 \begin{document}
@@ -147,13 +107,6 @@ David Franquesa 1\footnote{Corresponding author: \href{mailto:david.franquesa@up
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{path\_req }\OtherTok{\textless{}{-}} \StringTok{"/home/david/NextCloud/David{-}Tesi/eReuseMetrics/code/requirements"}
-\FunctionTok{source}\NormalTok{(}\FunctionTok{file.path}\NormalTok{(path\_req,}\StringTok{"libraries.R"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 \begin{verbatim}
 ## Loading required package: sessioninfo
 \end{verbatim}
@@ -582,8 +535,8 @@ Most devices from business and public administration are discarded when consider
 
 Members, partners and supporters cooperate to help to sustain and grow ecosystems that increase reuse and recycling and together we build a new mindset and open-source tech to make reuse/recycling tech industry more durable, reusable, repairable and impact accountable. The coalition of members and partners bring together the skills, training and open technologies necessary to help sustain and grow federated and autonomous platforms that optimize refurbishment, ensure quality of second hand electronics products and bring management in the reverse supply chain to incentivitize reused devices are ultimately recycled and impact accountable.
 
-\hypertarget{our-activity}{%
-\section{Our activity}\label{our-activity}}
+\hypertarget{stardarize-coordinate-requirements-and-bootstrap-reuse}{%
+\section{Stardarize, coordinate requirements and bootstrap reuse}\label{stardarize-coordinate-requirements-and-bootstrap-reuse}}
 
 \hypertarget{standarize-the-traceability-and-accountability-of-reuse-and-recycling}{%
 \subsection{Standarize the traceability and accountability of reuse and recycling}\label{standarize-the-traceability-and-accountability-of-reuse-and-recycling}}
@@ -600,10 +553,10 @@ The challenge is to provide resources to optimize reuse and make it impact accou
 
 The coalition of members and partners exchange know-how, build connections and bring together the skills and training to help sustain and grow federated and autonomous ecosystems that optimize refurbishment, ensure quality of second hand electronics products and bring management in the reverse supply chain to incentivitize reused devices are ultimately recycled and impact accountable. We coordinate and promote the creation of local circuits where several entities intercooperate under different roles to capture, refurbish and redistribute devices with a quality certificate to, among others, citizens affected by digital inequality.
 
-\hypertarget{our-members-and-partners}{%
-\section{Our members and partners}\label{our-members-and-partners}}
+\hypertarget{members-partners-and-circuits}{%
+\section{Members, partners and circuits}\label{members-partners-and-circuits}}
 
-Ereuse.org is a cluster of organisations dedicated to the transition to collaborative and circular consumption of electronics. Our federated members are local groups, business and organizations with the goal to extend the lifetime of products through repair, refurbish, retail and in general reuse.
+Ereuse.org is a federation of organisations dedicated to the transition to collaborative and circular consumption of electronics. Our federated members are local groups, business and organizations with the goal to extend the lifetime of products through repair, refurbish, retail and in general reuse.
 
 \hypertarget{refurbishers-and-resellers}{%
 \subsection{Refurbishers and Resellers}\label{refurbishers-and-resellers}}
