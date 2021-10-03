@@ -1,6 +1,5 @@
 # Abstract {-}
 
-Test
 The eReuse.org federation develops a set of tools and methodologies to bootstrap reuse of digital devices and account its contribution to the circular economy. The intended impact is to extend device lifetime and increase proper recycling at the end of the useful lifetime. In this whitepaper we present the federation, the tecnological roadmap and  use cases that create value to consumers, refurbishers and recyclers. In the roadmap we present the conditions and capabilities required for verify traceability and impact accounting while while preserving privacy of consumers and businesses. The aim is to make replication easy for other regions and allow the interoperation with others systems with the purpose of make reuse/recycling and tech industry impact accountable. Ultimately empowering consumers to choose reparable, reusable and durable devices.
 
 # Introduction
