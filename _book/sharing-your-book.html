@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 Sharing your book | eReuse.org and Digital Product Passport</title>
+  <meta name="description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 Sharing your book | eReuse.org and Digital Product Passport" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 Sharing your book | eReuse.org and Digital Product Passport" />
+  
+  <meta name="twitter:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  
+
+<meta name="author" content="eReuse.org" />
+
+
+<meta name="date" content="2021-09-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="technology.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="ereuse.html"><a href="ereuse.html"><i class="fa fa-check"></i><b>2</b> eReuse</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ereuse.html"><a href="ereuse.html#collaboration-to-avoid-premature-recycling"><i class="fa fa-check"></i><b>2.1</b> Collaboration to avoid premature recycling</a></li>
+<li class="chapter" data-level="2.2" data-path="ereuse.html"><a href="ereuse.html#why-electronics-are-not-affordable-and-not-sustainable"><i class="fa fa-check"></i><b>2.2</b> Why Electronics are not affordable and not sustainable</a></li>
+<li class="chapter" data-level="2.3" data-path="ereuse.html"><a href="ereuse.html#what-we-can-do-today-reuse-and-ensure-recycling"><i class="fa fa-check"></i><b>2.3</b> What we can do today: reuse and ensure recycling</a></li>
+<li class="chapter" data-level="2.4" data-path="ereuse.html"><a href="ereuse.html#how-we-do-it-bootstap-circular-economy-ecosystems-with-impact-accounting"><i class="fa fa-check"></i><b>2.4</b> How we do it: bootstap circular economy ecosystems with impact accounting</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="our-activity.html"><a href="our-activity.html"><i class="fa fa-check"></i><b>3</b> Our activity</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="our-activity.html"><a href="our-activity.html#bootstraping-circular-economy-ecosystems"><i class="fa fa-check"></i><b>3.1</b> Bootstraping circular economy ecosystems</a></li>
+<li class="chapter" data-level="3.2" data-path="our-activity.html"><a href="our-activity.html#accreditation-circularity-of-members-ecosystems-and-devices"><i class="fa fa-check"></i><b>3.2</b> Accreditation circularity of members, ecosystems and devices</a></li>
+<li class="chapter" data-level="3.3" data-path="our-activity.html"><a href="our-activity.html#coordinate-open-source-resources-roadmap-for-reusing-electronics"><i class="fa fa-check"></i><b>3.3</b> Coordinate open-source resources roadmap for reusing electronics</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="our-cluster.html"><a href="our-cluster.html"><i class="fa fa-check"></i><b>4</b> Our Cluster</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="our-cluster.html"><a href="our-cluster.html#refurbishers-and-resellers"><i class="fa fa-check"></i><b>4.1</b> Refurbishers and Resellers</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="our-cluster.html"><a href="our-cluster.html#solidanca.cat"><i class="fa fa-check"></i><b>4.1.1</b> Solidanca.cat</a></li>
+<li class="chapter" data-level="4.1.2" data-path="our-cluster.html"><a href="our-cluster.html#reutilitza.upc.edu"><i class="fa fa-check"></i><b>4.1.2</b> Reutilitza.upc.edu</a></li>
+<li class="chapter" data-level="4.1.3" data-path="our-cluster.html"><a href="our-cluster.html#pontsolidari.org"><i class="fa fa-check"></i><b>4.1.3</b> Pontsolidari.org</a></li>
+<li class="chapter" data-level="4.1.4" data-path="our-cluster.html"><a href="our-cluster.html#trinijove.org"><i class="fa fa-check"></i><b>4.1.4</b> Trinijove.org</a></li>
+<li class="chapter" data-level="4.1.5" data-path="our-cluster.html"><a href="our-cluster.html#andromines.net"><i class="fa fa-check"></i><b>4.1.5</b> Andromines.net</a></li>
+<li class="chapter" data-level="4.1.6" data-path="our-cluster.html"><a href="our-cluster.html#reciclanet.org"><i class="fa fa-check"></i><b>4.1.6</b> Reciclanet.org</a></li>
+<li class="chapter" data-level="4.1.7" data-path="our-cluster.html"><a href="our-cluster.html#elkartenet.eus"><i class="fa fa-check"></i><b>4.1.7</b> Elkartenet.eus</a></li>
+<li class="chapter" data-level="4.1.8" data-path="our-cluster.html"><a href="our-cluster.html#ieselcalamot.com"><i class="fa fa-check"></i><b>4.1.8</b> Ieselcalamot.com</a></li>
+<li class="chapter" data-level="4.1.9" data-path="our-cluster.html"><a href="our-cluster.html#labdoo.org"><i class="fa fa-check"></i><b>4.1.9</b> Labdoo.org</a></li>
+<li class="chapter" data-level="4.1.10" data-path="our-cluster.html"><a href="our-cluster.html#marianao.net"><i class="fa fa-check"></i><b>4.1.10</b> Marianao.net</a></li>
+<li class="chapter" data-level="4.1.11" data-path="our-cluster.html"><a href="our-cluster.html#engrunes.org"><i class="fa fa-check"></i><b>4.1.11</b> Engrunes.org</a></li>
+<li class="chapter" data-level="4.1.12" data-path="our-cluster.html"><a href="our-cluster.html#donalo.org"><i class="fa fa-check"></i><b>4.1.12</b> Donalo.org</a></li>
+<li class="chapter" data-level="4.1.13" data-path="our-cluster.html"><a href="our-cluster.html#abacus.coop"><i class="fa fa-check"></i><b>4.1.13</b> Abacus.coop</a></li>
+<li class="chapter" data-level="4.1.14" data-path="our-cluster.html"><a href="our-cluster.html#reutilizak.org"><i class="fa fa-check"></i><b>4.1.14</b> Reutilizak.org</a></li>
+<li class="chapter" data-level="4.1.15" data-path="our-cluster.html"><a href="our-cluster.html#ongdreamit.org"><i class="fa fa-check"></i><b>4.1.15</b> Ongdreamit.org</a></li>
+<li class="chapter" data-level="4.1.16" data-path="our-cluster.html"><a href="our-cluster.html#fundesplai.org"><i class="fa fa-check"></i><b>4.1.16</b> Fundesplai.org</a></li>
+<li class="chapter" data-level="4.1.17" data-path="our-cluster.html"><a href="our-cluster.html#hubuntu.es"><i class="fa fa-check"></i><b>4.1.17</b> Hubuntu.es</a></li>
+<li class="chapter" data-level="4.1.18" data-path="our-cluster.html"><a href="our-cluster.html#tau.org.ar"><i class="fa fa-check"></i><b>4.1.18</b> Tau.org.ar</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="our-cluster.html"><a href="our-cluster.html#partners"><i class="fa fa-check"></i><b>4.2</b> Partners</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="our-cluster.html"><a href="our-cluster.html#right-to-repair-europe"><i class="fa fa-check"></i><b>4.2.1</b> Right to Repair Europe</a></li>
+<li class="chapter" data-level="4.2.2" data-path="our-cluster.html"><a href="our-cluster.html#zero-waste-europe"><i class="fa fa-check"></i><b>4.2.2</b> Zero Waste Europe</a></li>
+<li class="chapter" data-level="4.2.3" data-path="our-cluster.html"><a href="our-cluster.html#the-restart-project"><i class="fa fa-check"></i><b>4.2.3</b> The Restart Project</a></li>
+<li class="chapter" data-level="4.2.4" data-path="our-cluster.html"><a href="our-cluster.html#association-for-progressive-communications"><i class="fa fa-check"></i><b>4.2.4</b> Association for Progressive Communications</a></li>
+<li class="chapter" data-level="4.2.5" data-path="our-cluster.html"><a href="our-cluster.html#universitat-politècnica-de-catalunya"><i class="fa fa-check"></i><b>4.2.5</b> Universitat Politècnica de Catalunya</a></li>
+<li class="chapter" data-level="4.2.6" data-path="our-cluster.html"><a href="our-cluster.html#usody"><i class="fa fa-check"></i><b>4.2.6</b> Usody</a></li>
+<li class="chapter" data-level="4.2.7" data-path="our-cluster.html"><a href="our-cluster.html#jamgo"><i class="fa fa-check"></i><b>4.2.7</b> Jamgo</a></li>
+<li class="chapter" data-level="4.2.8" data-path="our-cluster.html"><a href="our-cluster.html#electronics-watch"><i class="fa fa-check"></i><b>4.2.8</b> Electronics Watch</a></li>
+<li class="chapter" data-level="4.2.9" data-path="our-cluster.html"><a href="our-cluster.html#sustainable-digital-infraestructure-alliance"><i class="fa fa-check"></i><b>4.2.9</b> Sustainable Digital Infraestructure Alliance</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="our-cluster.html"><a href="our-cluster.html#circuits"><i class="fa fa-check"></i><b>4.3</b> Circuits</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="our-cluster.html"><a href="our-cluster.html#background."><i class="fa fa-check"></i><b>4.3.1</b> Background.</a></li>
+<li class="chapter" data-level="4.3.2" data-path="our-cluster.html"><a href="our-cluster.html#collaborative-circuits"><i class="fa fa-check"></i><b>4.3.2</b> Collaborative Circuits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="challenges.html"><a href="challenges.html"><i class="fa fa-check"></i><b>5</b> Challenges</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="challenges.html"><a href="challenges.html#for-society"><i class="fa fa-check"></i><b>5.1</b> for society</a></li>
+<li class="chapter" data-level="5.2" data-path="challenges.html"><a href="challenges.html#incentivitize-disposal-for-reuse"><i class="fa fa-check"></i><b>5.2</b> Incentivitize disposal for reuse</a></li>
+<li class="chapter" data-level="5.3" data-path="challenges.html"><a href="challenges.html#incentivitize-demand-for-reuse"><i class="fa fa-check"></i><b>5.3</b> Incentivitize demand for reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="for-refurbishers.html"><a href="for-refurbishers.html"><i class="fa fa-check"></i><b>6</b> for refurbishers</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="for-refurbishers.html"><a href="for-refurbishers.html#quantify-and-communicate"><i class="fa fa-check"></i><b>6.1</b> Quantify and communicate</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="for-refurbishers.html"><a href="for-refurbishers.html#metric"><i class="fa fa-check"></i><b>6.1.1</b> Metric</a></li>
+<li class="chapter" data-level="6.1.2" data-path="for-refurbishers.html"><a href="for-refurbishers.html#indicator"><i class="fa fa-check"></i><b>6.1.2</b> Indicator</a></li>
+<li class="chapter" data-level="6.1.3" data-path="for-refurbishers.html"><a href="for-refurbishers.html#tool"><i class="fa fa-check"></i><b>6.1.3</b> Tool</a></li>
+<li class="chapter" data-level="6.1.4" data-path="for-refurbishers.html"><a href="for-refurbishers.html#standard"><i class="fa fa-check"></i><b>6.1.4</b> Standard</a></li>
+<li class="chapter" data-level="6.1.5" data-path="for-refurbishers.html"><a href="for-refurbishers.html#certificate"><i class="fa fa-check"></i><b>6.1.5</b> Certificate</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="for-refurbishers.html"><a href="for-refurbishers.html#verify"><i class="fa fa-check"></i><b>6.2</b> Verify</a></li>
+<li class="chapter" data-level="6.3" data-path="for-refurbishers.html"><a href="for-refurbishers.html#privacy"><i class="fa fa-check"></i><b>6.3</b> Privacy</a></li>
+<li class="chapter" data-level="6.4" data-path="for-refurbishers.html"><a href="for-refurbishers.html#quality"><i class="fa fa-check"></i><b>6.4</b> Quality</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>7</b> Concepts</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="concepts.html"><a href="concepts.html#circular-economy-paradigm-and-principles"><i class="fa fa-check"></i><b>7.1</b> Circular Economy paradigm and principles</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="credentials.html"><a href="credentials.html"><i class="fa fa-check"></i><b>8</b> Credentials</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="credentials.html"><a href="credentials.html#refurbishment-quality"><i class="fa fa-check"></i><b>8.1</b> Refurbishment quality</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="credentials.html"><a href="credentials.html#especificacions"><i class="fa fa-check"></i><b>8.1.1</b> Especificacions</a></li>
+<li class="chapter" data-level="8.1.2" data-path="credentials.html"><a href="credentials.html#classificació"><i class="fa fa-check"></i><b>8.1.2</b> Classificació</a></li>
+<li class="chapter" data-level="8.1.3" data-path="credentials.html"><a href="credentials.html#procés-de-reacondicionat"><i class="fa fa-check"></i><b>8.1.3</b> Procés de reacondicionat</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="credentials.html"><a href="credentials.html#informes-de-reutilització-i-reciclatge"><i class="fa fa-check"></i><b>8.2</b> Informes de reutilització i reciclatge</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="credentials.html"><a href="credentials.html#passaport-del-dispositiu"><i class="fa fa-check"></i><b>8.2.1</b> Passaport del dispositiu</a></li>
+<li class="chapter" data-level="8.2.2" data-path="credentials.html"><a href="credentials.html#informe-de-reutilització"><i class="fa fa-check"></i><b>8.2.2</b> Informe de reutilització</a></li>
+<li class="chapter" data-level="8.2.3" data-path="credentials.html"><a href="credentials.html#informe-de-reciclatge"><i class="fa fa-check"></i><b>8.2.3</b> Informe de reciclatge</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="credentials.html"><a href="credentials.html#compartir-la-circularitat-dels-models-de-dispositius"><i class="fa fa-check"></i><b>8.3</b> Compartir la circularitat dels models de dispositius</a></li>
+<li class="chapter" data-level="8.4" data-path="credentials.html"><a href="credentials.html#mesurar-limpacte-social-i-circular."><i class="fa fa-check"></i><b>8.4</b> Mesurar l’impacte social i circular.</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="use-cases.html"><a href="use-cases.html"><i class="fa fa-check"></i><b>9</b> Use Cases</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="use-cases.html"><a href="use-cases.html#els-processos-destampa-de-dades-i-auditoria-a-la-blockchain-de-ereuse"><i class="fa fa-check"></i><b>9.0.1</b> Els processos d’estampa de dades i auditoria a la blockchain de eReuse</a></li>
+<li class="chapter" data-level="9.1" data-path="use-cases.html"><a href="use-cases.html#procés-de-certificació-dels-informes"><i class="fa fa-check"></i><b>9.1</b> Procés de certificació dels informes</a></li>
+<li class="chapter" data-level="9.2" data-path="use-cases.html"><a href="use-cases.html#procés-de-verificació-dels-informes-per-part-dauditors"><i class="fa fa-check"></i><b>9.2</b> Procés de verificació dels informes per part d’auditors</a></li>
+<li class="chapter" data-level="9.3" data-path="use-cases.html"><a href="use-cases.html#procés-dautoacreditació-en-el-distintiu-de-ereuse"><i class="fa fa-check"></i><b>9.3</b> Procés d’autoacreditació en el distintiu de eReuse</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="technology.html"><a href="technology.html"><i class="fa fa-check"></i><b>10</b> Technology</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="technology.html"><a href="technology.html#equations"><i class="fa fa-check"></i><b>10.1</b> Equations</a></li>
+<li class="chapter" data-level="10.2" data-path="technology.html"><a href="technology.html#theorems-and-proofs"><i class="fa fa-check"></i><b>10.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="10.3" data-path="technology.html"><a href="technology.html#callout-blocks"><i class="fa fa-check"></i><b>10.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>11</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>11.1</b> Publishing</a></li>
+<li class="chapter" data-level="11.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>11.2</b> 404 pages</a></li>
+<li class="chapter" data-level="11.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>11.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">eReuse.org and Digital Product Passport</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sharing-your-book" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Sharing your book</h1>
+<div id="publishing" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Publishing</h2>
+<p>HTML books can be published online, see: <a href="https://bookdown.org/yihui/bookdown/publishing.html" class="uri">https://bookdown.org/yihui/bookdown/publishing.html</a></p>
+</div>
+<div id="pages" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> 404 pages</h2>
+<p>By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you’d like to customize your 404 page instead of using the default, you may add either a <code>_404.Rmd</code> or <code>_404.md</code> file to your project root and use code and/or Markdown syntax.</p>
+</div>
+<div id="metadata-for-sharing" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Metadata for sharing</h2>
+<p>Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the <code>index.Rmd</code> YAML. To setup, set the <code>url</code> for your book and the path to your <code>cover-image</code> file. Your book’s <code>title</code> and <code>description</code> are also used.</p>
+<p>This <code>gitbook</code> uses the same social sharing data across all chapters in your book- all links shared will look the same.</p>
+<p>Specify your book’s source repository on GitHub using the <code>edit</code> key under the configuration options in the <code>_output.yml</code> file, which allows users to suggest an edit by linking to a chapter’s source file.</p>
+<p>Read more about the features of this output format here:</p>
+<p><a href="https://pkgs.rstudio.com/bookdown/reference/gitbook.html" class="uri">https://pkgs.rstudio.com/bookdown/reference/gitbook.html</a></p>
+<p>Or use:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="sharing-your-book.html#cb1-1" aria-hidden="true" tabindex="-1"></a>?bookdown<span class="sc">::</span>gitbook</span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="technology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-share.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

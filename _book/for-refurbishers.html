@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 for refurbishers | eReuse.org and Digital Product Passport</title>
+  <meta name="description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 for refurbishers | eReuse.org and Digital Product Passport" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 for refurbishers | eReuse.org and Digital Product Passport" />
+  
+  <meta name="twitter:description" content="We present the use cases that the eReuse cluster has detected in favour of promoting the reuse and recycling of digital devices." />
+  
+
+<meta name="author" content="eReuse.org" />
+
+
+<meta name="date" content="2021-09-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="challenges.html"/>
+<link rel="next" href="concepts.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="ereuse.html"><a href="ereuse.html"><i class="fa fa-check"></i><b>2</b> eReuse</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ereuse.html"><a href="ereuse.html#collaboration-to-avoid-premature-recycling"><i class="fa fa-check"></i><b>2.1</b> Collaboration to avoid premature recycling</a></li>
+<li class="chapter" data-level="2.2" data-path="ereuse.html"><a href="ereuse.html#why-electronics-are-not-affordable-and-not-sustainable"><i class="fa fa-check"></i><b>2.2</b> Why Electronics are not affordable and not sustainable</a></li>
+<li class="chapter" data-level="2.3" data-path="ereuse.html"><a href="ereuse.html#what-we-can-do-today-reuse-and-ensure-recycling"><i class="fa fa-check"></i><b>2.3</b> What we can do today: reuse and ensure recycling</a></li>
+<li class="chapter" data-level="2.4" data-path="ereuse.html"><a href="ereuse.html#how-we-do-it-bootstap-circular-economy-ecosystems-with-impact-accounting"><i class="fa fa-check"></i><b>2.4</b> How we do it: bootstap circular economy ecosystems with impact accounting</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="our-activity.html"><a href="our-activity.html"><i class="fa fa-check"></i><b>3</b> Our activity</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="our-activity.html"><a href="our-activity.html#bootstraping-circular-economy-ecosystems"><i class="fa fa-check"></i><b>3.1</b> Bootstraping circular economy ecosystems</a></li>
+<li class="chapter" data-level="3.2" data-path="our-activity.html"><a href="our-activity.html#accreditation-circularity-of-members-ecosystems-and-devices"><i class="fa fa-check"></i><b>3.2</b> Accreditation circularity of members, ecosystems and devices</a></li>
+<li class="chapter" data-level="3.3" data-path="our-activity.html"><a href="our-activity.html#coordinate-open-source-resources-roadmap-for-reusing-electronics"><i class="fa fa-check"></i><b>3.3</b> Coordinate open-source resources roadmap for reusing electronics</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="our-cluster.html"><a href="our-cluster.html"><i class="fa fa-check"></i><b>4</b> Our Cluster</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="our-cluster.html"><a href="our-cluster.html#refurbishers-and-resellers"><i class="fa fa-check"></i><b>4.1</b> Refurbishers and Resellers</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="our-cluster.html"><a href="our-cluster.html#solidanca.cat"><i class="fa fa-check"></i><b>4.1.1</b> Solidanca.cat</a></li>
+<li class="chapter" data-level="4.1.2" data-path="our-cluster.html"><a href="our-cluster.html#reutilitza.upc.edu"><i class="fa fa-check"></i><b>4.1.2</b> Reutilitza.upc.edu</a></li>
+<li class="chapter" data-level="4.1.3" data-path="our-cluster.html"><a href="our-cluster.html#pontsolidari.org"><i class="fa fa-check"></i><b>4.1.3</b> Pontsolidari.org</a></li>
+<li class="chapter" data-level="4.1.4" data-path="our-cluster.html"><a href="our-cluster.html#trinijove.org"><i class="fa fa-check"></i><b>4.1.4</b> Trinijove.org</a></li>
+<li class="chapter" data-level="4.1.5" data-path="our-cluster.html"><a href="our-cluster.html#andromines.net"><i class="fa fa-check"></i><b>4.1.5</b> Andromines.net</a></li>
+<li class="chapter" data-level="4.1.6" data-path="our-cluster.html"><a href="our-cluster.html#reciclanet.org"><i class="fa fa-check"></i><b>4.1.6</b> Reciclanet.org</a></li>
+<li class="chapter" data-level="4.1.7" data-path="our-cluster.html"><a href="our-cluster.html#elkartenet.eus"><i class="fa fa-check"></i><b>4.1.7</b> Elkartenet.eus</a></li>
+<li class="chapter" data-level="4.1.8" data-path="our-cluster.html"><a href="our-cluster.html#ieselcalamot.com"><i class="fa fa-check"></i><b>4.1.8</b> Ieselcalamot.com</a></li>
+<li class="chapter" data-level="4.1.9" data-path="our-cluster.html"><a href="our-cluster.html#labdoo.org"><i class="fa fa-check"></i><b>4.1.9</b> Labdoo.org</a></li>
+<li class="chapter" data-level="4.1.10" data-path="our-cluster.html"><a href="our-cluster.html#marianao.net"><i class="fa fa-check"></i><b>4.1.10</b> Marianao.net</a></li>
+<li class="chapter" data-level="4.1.11" data-path="our-cluster.html"><a href="our-cluster.html#engrunes.org"><i class="fa fa-check"></i><b>4.1.11</b> Engrunes.org</a></li>
+<li class="chapter" data-level="4.1.12" data-path="our-cluster.html"><a href="our-cluster.html#donalo.org"><i class="fa fa-check"></i><b>4.1.12</b> Donalo.org</a></li>
+<li class="chapter" data-level="4.1.13" data-path="our-cluster.html"><a href="our-cluster.html#abacus.coop"><i class="fa fa-check"></i><b>4.1.13</b> Abacus.coop</a></li>
+<li class="chapter" data-level="4.1.14" data-path="our-cluster.html"><a href="our-cluster.html#reutilizak.org"><i class="fa fa-check"></i><b>4.1.14</b> Reutilizak.org</a></li>
+<li class="chapter" data-level="4.1.15" data-path="our-cluster.html"><a href="our-cluster.html#ongdreamit.org"><i class="fa fa-check"></i><b>4.1.15</b> Ongdreamit.org</a></li>
+<li class="chapter" data-level="4.1.16" data-path="our-cluster.html"><a href="our-cluster.html#fundesplai.org"><i class="fa fa-check"></i><b>4.1.16</b> Fundesplai.org</a></li>
+<li class="chapter" data-level="4.1.17" data-path="our-cluster.html"><a href="our-cluster.html#hubuntu.es"><i class="fa fa-check"></i><b>4.1.17</b> Hubuntu.es</a></li>
+<li class="chapter" data-level="4.1.18" data-path="our-cluster.html"><a href="our-cluster.html#tau.org.ar"><i class="fa fa-check"></i><b>4.1.18</b> Tau.org.ar</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="our-cluster.html"><a href="our-cluster.html#partners"><i class="fa fa-check"></i><b>4.2</b> Partners</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="our-cluster.html"><a href="our-cluster.html#right-to-repair-europe"><i class="fa fa-check"></i><b>4.2.1</b> Right to Repair Europe</a></li>
+<li class="chapter" data-level="4.2.2" data-path="our-cluster.html"><a href="our-cluster.html#zero-waste-europe"><i class="fa fa-check"></i><b>4.2.2</b> Zero Waste Europe</a></li>
+<li class="chapter" data-level="4.2.3" data-path="our-cluster.html"><a href="our-cluster.html#the-restart-project"><i class="fa fa-check"></i><b>4.2.3</b> The Restart Project</a></li>
+<li class="chapter" data-level="4.2.4" data-path="our-cluster.html"><a href="our-cluster.html#association-for-progressive-communications"><i class="fa fa-check"></i><b>4.2.4</b> Association for Progressive Communications</a></li>
+<li class="chapter" data-level="4.2.5" data-path="our-cluster.html"><a href="our-cluster.html#universitat-politècnica-de-catalunya"><i class="fa fa-check"></i><b>4.2.5</b> Universitat Politècnica de Catalunya</a></li>
+<li class="chapter" data-level="4.2.6" data-path="our-cluster.html"><a href="our-cluster.html#usody"><i class="fa fa-check"></i><b>4.2.6</b> Usody</a></li>
+<li class="chapter" data-level="4.2.7" data-path="our-cluster.html"><a href="our-cluster.html#jamgo"><i class="fa fa-check"></i><b>4.2.7</b> Jamgo</a></li>
+<li class="chapter" data-level="4.2.8" data-path="our-cluster.html"><a href="our-cluster.html#electronics-watch"><i class="fa fa-check"></i><b>4.2.8</b> Electronics Watch</a></li>
+<li class="chapter" data-level="4.2.9" data-path="our-cluster.html"><a href="our-cluster.html#sustainable-digital-infraestructure-alliance"><i class="fa fa-check"></i><b>4.2.9</b> Sustainable Digital Infraestructure Alliance</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="our-cluster.html"><a href="our-cluster.html#circuits"><i class="fa fa-check"></i><b>4.3</b> Circuits</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="our-cluster.html"><a href="our-cluster.html#background."><i class="fa fa-check"></i><b>4.3.1</b> Background.</a></li>
+<li class="chapter" data-level="4.3.2" data-path="our-cluster.html"><a href="our-cluster.html#collaborative-circuits"><i class="fa fa-check"></i><b>4.3.2</b> Collaborative Circuits</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="challenges.html"><a href="challenges.html"><i class="fa fa-check"></i><b>5</b> Challenges</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="challenges.html"><a href="challenges.html#for-society"><i class="fa fa-check"></i><b>5.1</b> for society</a></li>
+<li class="chapter" data-level="5.2" data-path="challenges.html"><a href="challenges.html#incentivitize-disposal-for-reuse"><i class="fa fa-check"></i><b>5.2</b> Incentivitize disposal for reuse</a></li>
+<li class="chapter" data-level="5.3" data-path="challenges.html"><a href="challenges.html#incentivitize-demand-for-reuse"><i class="fa fa-check"></i><b>5.3</b> Incentivitize demand for reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="for-refurbishers.html"><a href="for-refurbishers.html"><i class="fa fa-check"></i><b>6</b> for refurbishers</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="for-refurbishers.html"><a href="for-refurbishers.html#quantify-and-communicate"><i class="fa fa-check"></i><b>6.1</b> Quantify and communicate</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="for-refurbishers.html"><a href="for-refurbishers.html#metric"><i class="fa fa-check"></i><b>6.1.1</b> Metric</a></li>
+<li class="chapter" data-level="6.1.2" data-path="for-refurbishers.html"><a href="for-refurbishers.html#indicator"><i class="fa fa-check"></i><b>6.1.2</b> Indicator</a></li>
+<li class="chapter" data-level="6.1.3" data-path="for-refurbishers.html"><a href="for-refurbishers.html#tool"><i class="fa fa-check"></i><b>6.1.3</b> Tool</a></li>
+<li class="chapter" data-level="6.1.4" data-path="for-refurbishers.html"><a href="for-refurbishers.html#standard"><i class="fa fa-check"></i><b>6.1.4</b> Standard</a></li>
+<li class="chapter" data-level="6.1.5" data-path="for-refurbishers.html"><a href="for-refurbishers.html#certificate"><i class="fa fa-check"></i><b>6.1.5</b> Certificate</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="for-refurbishers.html"><a href="for-refurbishers.html#verify"><i class="fa fa-check"></i><b>6.2</b> Verify</a></li>
+<li class="chapter" data-level="6.3" data-path="for-refurbishers.html"><a href="for-refurbishers.html#privacy"><i class="fa fa-check"></i><b>6.3</b> Privacy</a></li>
+<li class="chapter" data-level="6.4" data-path="for-refurbishers.html"><a href="for-refurbishers.html#quality"><i class="fa fa-check"></i><b>6.4</b> Quality</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>7</b> Concepts</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="concepts.html"><a href="concepts.html#circular-economy-paradigm-and-principles"><i class="fa fa-check"></i><b>7.1</b> Circular Economy paradigm and principles</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="credentials.html"><a href="credentials.html"><i class="fa fa-check"></i><b>8</b> Credentials</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="credentials.html"><a href="credentials.html#refurbishment-quality"><i class="fa fa-check"></i><b>8.1</b> Refurbishment quality</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="credentials.html"><a href="credentials.html#especificacions"><i class="fa fa-check"></i><b>8.1.1</b> Especificacions</a></li>
+<li class="chapter" data-level="8.1.2" data-path="credentials.html"><a href="credentials.html#classificació"><i class="fa fa-check"></i><b>8.1.2</b> Classificació</a></li>
+<li class="chapter" data-level="8.1.3" data-path="credentials.html"><a href="credentials.html#procés-de-reacondicionat"><i class="fa fa-check"></i><b>8.1.3</b> Procés de reacondicionat</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="credentials.html"><a href="credentials.html#informes-de-reutilització-i-reciclatge"><i class="fa fa-check"></i><b>8.2</b> Informes de reutilització i reciclatge</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="credentials.html"><a href="credentials.html#passaport-del-dispositiu"><i class="fa fa-check"></i><b>8.2.1</b> Passaport del dispositiu</a></li>
+<li class="chapter" data-level="8.2.2" data-path="credentials.html"><a href="credentials.html#informe-de-reutilització"><i class="fa fa-check"></i><b>8.2.2</b> Informe de reutilització</a></li>
+<li class="chapter" data-level="8.2.3" data-path="credentials.html"><a href="credentials.html#informe-de-reciclatge"><i class="fa fa-check"></i><b>8.2.3</b> Informe de reciclatge</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="credentials.html"><a href="credentials.html#compartir-la-circularitat-dels-models-de-dispositius"><i class="fa fa-check"></i><b>8.3</b> Compartir la circularitat dels models de dispositius</a></li>
+<li class="chapter" data-level="8.4" data-path="credentials.html"><a href="credentials.html#mesurar-limpacte-social-i-circular."><i class="fa fa-check"></i><b>8.4</b> Mesurar l’impacte social i circular.</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="use-cases.html"><a href="use-cases.html"><i class="fa fa-check"></i><b>9</b> Use Cases</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="use-cases.html"><a href="use-cases.html#els-processos-destampa-de-dades-i-auditoria-a-la-blockchain-de-ereuse"><i class="fa fa-check"></i><b>9.0.1</b> Els processos d’estampa de dades i auditoria a la blockchain de eReuse</a></li>
+<li class="chapter" data-level="9.1" data-path="use-cases.html"><a href="use-cases.html#procés-de-certificació-dels-informes"><i class="fa fa-check"></i><b>9.1</b> Procés de certificació dels informes</a></li>
+<li class="chapter" data-level="9.2" data-path="use-cases.html"><a href="use-cases.html#procés-de-verificació-dels-informes-per-part-dauditors"><i class="fa fa-check"></i><b>9.2</b> Procés de verificació dels informes per part d’auditors</a></li>
+<li class="chapter" data-level="9.3" data-path="use-cases.html"><a href="use-cases.html#procés-dautoacreditació-en-el-distintiu-de-ereuse"><i class="fa fa-check"></i><b>9.3</b> Procés d’autoacreditació en el distintiu de eReuse</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="technology.html"><a href="technology.html"><i class="fa fa-check"></i><b>10</b> Technology</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="technology.html"><a href="technology.html#equations"><i class="fa fa-check"></i><b>10.1</b> Equations</a></li>
+<li class="chapter" data-level="10.2" data-path="technology.html"><a href="technology.html#theorems-and-proofs"><i class="fa fa-check"></i><b>10.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="10.3" data-path="technology.html"><a href="technology.html#callout-blocks"><i class="fa fa-check"></i><b>10.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>11</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>11.1</b> Publishing</a></li>
+<li class="chapter" data-level="11.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>11.2</b> 404 pages</a></li>
+<li class="chapter" data-level="11.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>11.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">eReuse.org and Digital Product Passport</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="for-refurbishers" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> for refurbishers</h1>
+<p>Discarded devices by Product Owners (public or private administrations) are collected, refurbished, reused and recycled after few years or directly recycled if it has been detected that there is no demand.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:figreuseimpact"></span>
+<img src="figs/28.jpg" alt="Impact accounting without affecting business privacy" width="100%" />
+<p class="caption">
+Figure 6.1: Impact accounting without affecting business privacy
+</p>
+</div>
+<p>The principle of circular economy is to try to keep the devices as long as possible. How can the Product Owner identify which refurbishers have internalized properly these principles? The following figure <a href="for-refurbishers.html#fig:figreuseimpact">6.1</a> shows a typical case of disposal for reuse.</p>
+<p>The intention of the Product Owner is that these devices are reused as long as possible for a specific segment (e.g. schools) and then recycled at an authorised recycling point.</p>
+<p>De que manera los refurbishers pueden medir y comunicar su rendimiento en economía circular? existen algunas métricas e indicadores que sean de interés? <span class="citation">(<a href="#ref-measure" role="doc-biblioref"><strong>measure?</strong></a>)</span>.</p>
+<p>The product owner also wants to receive a report on the impact generated on reuse and recycling. Existe algun estandard para recojer estos datos? Existe alguna manera de que el Product Owner o terceras partes puedan verificar el impacto? ver subsección <span class="citation">(<a href="#ref-verify" role="doc-biblioref"><strong>verify?</strong></a>)</span></p>
+<p>Verificar el impacto implica tener que revelar información privada del negocio o incluso poder recibir alguna penalización. ver subsección <span class="citation">(<a href="#ref-privacy" role="doc-biblioref"><strong>privacy?</strong></a>)</span></p>
+<p>Finalmente el refubrisher debe de encontrar un comprador de segunda mano por lo que debe ser capaz de generar la confianza en la calidad del producto que está ofreciendo. Ver subsección <span class="citation">(<a href="#ref-quality" role="doc-biblioref"><strong>quality?</strong></a>)</span>.</p>
+<div id="quantify-and-communicate" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Quantify and communicate</h2>
+<p>Could be an indicator on which they can base their decision?</p>
+<p>El reto es que los producto owners deriven los dispositivos potencialmente reutilizables a los refurbishers que tengan un mayor rendimiento en economía circular.</p>
+<p>The challenge at therefore is for the previous owners of the devices, the product owners, to choose businesses that will try to do the actions discussed above. We therefore require them to choose those with the highest reuse performance (thus avoiding premature recycling) and to take custody of the reused assets to be recycled at the end of their life.</p>
+<p>As we commented before in the circular economy products and materials are seen as assets, businesses are seen as its users, that should
+repair, upgrade and reuse their devices and materials to maintain them in use as much as possible.</p>
+<p>FROM <span class="citation"><a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">Verstraeten-Jochemsen, Baars, and Daniels</a> (<a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">2020</a>)</span></p>
+<p>We need to know what works, what doesn’t and why and that means turning to metrics. The field of metrics can be difficult to navigate due to the variety of terms and definitions used. What is the difference between a metric and an indicator, and is a standard or a certificate more suitable for your needs? Further on the document we present the various terms defined by <span class="citation"><a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">Verstraeten-Jochemsen, Baars, and Daniels</a> (<a href="#ref-Verstraeten-Jochemsen2020" role="doc-biblioref">2020</a>)</span> and in the credentials section we will detail the metrics we consider necessary to measure the performance of refurbishers.</p>
+<div id="metric" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Metric</h3>
+<p>A metric is a method we employ to understand change over time across a number of dimensions. We use it as a catch-all term to describe the method used to measure something, the resulting values, as well as a calculated or combined set of indicators.</p>
+</div>
+<div id="indicator" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Indicator</h3>
+<p>The indicator is a crucial element of a metric, referring to a single value and its unit, and used to indicate (hence the name) a specific trend or performance.</p>
+</div>
+<div id="tool" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Tool</h3>
+<p>Many of the metrics considered are partly or fully automated in online or offline tools that enable easy application and reduce the risk of errors. In the context of this publication, tools can therefore be considered automated metrics.</p>
+</div>
+<div id="standard" class="section level3" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Standard</h3>
+<p>Metrics that have gone a certain degree of scrutiny and testing, and are commonly accepted as a standardised way of measuring, can be regarded as standards. Technically, one can consider both ‘informal’ standards and standards that have officially been documented and published by standardisation organizations but in the context of this publication, we will only use the term to refer to the latter.</p>
+</div>
+<div id="certificate" class="section level3" number="6.1.5">
+<h3><span class="header-section-number">6.1.5</span> Certificate</h3>
+<p>A certificate is a specific type of standard that can not be applied by the organisation itself but requires a third party to assess whether the company’s performance has been according to a certain standard. They usually result in a product label being issued by the third party.</p>
+</div>
+</div>
+<div id="verify" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Verify</h2>
+<p>There are certain requirements that the refurbishers’ system must have in order to allow for this verification. The requirements are
+inmutability, verificability and privacy of the data.</p>
+<ul>
+<li><p>Immutability means unchangeability. Immutable data is a piece of information in a database that cannot be (or shouldn’t be) deleted or modified after it’s creation. Most traditional databases store data in a mutable format, meaning the database overwrites the older data when new data is available. This is where Distributed Ledger Technologies (DLTs) or blockchains come into play. Immutability is one of the key features of DLTs. It is a replicated and synchronised digital registry, where it is written by consensus of the participants, distributed to different locations and organisations, without a central administrator, which structures the data and operations in such a way that only data can be added but it is not possible to modify those already accepted. It is impossible for any
+entity (for example, a government or corporation) to manipulate,replace, or falsify data stored on a DLT.</p></li>
+<li><p>Verifiability is an action to be able to confirm that a fact/data is supported by an attestation at a certain moment.</p></li>
+</ul>
+<p>In this verification that is only possible with certain data, but without the data, only with a summary/signature). In short, the function that a notary or notary public performs.</p>
+<p>Tal com veurem al capítol de tecnologia, Per la immutabilitat fem servir el que en anglès s’anomena “distributed ledger technology” (DLT) o “blockchain,”</p>
+<p>The data of the traceability systems of the entities federated in eReuse are in decentralised systems that should preserve business privacy.</p>
+<p>un dels requeriments que tenim es fer ús de d’un llibre de registre digital fent servir tecnología blockchain per tal d’assegurar la seva immutabilitat (no poder canviar el passat). i verificabilitat (poder confirmar que un fet està suportat per un atestat en un cert moment que només és possible amb certes dades, però sense les dades, només amb un resum/signatura). En resum, la funció que fa un notari o fedatari.</p>
+<p>Per la verificabilitat fem servir un explorador de blocs de la DLT on es poden cercar les entrades del registre que corresponen a un esdeveniment o dispositiu determinat, per aportar un conjunt d’atestats registrats que permeten confirmar uns fets que consten a un document, com per exemple un certificat d’una acció o conjunt d’accions durant la vida o múltiples vides d’un dispositius is the blockchain.</p>
+<p>In this action we justify the need to implement a blockchain and explain the one that has been developed in the framework of the project, as well as the mechanisms followed by reuse centres to self-certify and those undertaken by third parties to carry out auditing processes.</p>
+</div>
+<div id="privacy" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Privacy</h2>
+<p>Discarded devices by public or private administrations (Product Owners) are collected and refurbished or recycled if it has been detected that there is no demand. When the Product Owner requires impact data such as lifetime extension they request a report from the refurbisher. This impact data in turn feeds into the product owner metrics to calculate their circularity performance.</p>
+<p>In the process of data collection, the refurbisher must request data from his customers and suppliers, and in turn, to them request to the following actors of the reverse supply chain until the final recycler.</p>
+<p>This data if its not protected could disclose the actors business privacy, but if its not accountable that do no allow to account the
+circular impact generatet such as extended life time and final recycling.</p>
+<p>In order to know the impact, the refurbisher needs to ask its partners and customers the device chain-of-custody and the impact data. In cases where the refurbisher has made the sale or donation it may know if the device has been reused, but there are situations that it does not know who is the Final User. As in the case of reuse, the refurbisher also does not know if the Final User has taken it to a recycling point the device after its usage. Similarly in the case of recycling, the refurbisher when referring non-reusable devices to a recycler does not know if the devices have been recycled.</p>
+<p>and to assure to the actors in the reverse supply chain that their contacts will not be exposed and that they will not be penalised if
+there is no record of the final recycling of what they have managed. How can the Product Owner rely on the data it receives?</p>
+<p>In general, in a certification process, a third party is required to carry out an audit process in order to assess whether the data collected is reliable or not.</p>
+<p>Our proposal is to take advantage of blockchain technology in order to dispense with the need for an external audit to verify the lifetime extension impact data.</p>
+<p>and this data should not be disclosed to preserve its business privacy.</p>
+<p>confidence to Product Owners that their discarted devices will be managed in accordance with the principles of the circular economy,</p>
+<p>El Product Owner puede solicitar estos datos al refurbisher y este a la vez solicitarlos al retailer
+How the refurbisher can demonstrate to the Product Owner that a device has been reused and recycled</p>
+<p>How the refurbisher center has been properly recycled without having to know the actors involved in the reverse-supply chain and who are the final users.</p>
+<p>For example how can we know the extended durability of a device and whether it</p>
+<p>To minimise the problem, on the one hand, the devices, actors and end-users must be completely anonymous and, on the other hand, there
+must be no possibility of discovery, and on the other hand the impact accounting must provide guarantees of trust, verifiability,
+irreversibility and tamper proof to ensure sellers/donors that positive impact is generated if they divert their devices to reuse streams.</p>
+<p>The problem we have is how reconciling business privacy with being able to measure social and environmental impact. When companies, governments or individuals need to get rid of their computers and digital devices to have a new life (reuse), they do not know how to identify which ITADs/Refurbishers can promote a more circular economy. The Refurbishers / Retailers / ITADs / Trade-in actors of the reverse-supply chain do not feel comfortable in openly sharing this traceability and suppliers data. All of them are in competition, or they might even be penalized, if one of their devices is not properly recycled at the end of its life. This results in most Electric and Electronic Equipment (EEE) being recycled even though the explicit demand for reuse.</p>
+</div>
+<div id="quality" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Quality</h2>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Verstraeten-Jochemsen2020" class="csl-entry">
+Verstraeten-Jochemsen, Jacco, Noah Baars, and Caspar von Daniels. 2020. <span>“<span class="nocase">Circular metrics for business - Finding opportunites in the circular economy</span>,”</span> no. October. <a href="https://www.circle-economy.com/resources/circular-metrics-for-business">https://www.circle-economy.com/resources/circular-metrics-for-business</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="challenges.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="concepts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-challenges.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

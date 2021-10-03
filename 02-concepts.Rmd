@@ -1,0 +1,96 @@
+# Concepts
+
+What eReuse federated members have in commona definition of circular economy.
+
+## The premature recycling of electronics
+
+With more mobile devices than people on earth and powerful companies keen for us to keep purchasing, the successful implementation of the 3Rs (Reduce, Reuse, and Recycle) for electronic devices becomes vitally important. Today, most laptops, desktops and mobile phones are prematurely recycled when they become obsolete or depreciated by companies and public administrations.
+
+When we recycle a device that could be reused we need to manufacture a new computer which is not only damaging to the planet but also excludes those that cannot afford to always buy the latest products.
+
+Limiting premature recycling and promoting reuse is not the final solution to our sustainability problem but it is a way forward. Things improve with less device obsolescence and more cradle-to-cradle.
+
+The reuse of electronic devices such as desktops, laptops or mobile phones is applied to devices that have already been manufactured and are no longer in use (disposed) and will be recycled unless they are "disposed for reuse" by doing any of the following actions refurbish, recondition, repair, upgrade and used again by the same final user or redistributed to other users.
+
+
+```{r figreuseelectronics, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Citizen and professional reuse of digital devices"}
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","27.png"))
+```
+
+
+We say a device or component is reusable if it has or may have use value for someone:
+
+- If the use value of the device is high enough, it means that there is somewhere a potential user for that device as it is, and only a basic refurbishing processes is required, such as basic repair, erasing data and restoring the operating system (this is represented as citizen reuse loop in figure \@ref(fig:figreuseelectronics).
+
+- If the use value is too low, its use value can be increased through advanced refurbishing processes: repairing, replacing damaged components and updating/ugrading. This is represented as professional reuse loop in the figure.
+
+The reuse process ends when after a few years the device or component reaches disposal for recyling state, which means its use value then, or through potential improvements, does not allow its reuse again. The cycle reach recycling to recover (reuse) raw materials and manufacture new components.
+
+## Circular Economy paradigm and principles
+
+The circular economy is the vision of a new economy that aims to meet society's needs within the limits of negative impact in order to have a healthy planet with sufficient resources for future generations. Today, we are far from achieving this vision, in 2020 our economy will be only 9% circular (Circle Economy, 2019).
+
+The circular economy is a new paradigm to change the current consumption model based on buy, use and throw away. The principles of the circular economy in electronics is, first, to preserve in use the products and components that have been already manufactured, and second, to recover raw materials when devices are no longer repairable and functional.
+
+The basic concept of a circular economy depicts a production and consumption system that relies on the repair, reuse, remanufacturing, sharing of products, recycling, changing the consumption patterns and new business models and systems. [^concepts-1]
+
+[^concepts-1]: <https://ec.europa.eu/environment/ecoap/indicators/circular-economy-indicators_en>
+
+Circularity means making self-sufficient system that does not require inputs of raw materials and does not have losses. Losses are: raw materials that ends up mixed in iron or steel (because perform a basic recycling process), non-potentially recoverable materials due to the chemical characteristics of the elements - the entropy backfire, because  its highest Termodynamic Rarity [^concepts-2] or waste that ends up in landfills.
+
+[^concepts-2]: Thermodynamic rarity (TR) is an indicator, based on exergy, used to measure the critically of raw materials, depending on their scarcity in the earth's crust. Exergy is a property of a system relative to an associated reference state. It is the maximum work a system can deliver as it interacts with another large, but     real, system, namely, a reservoir. Such a reservoir attracts the system toward degradation or entropy creation.
+
+
+```{r figcirculareconomy, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Circular Economy Challenge"}
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","26.jpg"))
+```
+
+To make and scale a circular economy, businesses, governments, and society must work together. But today it is uncertain if reused digital devices may end up being exported illegally and potentially polluting the environment. Such risk and slippage is the main drawback in the promotion and the practice of reuse in public and private organisations.
+
+The circular economy is a new paradigm to change the current consumption model based on buy, use and throw away. Circular economy in electronics is, first, to preserve in use the products and components that have been already manufactured, and second, to recover raw materials when devices are no longer repairable and functional.
+
+Circularity means making self-sufficient system that does not require inputs of raw materials and does not have losses. losses are waste that ends up in landfills where materials cannot be recovered.
+
+In circular economy, products and materials are seen as assets, businesses are seen as its users, that should repair, upgrade and reuse their devices and materials to maintain them in use as much as possible.
+
+We define the Circular Economy of electronics reuse as the result of performing all viable reuse processes until the use value of devices does not allow further reuse, and that at the end of any reused device is recycled.
+
+Therefore, there are three principles that are key to achieving Circular Economy of electronics: Reduce, Reuse and Recycling. we should ensure at the time of recycling devices have low use value, so there is no premature recycling.
+
+## Increase disposal and demand for reuse
+
+The ultimatelly aim is to achieve a cultural change towards a culture of reuse and recycling. On the one hand it is necessary to **stimulate disposal for reuse** in a way that Product Owners (Business and Public Administrations) willing to dispose reusable devices choose a refurbisher / reuse centre rather than a final recycler and this goes thought generate the enough confidence that product owners' devices are treated in accordance with circular economy principles.
+
+### Stimulate disposal for reuse
+
+> **How can the Product Owner identify which refurbishers have internalized properly these principles?**
+
+The following figure \@ref(fig:figreuseimpact) shows a typical case of disposal for reuse.
+
+Discarded devices by Product Owners (public or private administrations) are collected, refurbished, reused and recycled after few years or directly recycled if it has been detected that there is no demand. The intention of the Product Owner is that these devices are reused as long as possible for a specific segment (e.g. schools) and then non-premature recycled at an authorized recycling point.
+
+```{r figreuseimpact, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Impact accounting without affecting business privacy"}
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","28.jpg"))
+```
+
+The challenge at therefore is Product Owners to choose businesses with the highest reuse performance (thus avoiding premature recycling) and to take custody of the reused assets to be recycled at the end of their life.
+
+> **Which refurbisher should the Product Owner choose in order to increase the overall circular economy?**
+
+As we will see in the latter there is a need for Product Owners to identify refurbishers with accountable reuse and recycling impact.
+
+### Stimulate demand for reuse
+
+That problem is called "The Market for Lemons: Quality Uncertainty and the Market Mechanism" [@AKERLOF1978] and it refers to issues that arise regarding the value of an investment or product due to asymmetric information possessed by the buyer and the seller. In our use case first the Product Owner has a product for which it wants to be able to transparently demonstrate the quality to the Refurbisher, and second the Refubrisher wants to demonstrate to the consumer. In order to minimise the problem the actions to be taken include trying to reduce information asymmetries and be able to stimulate demand and this involves generating sufficient confidence about the potential for reuse and quality of the devices before refurbishment (Product owner to refurbisher) and after (refurbisher to final user).
+
+```{r figmugge, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Circular Economy Challenge"}
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","1g.png"))
+```
+
+@Mugge2017 investigated the potential of selling refurbished smartphones through a quantitative study. It conducted an online survey questioning 250 respondents to study the impact generated from various incentives that reuse centres can undertake to improve the purchase intention of refurbished phones. Or to put it another way: the question is: how can the reuse market be stimulated? The results are given for 6 different user groups in Figure \@ref(fig:figmugge). We see that in addition to the product itself, it is key to provide information that allows the product to be classified, to inform about the refurbishment process and quality certification.
+
+

@@ -1,0 +1,284 @@
+# Abstract {-}
+
+The eReuse.org federation develops a set of tools and methodologies to bootstrap reuse of digital devices and account its contribution to the circular economy. The intended impact is to extend device lifetime and increase proper recycling at the end of the useful lifetime. In this whitepaper we present the federation, the tecnological roadmap and  use cases that create value to consumers, refurbishers and recyclers. In the roadmap we present the conditions and capabilities required for verify traceability and impact accounting while while preserving privacy of consumers and businesses. The aim is to make replication easy for other regions and allow the interoperation with others systems with the purpose of make reuse/recycling and tech industry impact accountable. Ultimately empowering consumers to choose reparable, reusable and durable devices.
+
+# Introduction
+
+Digital devices such as desktops, laptops and mobiles should be affordable and does not harm people and the environment. The principle we apply is try to keep in use devices for as long as possible and to ensure their final recycling. Our approach is to empower field actors such as repairers, refurbishers and recyclers as well as the ecosystems they form at local level (circuits). Together members and partners provides with a new mindset and an open-source tech to enhance reuse  and make tech industry impact accountable.
+
+## Collaboration to avoid premature recycling
+
+Ereuse.org is a federation of organisations that cooperate to promote the reuse of electronics and to avoid its premature recycling. We are not an organisation but rather a federation of organisations collaborating with the aim to help to sustain and grow ecosystems that increase reuse/recycling. 
+
+We motivate and promote the emergence of collaborative and circular economy ecosystems that increase reuse/recycling and account final recycling with a verifiable accountability of impact. 
+
+We have brought together a federation of repairers, refurbishers (the local companies that collect used devices from governments and companies to repair, distribute in the second hand market) and recyclers. Most of these are social economy organizations that refurbish, recycle and distribute second-hand devices such as mobiles, laptops or desktop computers. 
+
+eReuse has three categories of partnerships which we name under strategic, innovation and research: 
+
+* Strategic partners are organizations that promote social awareness about the social and environmental impact of electronics, social economy, right to repair, zero waste, digital inclusion, circular economy, social economy, fair electronics and the right to repair. 
+
+* Innovation partners are startups and innovators that bring their technologies and solutions the the transition to circular and accountable. 
+
+* Research partners are universities and research centres. 
+
+Finnaly eReuse has supporters that are public administrations, city councils and companies that collaborate with partners and impact accountable members.
+
+Together with members, partners and supporters we accelerate the transition towards a circular economy of electronics that avoids premature recycling. 
+
+Ereuse.org cluster was launched in 2015 under the coordination of Pangea.org, a private, independent non-profit organization founded in 1993 to promote the strategic and environmental use of ICT.
+
+
+### Why Electronics are not affordable and not sustainable
+
+Electronics, including computers, tablets or smartphones is increasing exponentially and is one the biggest and most environmentally damaging industries. Raw materials are crucial for electronics, are non renewable, and cause conflicts and wars. Electronic products involve one of the highest CO2 footprint. Electronic industry workers cry for decent work, and final products, are neither affordable for all people nor sustainable for the planet, with only 20% of electronic waste properly collected and recyled. 
+
+The main problem is that the consumption model of digital devices is non-circular, non-resilient and non-affordable. Governments and companies buy new hardware every 3-6 or less years guided by financial reasons (depreciation can only be accounted for over 5 years) not sustainability-driven. The way they dispose of old hardware is not sustainable, or responsible, and often guided only by economic criteria. Furthermore, manufacturers do not build for durability.
+
+```{r figimpacts, echo= FALSE, out.width="100%", fig.align='center', fig.cap="ICT impacts"}
+# fig.pos to control the float behavior. The option value !H will prevent any floating within the document.
+
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","25.jpg"))
+
+```
+
+
+
+### What society can do today
+
+Most devices from business and public administration are discarded when considered amortized, and although they still have a value for use and are suitable for reuse, they are scrapped (recycled), or illegally exported to other countries via informal reuse circuits. The positive aspects of reuse are well understood, reuse effectively contributes to develop a circular economy, strengthen the creation of local employment, prevent the generation of waste, and reduce the digital divide. However, why is it such a minority practice? When companies, governments or individuals need to get rid of their computers and digital devices to have a new life (reuse), they don’t know where to turn. This results in most Electric and Electronic Equipment (EEE) being recycled even though the explicit demand for reuse. 
+
+### What does our members and partners
+
+Members, partners and supporters cooperate to help to sustain and grow ecosystems that increase reuse and recycling and together we build a new mindset and open-source tech to make reuse/recycling tech industry more durable, reusable, repairable and impact accountable. The coalition of members and partners bring together the skills, training and open technologies necessary to help sustain and grow federated and autonomous platforms that optimize refurbishment, ensure quality of second hand electronics products and bring management in the reverse supply chain to incentivitize reused devices are ultimately recycled and impact accountable.
+
+## Stardarize, coordinate requirements and bootstrap reuse 
+
+### Standarize the traceability and accountability of reuse and recycling
+
+Circular consumption is based on using resources to the maximum extent possible, ensuring that they are ultimately recycled, but never before or prematurely, but only when no one else can be used or reused. eReuse propose a set of metrics and indicators that are part of the eReuse standard. The purpose of this certification is allow to refurbishers self-audit their circularity and to report about it to its suppliers and customers. With this set of certificates/accreditation federated members differentiate from organisations that claim to promote reuse but actually engage in premature recycling. Our supporters are governments and business disposing digital devices and they choose members with accountable reusability and recycling. Together we want to communicate the economic, environmental and social impact of reuse and its contributions the Sustainable Development Goals 16, 13, 12, 15, 4 and 10.
+
+### Coordinate a roadmap of resources to increase and comunicate reuse and recycling
+
+The challenge is to provide resources to optimize reuse and make it impact accountable. This information creates trust when it is shared with device suppliers, refurbishers, consumers and a data-commons for measuring circularity of devices. Resources can be refurbishment tools, inventory management, product passport traceability systems, self-asses and self-certify mechanisms for quality and circularity standards, good practices and case studies. The information generated is verifyable because the usage of digital twin technologies in sincronization with distributed ledgers. Together we build a new mindset and open-source tech to make reuse/recycling tech industry more durable, reusable, repairable and impact accountable.
+
+### Bootstraping reuse and recycling ecosystems to extend the lifetime of digital devices
+
+The coalition of members and partners exchange know-how, build connections and bring together the skills and training to help sustain and grow federated and autonomous ecosystems that optimize refurbishment, ensure quality of second hand electronics products and bring management in the reverse supply chain to incentivitize reused devices are ultimately recycled and impact accountable. We coordinate and promote the creation of local circuits where several entities intercooperate under different roles to capture, refurbish and redistribute devices with a quality certificate to, among others, citizens affected by digital inequality. 
+
+## Members, partners and circuits
+
+Ereuse.org is a federation of organisations dedicated to the transition to collaborative and circular consumption of electronics. Our federated members are local groups, business and organizations with the goal to extend the lifetime of products through repair, refurbish, retail and in general reuse. 
+
+### Refurbishers and Resellers
+
+#### Solidanca.cat
+
+Solidança is a nonprofit organization created in 1997 and dedicated to the professional training and labor insertion of people in social vulnerability. To this end, in 2006, created a company Solidança labor insertion -Solidança Labor EI – which offers services in the environmental sector, specifically in the management and revaluation of certain waste fractions.
+
+#### Reutilitza.upc.edu
+
+The Universitat Politècnica de Catalunya (Spain) has a service-learning reuse program (reutilitza.upc.edu). Involves more than 500 students every year on tasks around repairing and refurbishing computers. Up to December 2016, more than 2000 computers were repaired, installed and handed over to 140 solidarity projects around the world.
+
+#### Pontsolidari.org
+
+The Banc de Recursos Foundation located in Barcelona, is focused on reutilization and redistribution of goods at both, national and international level and on development aid projects. Through the on line platform www.pontsolidari.org , used computers coming from donations of business companies, are being reused in social organizations and charities.
+
+#### Trinijove.org
+
+Trinijove facilitate entrepreneurship of youth in risk of exclusion an new business models such as sharing and leasing schemes for products. Trinijove is a private foundation based on Catalonia (Spain) that aims its efforts in the education of people with difficulties and helps them in the task of finding a job.
+
+#### Andromines.net
+
+Andromines is a nonprofit organization that since 1993 works for a more just and equitable society, by denouncing and fighting social exclusion and welcoming people marginalized labor. Its project ‘Recycle PC’ is based on carrying out the recovery and recycling of WEEE (Waste Electrical and Electronic Equipment and) Line Gray (computers, monitors, printers and other computer accessories).
+
+#### Reciclanet.org
+
+Reciclanet is an Educational, Ecological and Solidarity Association, formed by volunteers. We develop projects for recovery and reuse of computer equipment, and the spread of free software. Our philosophy is based on people, and speaking of sharing, educate and be solidari @. We work since 2000, promoting the sharing and reuse of computers with open source.
+
+#### Elkartenet.eus
+
+Elkartenet is a non-profit educational association and main objective is to carry out educational, associative and commercial revitalization projects supported by tools designed with Free Software and with criteria to fight against the different forms of Digital Divide and favouring Circular Economy.
+
+#### Ieselcalamot.com
+
+The Calamot Institute is a public secondary education compulsory and post-compulsory taught ESO, secondary education to middle and top grade.
+
+TAGS: school, not-for-profit.
+
+#### Labdoo.org
+
+Labdoo is a humanitarian social network joined by people around the world who want to make our planet a better place by providing those in underdeveloped regions (both in the developing and the developed world) a chance at a better education. The goal of the social network is to send unused laptops, ebook readers, tablet-PCs and any device that can be loaded with educational software to needy schools around the world using collaboration and without incurring any economic nor environmental costs.
+
+#### Marianao.net
+
+Marianao Foundation is a nonprofit organization that since 1985 develops socio-educational projects serving the community, to promote the personal and community development in Sant Boi de Llobregat and Baix Llobregat. The Funación is interested in receiving the material does not work and must be repaired.
+
+#### Engrunes.org
+
+Engrunes is a private non-profit enterprise with the purpose to provide people at risk of social exclusion or excluded, support staff, paid work that allows them to rejoin again an active social life and work, using as tools their work and personal effort.
+
+#### Donalo.org
+
+Donalo is a meeting point where companies and people donate digital devices and products to NGOs. The project, based on the accountability of companies according to their standards, is a reformulation of the task did Migrano de Arena Foundation since 2007 and took the name of ‘surplus management’.
+
+#### Abacus.coop
+
+Founded in 1968, Abacus cooperative has more than 850,000 consumer members and 478 business partners. Is a leader in the distribution of books, real educational, cultural and entertainment establishments in Catalonia 45 Catalonia, Valencia, Castellón and Islands. Abacus cooperative is a founding member of the Group clade, the first Catalan cooperative business group.
+
+#### Reutilizak.org
+
+We are a non-profit association that supports the integral development of people at risk and / or social exclusion in the neighborhood of Vallecas in Madrid, since 1986\. Encouraging and promoting social participation, especially of juveniles and young people from underprivileged socio-cultural backgrounds, trying to prevent their marginalization from the educational and social process. To promote, carry out and manage social and labor integration projects for people at risk or socially excluded.
+
+#### Ongdreamit.org
+
+DreamIT is an NGO that under the motto “dreams that change the world”, aims to mediate in the adhesion of volunteers and the transfer of technological equipment (Hw and Sw educational) to projects that aim to give an opportunity to the most disadvantaged through education. Our vision is a world in which education is available to the most disadvantaged through technology. Our mission is to transform and make education possible by using technology to empower people in need, focused solely on social change.
+
+#### Fundesplai.org
+
+FUNDACIÓN ESPLAI mission is promoting committed citizenship through social inclusion, social-educational action and a responsible use of ICT, with a special dedication to childhood and youth, all in all within the global aim of encouraging the third sector role in society. They work at local, national and international level developing different projects addressed to different vulnerable groups and designing methodological tools and training materials
+
+#### Hubuntu.es
+
+The NGO Reciclaje Tecnológico was founded in Huesca in 2015 with the aim of reducing the digital divide in the most disadvantaged areas of society. Everything is done through the refurbishing and reuse of digital devices. Digital education and the sustainability of the planet are two of its main objectives.
+
+#### Tau.org.ar
+
+Nodo Tau is a civil association settled in Rosario, Argentina, that since 1995 promotes the use of ICTs in vulnerable groups and social organizations who work for the validity of social, civil, economic and environmental rights. From its experience in the recycling of computer equipment used for the social sector, it has incorporated to the WEEE sector, by managing its own plant of reused, and simultaneously dedicating to the investigation and broadcasting of the issue, by its publications in raee.tau.org.ar.
+
+### Partners
+
+#### Right to Repair Europe
+
+We are a coalition of European organizations active around the cause of repair. Members of the Right to Repair campaign are based in several European countries and represent civil society organisations, repair businesses, community repair initiatives and public institutions. https://repair.eu/our-members/
+
+TAGS: NGO
+WEB: [repair.eu](https://repair.eu)
+
+#### Zero Waste Europe
+
+ZWE brings together and represents the European municipalities that have openly committed to the goal of continuously reducing waste generation and improving waste separate collection and hence redesigning the relationship between people and waste. We are defining a campaign for municipalities with the objective of to increase the number of municipalities willing to promote the circular economy of digital devices. With the help of ZWE we want to find interested municipalities, local zero waste organizations willing to launch local reuse circuits and social reuse centers that repair, refurbish and retail second hand used digital devices.  
+
+TAGS: NGO
+WEB: [zerowasteeurope.eu](http://www.zerowasteeurope.eu)
+
+#### The Restart Project
+
+The Restart Project helps people learn how to repair their broken electronics, and rethink how they consume them in the first place. They run regular Restart Parties where people teach each other how to repair their broken and slow devices – from tablets to toasters, from iPhones to headphones.
+
+TAGS: NGO
+WEB: [therestartproject.org](http://www.therestartproject.org)
+
+#### Association for Progressive Communications
+
+The Association for Progressive Comunications is both a network and an organisation. APC members are groups and individuals working in their own countries to empower and support organisations, social movements and individuals in and through the use of information and communication technologies (ICTs) to build strategic communities and initiatives for the purpose of making meaningful contributions to equitable human development, social justice, participatory political processes and environmental sustainability. We have start a global campaign to promote the creation of reuse circuits in municipalities.  
+
+TAGS: NGO
+WEB: [apc.org](http://apc.org)
+
+#### Universitat Politècnica de Catalunya
+
+The Distributed Systems Group at upc.edu performs research on distributed systems and computer networks in the areas of models, algorithms and software for large, complex, dynamic, decentralized systems and applications. We look at large scale and decentralized community networks and community clouds, economics oriented distributed systems, and resource allocation mechanisms. Activities are around the design, modelling and evaluation of systems through modelling and experimentation in real deployments. Outcomes are system architectures, algorithms, software, regulation and adaptive models, decentralized resource allocation and game-theory based mechanisms. The group consists of four professors and a variable number of PhD and master students.
+
+TAGS: Reearch group  
+WEB: [Distributed Systems group](https://dsg.ac.upc.edu/)
+
+#### Usody
+
+Usody is a B2B tracing solution to measure & optimize the circular economy impact of digital devices. Business disposing or selling digital devices such as mobiles, desktops and laptops are not taking advantage of the circular economy and social impact they generate. We anonymous trace the reverse-chain of ownership custody, and report data to assess social and environmental impact of reuse and final recycling, generating trust to enable public administrations and companies to offer their devices for reuse to resellers. However the resellers do not feel comfortable in openly sharing this traceability data. They fear competitors, or they might even be penalized, if one of their devices is not properly recycled at the end of its life. For that reason a privacy-preserving distributed ledger technology (DLT) system is used to ensure trust. We differentiate from others by providing traceability & impacting accounting as a stand-alone service that can be used by existing resellers. Resellers are our partners, not competition, and we enable them to provide impact accounting.
+
+TAGS: IT company  
+WEB: [usody.com](http://usody.com)
+
+#### Jamgo
+
+Jamgo is a technological cooperative company based in Barcelona, was born in 2011 with the intention of creating a workspace where values such as transparency, cooperation and internal democracy were prioritized. Workers at the cooperative are at the same time partners of the company, which makes Jamgo a completely horizontal work environment were social and solidarity economy and cooperation methodologies are put in practice. Our main objective is to use technology as a tool to promote projects with a positive social impact. Jamgo is also engaged with the values of free software and open data and their contribution to social transformation. Jamgo is main developer of eReuse Android App.  
+
+TAGS: IT company, cooperative.  
+WEB: [jamgo.coop](http://jamgo.coop)
+
+#### Electronics Watch
+
+Is an organization with the mission to help public sector organisations work together and collaborate with local monitoring partners to protect the labour rights and safety of workers in their electronics supply chains. We’re looking for which data structures are needed to be able to achieve traceability starting at component manufacturing.
+
+TAGS: NGO
+WEB: [electronicswatch.org](https://electronicswatch.org/en)
+
+#### Sustainable Digital Infraestructure Alliance
+
+The purpose of the Alliance as a professional association is to promote market participants in  the  field  of creating  and  expanding  sustainable  digital  infrastructure.  SDIA is  committed to realizing a sustainable digital economy in-line with the UN Sustainable Development Agenda, European Green Deal strategies, Paris Climate Agreement commitments, and other relevant frameworks. The SDIA [Roadmap](https://sdialliance.org/roadmap) to Sustainable Digital Infrastructure.
+
+TAGS: NGO
+WEB: [sdialliance.org](https://sdialliance.org)
+
+### Circuits
+
+In cities, federated members and city councils collaborate and coordinate in reuse circuits with great effect in creating inclusive jobs, starting or accelerating efficiency and scaling up of local exchange/market of second hand devices. City councils deliver IT retired equipment to local reuse centers that are circular economy impact accountable and collaborate between them to increase reuse and recycling. 
+
+#### Background. 
+
+Everything started with a “what if we opt for reuse rather than recycling”. In 2014 the Government of Catalonia planned to discard 30,000 computer devices per year until 2019. 92% of the devices were functional and 87% of them were potentially reusable locally by social entities, schools and people digitally excluded. The government wanted to involve all the active reuse centers to do all the work of refurbishing, channeling and tracking these devices. This was the request they made to a research group at the Universitat Politècnica de Catalunya. A few months later the first eReuse.org circuit starts in Catalonia. 
+
+#### Collaborative Circuits
+
+The mission of a collaborative Circuit is to promote cooperation between entities in the reuse sector and the responsible, collaborative and circular use of digital devices. In some circuits there is an entity that manage between the City Council and the reuse centers. This manager entity acts as an umbrella of the reuse centers and can be a zero waste or a close the digital divide and that among its principles is to promote collaboration between reuse centers and final users.  
+
+```{r figparticipants, echo= FALSE, out.width="100%", fig.align='center', fig.cap="General image of the operation of an eReuse circuit"}
+# fig.pos to control the float behavior. The option value !H will prevent any floating within the document.
+
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","3.png"))
+
+```
+
+* **Management entities**: these are the entities that “arbitrate” the circuits; that is, they are the entities that formalize the agreements with the public administrations and act as umbrellas between all the refurbishment entities of a territory. The managing entities in no case refurbish or distribute equipment, they only receive the inventories of the donors to share them following criteria with the refurbish entities. In the case of the Barcelona circuit, it is Pangea.
+
+* **Reuse centers**: these are the entities that refurbish and distribute to Final Users the equipment with quality certification.
+
+* **Retailers and others**: these are entities that give value to the circuit in several ways: i) finding demand and / or ii) with various services, such as hardware and software maintenance, iii) with end-user training services, 4) with various services and collaborations.
+
+To make the circuit work, tools, protocols and technology are needed. Thus, open software has been developed that allows entities to manage the registration, inventory and traceability of devices, as well as certify the refurbishment quality. Reuse centers share open data about second-hand computers and their components with the aim of analyzing their life cycle during reuse until final recycling. These data allows to calculate the environmental impact in addition to the hours that have been reused (social impact).
+
+
+
+<!-- * Entitats gestores: són les entitats que “arbitren” els circuits; és a dir, són les entitats que formalitzen els convenis amb les administracions públiques i fan de paraigües entre les totes les entitats reacondicionadores d’un territori. Les entitats gestores en cap cas reacondicionen o distribueixen equipament, només reben els inventaris dels donants per compartir-los seguint uns criteris amb les entitats reacondicionadores. En el cas del circuit de Barcelona, és Pangea.  -->
+
+<!-- * Entitats reacondicionadores: són les entitats que reacondicionen i distribueixen els equips amb certificació de qualitat. A Catalunya, les més actives són Solidança, Andròmines, Trinijove, donalo.org i Fundación Esplai. -->
+
+<!-- * Entitats distribuidores i altres: són entitats que donen valor al circuit de varies maneres: i) trobant la demanda i/o distribuint, com Labdoo, donalo.org, Kedu…), ii) amb serveis diversos, com manteniment hardware i software (Gatxan, Maddix) o virtualització d’escriptoris (Isaard), iii) amb serveis de capacitació a l’usuari final (labdoo, Fundació Pare Manel), 4) amb serveis i col·laboracions diverses (Banc de Recursos, UPC reutilitza-TXT) -->
+
+
+##### Barcelona Circuit
+
+**Manager entity**: Associació Pangea.org 
+
+**Reuse centers**: Solidanca.cat, Reutilitza.upc.edu, Pontsolidari.org, Trinijove.org, Andromines.net, Labdoo.org, Engrunes.org, Donalo.org, Fundesplai.org, among others.
+
+In 2017 the Associació Pangea formalized an agreement with Barcelona Activa, as a pilot test, and then with the Barcelona City Council (2018), under which it receives the devices that have fallen into disuse and with de responsability to redistribute to refurbishers from these administrations to share and then distribute them (following circularity performance criteria) with the reuse centers.
+
+These reuse centers can either refurbish and redistribute equipment valid for reuse among final users; or share inventories with other demand-seeking entities; in this case, restricted to ESS, vulnerable schools and families. In the Barcelona circuit, the final users receive on loan, they have usufruct but not the ownership, (Ostrom, 2018) 7, of the equipment. Final users cover the cost of services to make the good reusable, directly or through third parties, such as ESS, public services or Corporate Social Responsibility (CSR) actions.
+
+Recently, and since the emergence of COVID19, from ereuse is also working on green and responsible public procurement with the Social Services of Barcelona City Council to equip public facilities with reused material and to meet prices, that despite being affordable, often cannot be assumed by vulnerable populations. This community strategy created a lot of resilience during confinement and in a context where the linear chain’s own stock chains were severely affected.
+
+Others entities are also integrated into the circuits, which help in the support and improvements of substantial and strategic skills of the final user; entities that provide software and hardware maintenance services; and entities that help increase the functionality of computers with lower performance with the service of desktop virtualization.
+
+<!-- El que té l’Ajuntament de Barcelona com a donant està gestionat per l’entitat Pangea, que al 2017 formalitza un conveni primer amb Barcelona Activa, com a prova pilot, i després amb l’IMI (2018, Institut Municipal d’Informàtica), en virtut del qual rep els dispositius que han quedat en desús d’aquestes administracions per compartir-los i repartir-los després (seguint criteris de rendiment de circularitat) amb les entitats reacondicionadores del circuit (Solidança, Andròmines, donalo.org, Fundación Esplai i Trinijove, entre d’altres).  -->
+
+<!-- Aquestes reacondicionadores poden, o bé redistribuir els equips vàlids per a la reutilització entre els usuaris finals; o bé compartir els inventaris amb altres entitats que cerquen la demanda; en aquest cas, restringida a ESS, escoles i famílies vulnerabilitzades. En el circuit de Barcelona els receptors finals reben en comodat, tenen usufructe però no la propietat, (Ostrom, 2018) 7 , de l’equipament. Els receptors cobreixen, el cost dels serveis per fer el bé reutilitzable, directament o bé mitjançant tercers actors, com ESS, serveis públics o accions de Responsabilitat Social Corporativa (RSC). -->
+
+<!-- Darrerament, i des de la irrupció del COVID19, des d’ereuse també s’està treballant la compra pública verda i responsable amb el Serveis Socials de l’Ajuntament de Barcelona per equipar instal·lacions públiques amb material reutilitzat i per afrontar els preus, que tot i ser assequibles, moltes vegades no poden ser assumits per poblacions vulnerabilitzades que -->
+<!-- demanden els equips. Aquesta estratègia comunitària va crear molta resiliència durant el confinament i en un context on les cadenes d’estoc pròpies de la cadena lineal es van veure molt afectades. -->
+
+<!-- Als circuits s’integren també entitats com Labdoo o ColecTIC i Pare Manel, que ajuden en l’acompanyament i millores de competències substancials i estratègiques de l’usuari final; entitats que donen servei de manteniment de software i hardware; i entitats que ajuden a incrementar les funcionalitats d’ordinadors amb menors prestacions amb el servei de -->
+<!-- virtualització d’escriptoris. -->
+
+<!-- Per fer funcionar el circuit, són necessaris eines, protocols i tecnologia. Així, s’ha desenvolupat un software en codi lliure que permet a les entitats gestionar el registre, inventariat i traçabilitat dels dispositius, a més, certificar el reacondicionat amb qualitat. A través de les reacondicionadores del circuit, eReuse obté els detalls dels ordinadors de segona mà i dels seus components amb l’objectiu d’analitzar el seu cicle de vida durant la reutilització fins el reciclatge final. Aquestes dades ens permeten calcular l’impacte ambiental a més de les hores que s’han reutilitzat (impacte social). -->
+
+##### Madrid Circuit
+
+**Manager entity**: Associació Pangea.org 
+
+**Reuse centers**: 
+
+TODO. Description.

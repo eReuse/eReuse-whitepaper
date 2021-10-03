@@ -1,0 +1,49 @@
+---
+title: "eReuse.org Whitepaper"
+author: |
+  | $^1$Universitat Politècnica de Catalunya
+  | David Franquesa 1^[Corresponding author: david.franquesa@upc.edu], Leandro Navarro 1$^1$
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+subtitle: Account and motivate reuse and recycling of digital devices
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+site: bookdown::bookdown_site
+---
+
+```{r}
+path_req <- "/home/david/NextCloud/David-Tesi/eReuseMetrics/code/requirements"
+source(file.path(path_req,"libraries.R"))
+```
+
+
+
+<!-- Put in the console to render all the book in html -->
+<!-- bookdown::render_book('index.Rmd', 'bookdown::gitbook') -->
+<!-- Put in the console to render all the book in pdf. It creates file _main.index in folder _book with an the index -->
+<!-- bookdown::render_book('index.Rmd', 'bookdown::pdf_book') -->
+<!-- bookdown::render_book('index.Rmd', 'bookdown::pdf_document2') -->
+
+<!-- TODO mirar: https://github.com/ismayc/thesisdown/blob/master/inst/rmarkdown/templates/thesis/skeleton/skeleton.Rmd -->
+<!-- https://github.com/ismayc/thesisdown -->
+
+
+<!-- Enable git in Rstudio -->
+<!-- https://support.rstudio.com/hc/en-us/articles/200532077?version=1.4.1106&mode=desktop -->
+
+<!-- Connect RStudio to Git and GitHub -->
+<!-- https://happygitwithr.com/rstudio-git-github.html -->
+
+## install if needed (do this exactly once):
+## install.packages("usethis")
+library(usethis)
+use_git_config(user.name = "dfranquesa", user.email = "davidfranquesa@gmail.com")
+
+
+
