@@ -1,0 +1,153 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Expected impact and Outcomes
+
+Impact and outcomes are terms used to describe change at different levels. Outcomes  -- the short- to medium-term effects of an intervention -- and eventually impacts. 
+
+<!-- Activities: Actions taken or work performed through which inputs, such as funds, technical assistance and other types of resources, are mobilised to produce specific outputs. -->
+
+<!-- Outputs: The products, capital goods and services which result from a development intervention; may also include changes resulting from the intervention which are relevant to the achievement of outcomes. -->
+
+<!-- Outcomes: The likely or achieved short-term and medium-term effects of an intervention’s outputs.  -->
+
+<!-- Impact: Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.  -->
+
+<!-- Most organisations understand the key difference between the things they do (activities) and the ultimate changes they wish to help bring about (impact). But the distinction is not always helpful. In order to achieve desired long-term changes, there may be many steps between an organisation’s activities and the desired impact. The results chain (see below) attempts to categorise these steps by  -->
+
+<!-- breaking them down into manageable stages – inputs,  activities, outputs, outcomes and impact.  -->
+
+<!-- The preferred solution of the author, in a desire for a less complicated life, is to define outputs as the services or products delivered that are largely within the control of an agency; impact as the lasting or significant changes in people’s lives brought about by an intervention or interventions; and outcomes as everything in between. -->
+
+<!-- In this results chain, inputs are used in order to carry out activities. Activities lead to services or products delivered (outputs). The outputs start to bring about change (outcomes) and eventually this will (hopefully) contribute to the impact. For example, if an organisation was providing seeds to farmers, the seeds themselves, any transport costs, staff costs etc. would be inputs. Activities  -->
+
+<!-- undertaken would include travelling to the field to deliver seeds and, possibly, conduct training with farmers. The outputs could be the seeds distributed and the people trained. The outcomes could be that the farmers plant the seeds, the seeds grow into crops, the crops are harvested, and then eaten or sold. This would contribute to the desired impact, which might be a better standard of living  -->
+
+<!-- in the long-term for farmers and their families. -->
+
+<!-- Another term that is commonly used is ‘results’. Results is defined by OECD DAC as the “output, outcome or impact (intended or unintended, positive and/or negative) of a development intervention”. ‘Results’ is defined differently by different organisations. Some only use it to describe actual achievements whilst others use it to describe predicted change.  -->
+
+> Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.
+
+The intended impact is to extend device lifetime and ensure final recycling. The principle of circular economy is to try extend devices lifetime as long as possible avoiding the premature recycling.Recycling should only take place at the end of their useful life and at that point try to recover as much as possible of the raw materials they contain.
+
+The intended impact understood as long-term effects produced by our intervention tecnological roadmap and others activities 
+
+1.  Increase devices lifetime through increasing durability, reparability, reusability and upgradeability.
+2.  Increase proper recycling.
+
+The expected outcomes understood as achieved short-term and medium-term effects of an intervention’s outputs:
+
+
+```{r tableoutcomes, echo = FALSE}
+o1 <- c("o1","Devices are in use rather that stored",
+        "X","","","","","")
+o2 <- c("o2","Allocation criteria of devices according its service",
+        "X","","","","","")
+o3 <- c("o3","Increase procurement of second-hand devices and product-as-service",
+        "X","X","","","","")
+o4 <- c("o4","Criteria for buying devices is more focused on durability and reparability",
+        "X","X","","","","")
+o5 <- c("o5","Share data on devices circularity",
+        "X","X","X","X","X","X")
+
+o6 <- c("o6","Only dispose for external reuse those devices that are not reusable internally",
+        "","","X","","","")
+
+o7 <- c("o7","Consumers dispose with impact accountable ITADs/refurbishers",
+        "","","X","","","")
+o8 <- c("o8","Prioritize disposal for reuse rather that disposal for recycling",
+        "","","X","","","")
+o9 <- c("o9","Circular economy accountable",
+        "","","X","X","","X")
+o10 <- c("o10","Trace refurbished devices until recycling",
+        "","","X","X","","")
+
+o11 <- c("o11","Financially compensated for collecting low reuse potential devices",
+        "","","X","","","")
+
+o12 <- c("o12","Reduce exporting of non-durable and non-repairable devices",
+        "","","","X","","")
+
+o13 <- c("o13","Devices easily openable and no software locks",
+        "X","X","X","X","X","X")
+
+o14 <- c("o14","Batteries that are easily removable and replaceable without special tools",
+        "X","X","X","X","X","X")
+
+o15 <- c("o15","Continued operating system support",
+        "X","X","X","X","X","X")
+
+o16 <- c("o16","Spare parts and repair information that are accessible to everyone",
+        "","","","","","")
+
+o17 <- c("o17","Repairs affordable and accessible (cost of spare parts)",
+        "","","","","","")
+
+o18 <- c("o18","Compare reparability information of devices",
+        "","","","","","")
+
+o19 <- c("o19","Devices can be fully disassembled with an standard tool",
+        "","","","","","X")
+
+o20 <- c("o20","Receive only devices without reuse potential",
+        "","","","","","X")
+
+o21 <- c("o21","Report final recycling of devices",
+        "","","","","","X")
+
+o22 <- c("o22","Reduce costs of dissasembly",
+        "","","","","","X")
+
+
+m <-matrix(c(o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15,o16,o17,o18,o19,o20,o21,o22), byrow = TRUE, nrow = 22)
+df <- as.data.frame(m)
+colnames(df)<-c("Id","Outcome","A","B","C","D","E","F")
+
+if(is_latex_output()) {
+format_out <- "latex"
+} else if(is_html_output()) {
+format_out <- "html"
+} else format_out <- "none"
+
+df_table <- df %>% 
+kable(format= format_out, booktabs=TRUE, format.args =  list(decimal.mark = ".", big.mark = ","),
+      caption = "Expected outcomes by groups", linesep ="") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  kable_classic_2(full_width = F) %>%
+  footnote(general = "Here is a general comments of the table. ",
+           number = c("Consumers of type business A; ", 
+                      "Consumers of type particulars B; ", 
+                      "Consumers of type business disposing for reuse C; ",
+                      "Refurbishers/ITADs D; ",
+                      "Repairers E; ", 
+                      "Recylers F; "
+                      )
+           )  
+
+# TODO
+# fer un transpose per cada outcome y rbinds de tots
+```
+
+
+```{r tableOutcomesPrint, echo = FALSE, fig.align="center", fig.cap = "Community expected outcomes"}
+df_table
+```
+
+## TODO: Explicar principales Outcomes
+
+Idea, hacer apartado por tipo de usuario y lo que quiere lograr siguiendo la relación de la tabla 3.1
+
+Consumers of type business A;
+Consumers of type particulars B;
+Consumers of type business disposing for reuse C;
+Refurbishers/ITADs D;
+Repairers E;
+Recylers F
+
+
+
+
