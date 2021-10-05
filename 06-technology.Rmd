@@ -6,6 +6,13 @@ Ereuse has developed software, protocol and data commons for local refurbishment
 
 eReuse offers a set of tools that automate the process of secure collection and traceability monitoring in the management of electronics (Workbench and Devicehub). eReuse has developed a Distributed Ledger Technology (DLT) with a block explorer in order to ensure: immutability (not being able to change the past), verifiability (being able to confirm that a fact is supported) and privacy (not showing identifiers of devices, businesses or people).
 
+In the eReuse software every single piece of an old laptop or desktop collected from a company or a government by the refurbisher is broken down into individual pieces, recorded and indexed in a transparent and privacy-preserving database. The refurbisher repairs and rebuilds the machines, and their value and quality are reported in the system and potential customers. Refurbishers then loan the repaired machine in a second-hand market and monitor the process till every single item is correctly reused and finally recycled. As a result, eReuse systems prevent much more waste from going to landfill, extend the lifetime of digital devices and make obsolescence visible (real durability of devices in hours and reparability). This contributes to changing consumer habits and ultimately manufacturers’ policies by empowering governments, refurbishers and citizens with new DLT-based technology that provides for device traceability and impact accounting.
+
+Until now, there has been no standard traceability protocol to assess impacts and bring transparency to the refurbishment and reuse sector of electronic devices. In the business as usual refurbishers providers have non-transparent redistribution channels based on undisclosed business relationships. This prevents impact accounting. eReuse enhances trust while conciliating business privacy. eReuse has developed a disruptive traceability & impacting accounting as a stand-alone service that can be used by existing refurbishers. eReuse enable an infraestructure to trace the reverse-chain of ownership custody, and reports data to assess social and environmental impact. 
+
+eReuse systems are managed and governed locally by governments and business  (Product Owners) and social enterprises (Refurbishers). , and refurbishers collect, refurbish and deliver to business and citizens (Final Users) willing to reuse a second-hand device. 
+
+
 ## Open data 
 
 A public dataset (1) about reuse of computing devices in eReuse under CCBY4.0 license: The original dataset has been anonymized and exported from the refurbishers’ Devicehub.

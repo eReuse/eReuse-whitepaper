@@ -137,9 +137,7 @@ kable(format= format_out, booktabs=TRUE, format.args =  list(decimal.mark = ".",
 df_table
 ```
 
-## TODO: Explicar principales Outcomes
-
-Idea, hacer apartado por tipo de usuario y lo que quiere lograr siguiendo la relación de la tabla 3.1
+Resumir brevemente los outcomes, quizás agruparlos por:
 
 Consumers of type business A;
 Consumers of type particulars B;
