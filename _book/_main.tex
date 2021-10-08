@@ -68,6 +68,20 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -84,7 +98,7 @@
 \subtitle{Account and motivate reuse and recycling of digital devices}
 \author{\(^1\)Universitat Politècnica de Catalunya\\
 David Franquesa 1\footnote{Corresponding author: \href{mailto:david.franquesa@upc.edu}{\nolinkurl{david.franquesa@upc.edu}}}, Leandro Navarro 1\(^1\)}
-\date{2021-10-05}
+\date{2021-10-08}
 
 \begin{document}
 \maketitle
@@ -653,75 +667,131 @@ Refurbishers/ITADs D;
 Repairers E;
 Recylers F
 
-\hypertarget{use-cases}{%
-\chapter{Use Cases}\label{use-cases}}
+\hypertarget{user-stories-and-use-cases}{%
+\chapter{User Stories and Use Cases}\label{user-stories-and-use-cases}}
+
+\hypertarget{definitions}{%
+\section{Definitions}\label{definitions}}
+
+Is a User Story the same thing as a Use Case? Although there are some similarities between User Stories and Use Cases, User Stories and Use Cases are not interchangeable; both User Stories and Use Cases identify users and they both describe goal, but they serve different purposes.
+
+A \textbf{user story} is an informal, natural language description of features of a software system. They are written from the perspective of an end user or user of a system. A User Story is a note that captures what a user does or needs to do as part of her work. Each User Story consists of a short description written from user's point of view, with natural language. Unlike the traditional requirement capturing, User Story focuses on what the user needs instead of what the system should deliver. This leaves room for further discussion of solutions and the result of a system that can really fit into the customers' business workflow, solving their operational problems and most importantly adding value to the organization.
+
+A \textbf{Use case} is used to capture user (actor) point of view while describing functional requirements of the system. They describe the step by step process a user goes through to complete that goal using a software system. A Use Case is a description of all the ways an end-user wants to ``use'' a system. Use Cases capture all the possible ways the user and system can interact that result in the user achieving the goal. They also capture all the things that can go wrong along the way that prevent the user from achieving the goal.
+
+\hypertarget{user-stories-vs-use-cases---the-similarity}{%
+\subsection{User Stories vs Use Cases - The Similarity}\label{user-stories-vs-use-cases---the-similarity}}
+
+If we consider the key component in both approaches:
+
+\begin{itemize}
+\item
+  User Stories contain, with user role, goal and acceptance criteria.
+\item
+  Use Cases contain equivalent elements: an actor, flow of events and post conditions respectively
+\end{itemize}
+
+\hypertarget{user-stories-vs-use-cases---the-difference}{%
+\subsection{User Stories vs Use Cases - The Difference}\label{user-stories-vs-use-cases---the-difference}}
+
+User Stories are centered on the result and the benefit of the thing you're describing, whereas Use Cases can be more granular, and describe how your system will act. The details of a User Story may not be documented to the same extreme as a Use Case.
+
+\begin{itemize}
+\item
+  User Stories deliberately leave out a lot of important details. User Stories are meant to elicit conversations by asking questions during scrum meetings.
+\item
+  Small increments for getting feedback more frequently, rather than having more detailed up-front requirement specification as in Use Cases.
+\end{itemize}
 
 \begin{quote}
-Who is the lead beneficiary of the solution? Explain the type of users that would benefit from the solution, or who will be part of the pilot. Explain the solution, what problem does it solve, and what is the intended user experience. For example, you could use the use case from the view of the user, as if it was a testimonial: As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
+User stories don't provide the details the development team needs to do their work.
 \end{quote}
 
-\hypertarget{lead-beneficiaries-of-the-solution}{%
-\section{Lead beneficiaries of the solution}\label{lead-beneficiaries-of-the-solution}}
+\hypertarget{user-stories}{%
+\section{User stories}\label{user-stories}}
 
-Notas:
+\begin{quote}
+User Stories contain, with user role, goal and acceptance criteria.
+\end{quote}
 
-Poder conocer las preguntas generales y la útilidad. Expertos de EC puedan saber de que trata sin ir al detalle o tener que compartir la propuesta.
+\begin{quote}
+User Story focuses on what the user needs instead of what the system should deliver
+\end{quote}
 
-Descripción de los use cases pero no llegar a explicar la implementación/propuesta/detalle. Por ejemplo la figura 4.1 potser es massa detallada. POsar-ho un nou apartat al final: on estem i detall.
+\hypertarget{user-story-1-refurbisher---impact-accounting-and-reporting}{%
+\subsection{User Story 1: Refurbisher - impact accounting and reporting}\label{user-story-1-refurbisher---impact-accounting-and-reporting}}
 
-Importante poder vislumbrar que building blocks, conditions or capabilities van a ser necesarias para poder implementarlo
+user roles: refurbishers, suppliers (of unused devices), recycler, Final User.
+goals: report lifetime extension and final recycling.
 
-Mirar document sobre w3i: Explicar les funcionalitats/requeriments i casos d'us.
+Refurbishers are business collecting used devices, repairing and reselling them.
 
-Lead Beneficiaries:
+El \textbf{refurbisher} Andròmines recibe dispositivos usados de un \textbf{supplier} de dispositivos usados (i.e: Ayuntamiento de Barcelona) que quiere que sus dispositivos se reutilizen y reciclen de manera adecuada. El refurbisher recoje y hace un inventario de los dispositivos y los filtra según potencial de reutilización. Los que tienen un potencial de reutilización bajo los mandará a un \textbf{reciclador} que los desmantela y manda a una fundición, los que son reutilizables los venderá/donará a \textbf{Final users} para que sean reutilizados. El objetivo del refurbisher es poder reportar a su supplier el impacto generado en economía circular que principalmente es el tiempo de extensión de vida del dispositivo y su reciclaje final por parte de un reciclador autorizado. En cuanto a contabilizar el impacto la dificultades para el refurbisher son: 1) poder saber si los Final Users después de su reutilización han llevado a un punto autorizado de reciclaje el dispositivo, 2) saber si los recicladores a los que manda lo que no es potencialmente reutilizable estan autorizados por las autoridades competentes y 3) saber durante cuantas horas y años se han reutilizado los dispositivos. Esta información debería ser verificable y auditable por parte del refurbisher, suppliers y auditores a los que el refurbisher se lo permita. Entendemos por verificable la posibilidad de tener la certeza que en una transferencia de dispositivos las dos partes han participado (confirmando) y que se han transferido unos dispositivos con una identidad única.
 
-\begin{itemize}
-\item
-  Business and governments disposing for reuse
-\item
-  Business collecting, repairing and reselling devices: Refurishers
-\item
-  Final Users
-\item
-  Recyclers
-\end{itemize}
+Testimonials:
 
-Roles:
+\begin{quote}
+As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
+\end{quote}
 
-\begin{itemize}
-\item
-  Donor
-\item
-  Seller
-\item
-  Disposition for reuse manager
-\item
-  Buyer (Final User)
-\item
-  Repairer
-\item
-  Seller (exporter)
-\item
-  Recycler: Collector
-\item
-  Recycler: Dismantler
-\item
-  Recycler: Refinery
-\end{itemize}
+As a refurbisher I can :
 
-\hypertarget{business-and-governments-disposing-for-reuse}{%
-\subsection{Business and governments disposing for reuse}\label{business-and-governments-disposing-for-reuse}}
-
-Governments and business want to dispose of used IT devices such as computers and laptops.
-
-Roles:
-
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \item
-  Donor
+  Puedo saber las horas de extensión de tiempo de vida de los dispositivos que di a un reseller o a un Final user
 \item
-  Seller
-\end{itemize}
+  Puedo saber si los Final Users han reciclado los dispositivos al final de su tiempo de vida útil
+\item
+  Puedo generar un informe de cadena de custódia que \ldots{} y cada transferencia es verificable
+\item
+  Puedo generar un informe de impacto agregado y el impacto de cada device puede ser conocido
+\end{enumerate}
+
+Ejemplo: De los 100 dispositivos que el donante me dió puedo saber:
+- 70 se han reutilizado por parte de usuarios finales que han extendido el tiempo de vida en X horas y 30 se han reciclado sin reutilización por tal usuario
+- de 70 reutilizados se tenemos conformidad del reciclaje de 30 de ellos y se han reciclado por estos usuarios (no hace falta que sea anónimo)
+
+\hypertarget{user-story-2-refurbisher---seller-of-second-hand-devices}{%
+\subsection{User Story 2: Refurbisher - seller of second-hand devices}\label{user-story-2-refurbisher---seller-of-second-hand-devices}}
+
+user roles: refurbishers, resellers and Final User.
+goals: report the refurbishment process and quality of second hand devices refurbished
+
+El \textbf{refurbisher} Solidança ha reacondicionado (reparación / upgrade / install SO) un conjunto de dispositivos. Quiere poder informar a sus potenciales compradores que son \textbf{resellers} (B2B) o \textbf{Final Users} (B2C) de: 1) la identidad del dispositivo y una descripción de los componentes que incluye, 2) el proceso de reacondicionado (borrado de datos, tests,\ldots..). El refurbisher debe poder mandar esta información a sus potenciales compradores mediante web o documentos y estos poder verificar que esta información es creible, entendido como: 1) se ha generado mediante herramientas software sin manipulación, 2) se generó en una fecha determinada. Además, el comprador al recibir el dispositivo debe poder usar unas tools software que le aseguren que es la misma identidad y descripción.
+
+Testimonials:
+
+\begin{quote}
+As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
+\end{quote}
+
+As a refurbisher with role (seller) of refurbished devices I can :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Puedo generar un documento (pdf, url) con la identidad del dispositivo y los componentes que incluye
+\item
+  Puedo generar un documento (pdf, url) con el proceso de reacondicionado y las pruebas realizadas, especialmente el borrado de datos y el test de disco y de stress.
+\end{enumerate}
+
+As a Final User with role (buyer) I can:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Verificar que el dispositivo que tengo físicamente es un dispositivo virtual
+\item
+  Tener la garantía que la información se ha generado con un software y que no ha sido modificada de manera manual.
+\end{enumerate}
+
+\hypertarget{user-story-3-supplier---refurbishers-credentialsreputation}{%
+\subsection{User Story 3: Supplier - Refurbishers credentials/reputation}\label{user-story-3-supplier---refurbishers-credentialsreputation}}
+
+User roles: Supplier and refurbisher.
+
+Un \textbf{supplier} es una empresa o una administración pública que tiene dispositivos usados que quiere que se destinen a la reutilización. Para ellos es difícil identificar que refurbishers tienen la capacidad de poder reportar de manera fiable el impacto creado en economía circular. Quieren poder identificar quales tienen esta habilidad por lo que algun sistema de credenciales/reputación les facilitaría esta búsqueda. Otras preguntas.
 
 What questions should we be able to answer?
 
@@ -735,152 +805,10 @@ What questions should we be able to answer?
   How can they or third parties know with certainty that a device has been reused and recycled without requiring the actors having to disclose business information or that may penalise them negatively? so how they can verify reuse and finaly recycling.
 \end{itemize}
 
-Explain the solution, what problem does it solve, and what is the intended user experience
+\hypertarget{certificationreputationcredentials}{%
+\section{Certification/Reputation/Credentials}\label{certificationreputationcredentials}}
 
-Testimonials: \textgreater{} As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
-
-\hypertarget{questions-an-value-for-the-user}{%
-\subsubsection{Questions an value for the user}\label{questions-an-value-for-the-user}}
-
-Testimonials:
-
-\begin{quote}
-As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
-\end{quote}
-
-As the business disposing out-of-use devices I can :
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Puedo saber las horas de extensión de tiempo de vida de los dispositivos que di a un refurbisher o a un final user
-\item
-  Puedo saber si los refurbishers y los final users han reciclado los dispositivos.
-\end{enumerate}
-
-\hypertarget{refurbishers-business-collecting-repairing-and-reselling-devices}{%
-\subsection{Refurbishers: Business collecting, repairing and reselling devices}\label{refurbishers-business-collecting-repairing-and-reselling-devices}}
-
-Are business that collect, refurbish and deliver 2nd-hand devices to retailers (B2B) or to business and citizens B2C (Final Users).
-
-For simplicity we define refurbishers as businesses that do not have the roles of recyclers and therefore always deal with products and not waste. However we can have cases of refurbishers with also the roles of recyclers.
-
-Roles:
-
-\begin{itemize}
-\item
-  Donor
-\item
-  Seller
-\item
-  Seller (Exporter)
-\item
-  Disposition for reuse manager
-\item
-  Repairer
-\end{itemize}
-
-\hypertarget{questions-an-value-for-the-user-1}{%
-\subsubsection{Questions an value for the user}\label{questions-an-value-for-the-user-1}}
-
-Testimonials:
-
-\begin{quote}
-As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_
-\end{quote}
-
-\textbf{Role seller}
-
-As a refurbisher with role (seller) of refurbished devices I can :
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Puedo generar un documento (online) con una descripción del dispositivo(s), y:
-
-  \begin{enumerate}
-  \def\labelenumii{\arabic{enumii}.}
-  \item
-    el comprador de manera online puede verificar que el documento:
-
-    \begin{enumerate}
-    \def\labelenumiii{\arabic{enumiii}.}
-    \item
-      está en un repositorio inmutable
-    \item
-      se ha generado con un software (no de manera manual)
-    \end{enumerate}
-  \item
-    Cuando el comprador recibe físicamente el dispositivo(s) puede:
-
-    \begin{enumerate}
-    \def\labelenumiii{\arabic{enumiii}.}
-    \item
-      Validar que se trata del mismo producto que compró online
-    \item
-      Puede regenerar el documento y verificar que coincide con el del comprador
-    \end{enumerate}
-  \end{enumerate}
-\end{enumerate}
-
-\textbf{Role Disposition for reuse manager}
-
-As refurbisher with role of (Disposition Manager) I can:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Puedo generar un documentos de \textbf{cadena de custódia} con anonimización de usuarios, en donde se explícita si han confirmado o no las transferencia y el tipo de rol de usuario, ejemplos:
-
-  \begin{itemize}
-  \item
-    User 1 is a Donor (confirm) -\textgreater{} User 2 is a Disposition Manager (confirm) -\textgreater{} User 3 is a Final User (confirmed) -\textgreater{} User 4 is a Recycler (confirmed)
-  \item
-    \ldots.
-  \end{itemize}
-\item
-  Puedo generar informes de impacto a mis donantes/vendedores con información de la extensión de tiempo de vida y de llegada a un centro de reciclaje autorizado
-
-  \begin{itemize}
-  \item
-    De los 100 dispositivos del donante tenemos que:
-
-    \begin{itemize}
-    \item
-      70 se han reutilizado por parte de usuarios finales que han extendido el tiempo de vida en X horas y 30 se han reciclado sin reutilización por tal usuario
-    \item
-      de 70 reutilizados se tenemos conformidad del reciclaje de 30 de ellos y se han reciclado por estos usuarios (no hace falta que sea anónimo)
-    \end{itemize}
-  \end{itemize}
-\end{enumerate}
-
-\textbf{Role Repairer}
-
-As refurbisher with role of (Repairer) I can:
-
-TODO
-
-\begin{itemize}
-\tightlist
-\item
-  How can the refurbishers identify which devices have the greatest potential for reuse?
-\end{itemize}
-
-\textbf{Role Seller (Exporter)}
-
-As refurbisher with role of (seller exporter) I can:
-
-TODO
-
-\hypertarget{final-users}{%
-\subsection{Final Users}\label{final-users}}
-
-TODO
-
-\hypertarget{ereuse-certification}{%
-\section{eReuse Certification}\label{ereuse-certification}}
-
-TODO.
+La certificación puede incidir en toda la parte de sistemas de reputación para los usuarios
 
 In general, in a certification process, a third party is required to carry out an audit process in order to assess whether the data collected and accredited on the performance of the refurbisher has followed the `'standard''. Our proposal is avoid the need of a third party because we benefit from: a set of tools such as secure inventory management systems that automate the process of collecting this data and, a information blockchain technology in order to ensure this data is trustable and verificable.
 
