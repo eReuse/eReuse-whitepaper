@@ -3,8 +3,48 @@ output:
   html_document: default
   pdf_document: default
 ---
+# Ecosystem
 
-# Expected impact and Outcomes
+## Overview
+
+This section describes the professional roles of the core actors and the relationships between them in an ecosystem. 
+
+Supplier
+
+: A role an entity might perform by disposing digital devices. Suppliers have out-of-use devices that may or may not have the potential to be reused. They are usually companies and public administrations that want their devices to be reused and therefore contact refurbishers to do this work. The dispose operation represents a change of ownership from supplier to refurbisher. In cases where the supplier declares the devices as waste then they are considered a waste producer and must provide their producer code and environmental identification number (in Spain this is the NIMA code). 
+
+Refurbisher
+
+: A role an entity might perform by collecting, refurbishing and reselling/donating digital devices considered as waste or products. Their main activity is to collect out-of-use devices from suppliers, refurbish or prepare for reuse (if it is e-waste), and redistribute digital devices to Final Users. Refurbishers are mainly classified into two types, those that can deal with devices that are considered as waste and those that can only deal with devices that are considered as products, in the figure \@ref(fig:ereuseloops) the professional loop represents the first classification and the citizen loop represents the second classification. Refurbishers classified as waste managers must have a credential that represents them as an authorised waste manager for doing preparation for reuse treatment, in addition to having an environmental identification number (in Spain this is the NIMA code). 
+
+Recycler
+
+: A role an entity might perform by recycling digital devices. Like refurbishers, they collect digital devices but unlike refurbishers they do not take actions to promote reuse (repair, upgrade) but only take actions to preserving raw materials such as dismantling and shredding. The recyclers must have a credential that defines the authorisation to do the raw material recovery treatment, as well as the environmental identification number.  
+
+
+Managers
+
+: A role an entity might perform by managing digital devices. In some cases the supplier prefers to transfer ownership to a management entity to promote reuse rather than contacting the refurbishers directly. Managers can or can not receive ownership of the devices and can either transfer ownership to the refurbishers and these to Final Users or keep ownership on comodatum throughout their life cycle. 
+
+Retailer
+
+: A role an entity might perform by reselling digital devices to Final Users. In cases where the refurbisher does not have or does not want to have contact with the Final Users, he collaborates with the retailers. Retailers can be web platforms or B2B/B2C companies. 
+
+Final User
+
+: A role and entity or individual might perform by using digital devices. Life extension time should only counted when the device is being used by a Final User.
+
+
+(ref:ereuseecosystem) eReuse Ecosystem overview.
+
+```{r ereuseecosystem, echo= FALSE, out.width="50%", fig.align='center', fig.cap='(ref:ereuseecosystem)'}
+
+options(tinytex.verbose = TRUE)
+knitr::include_graphics(file.path(".","figs","3.png"))
+```
+
+
+## Impact and Outcomes
 
 Impact and outcomes are terms used to describe change at different levels. Outcomes  -- the short- to medium-term effects of an intervention -- and eventually impacts. 
 
@@ -119,12 +159,12 @@ kable(format= format_out, booktabs=TRUE, format.args =  list(decimal.mark = ".",
   kable_styling(latex_options = "scale_down") %>%
   kable_classic_2(full_width = F) %>%
   footnote(general = "Here is a general comments of the table. ",
-           number = c("Consumers of type business A; ", 
-                      "Consumers of type particulars B; ", 
-                      "Consumers of type business disposing for reuse C; ",
-                      "Refurbishers/ITADs D; ",
-                      "Repairers E; ", 
-                      "Recylers F; "
+           number = c("A: Final Users of type business; ", 
+                      "B: Final Users of type Individuals; ", 
+                      "C: Suppliers disposing for reuse; ",
+                      "D: Refurbishers/ITADs; ",
+                      "E: Repairers; ", 
+                      "F: Recylers; "
                       )
            )  
 
@@ -136,16 +176,6 @@ kable(format= format_out, booktabs=TRUE, format.args =  list(decimal.mark = ".",
 ```{r tableOutcomesPrint, echo = FALSE, fig.align="center", fig.cap = "Community expected outcomes"}
 df_table
 ```
-
-Resumir brevemente los outcomes, quizás agruparlos por:
-
-Consumers of type business A;
-Consumers of type particulars B;
-Consumers of type business disposing for reuse C;
-Refurbishers/ITADs D;
-Repairers E;
-Recylers F
-
 
 
 

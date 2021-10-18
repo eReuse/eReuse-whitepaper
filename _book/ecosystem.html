@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Technology | eReuse.org Whitepaper</title>
-  <meta name="description" content="Chapter 8 Technology | eReuse.org Whitepaper" />
+  <title>Chapter 4 Ecosystem | eReuse.org Whitepaper</title>
+  <meta name="description" content="Chapter 4 Ecosystem | eReuse.org Whitepaper" />
   <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Technology | eReuse.org Whitepaper" />
+  <meta property="og:title" content="Chapter 4 Ecosystem | eReuse.org Whitepaper" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Technology | eReuse.org Whitepaper" />
+  <meta name="twitter:title" content="Chapter 4 Ecosystem | eReuse.org Whitepaper" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="roadmap-building-blocks-conditions-or-capabilities.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="concepts.html"/>
+<link rel="next" href="user-stories-and-use-cases.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -227,66 +227,625 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="technology" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Technology</h1>
-<p>TODO: vincular los componentes software con los use cases.</p>
-<p>Ereuse has developed software, protocol and data commons for local refurbishment ecosystems with traceability and impact accounting. Ereuse is a B2B, open-source system ready to be used and extended. The role of eReuse is to coordinate a roadmap and ensure the code is freely available to the federation of refurbishers. The software development is supported by contributions from research centres, companies and the community.</p>
-<p>eReuse offers a set of tools that automate the process of secure collection and traceability monitoring in the management of electronics (Workbench and Devicehub). eReuse has developed a Distributed Ledger Technology (DLT) with a block explorer in order to ensure: immutability (not being able to change the past), verifiability (being able to confirm that a fact is supported) and privacy (not showing identifiers of devices, businesses or people).</p>
-<p>In the eReuse software every single piece of an old laptop or desktop collected from a company or a government by the refurbisher is broken down into individual pieces, recorded and indexed in a transparent and privacy-preserving database. The refurbisher repairs and rebuilds the machines, and their value and quality are reported in the system and potential customers. Refurbishers then loan the repaired machine in a second-hand market and monitor the process till every single item is correctly reused and finally recycled. As a result, eReuse systems prevent much more waste from going to landfill, extend the lifetime of digital devices and make obsolescence visible (real durability of devices in hours and reparability). This contributes to changing consumer habits and ultimately manufacturers’ policies by empowering governments, refurbishers and citizens with new DLT-based technology that provides for device traceability and impact accounting.</p>
-<p>Until now, there has been no standard traceability protocol to assess impacts and bring transparency to the refurbishment and reuse sector of electronic devices. In the business as usual refurbishers providers have non-transparent redistribution channels based on undisclosed business relationships. This prevents impact accounting. eReuse enhances trust while conciliating business privacy. eReuse has developed a disruptive traceability &amp; impacting accounting as a stand-alone service that can be used by existing refurbishers. eReuse enable an infraestructure to trace the reverse-chain of ownership custody, and reports data to assess social and environmental impact.</p>
-<p>eReuse systems are managed and governed locally by governments and business (Product Owners) and social enterprises (Refurbishers). , and refurbishers collect, refurbish and deliver to business and citizens (Final Users) willing to reuse a second-hand device.</p>
-<div id="open-data" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> Open data</h2>
-<p>A public dataset (1) about reuse of computing devices in eReuse under CCBY4.0 license: The original dataset has been anonymized and exported from the refurbishers’ Devicehub.</p>
-<ol style="list-style-type: decimal">
-<li>Data set July 2020. We have limited the study to only refurbishers with operations in Spain that has accepted the data commons license. Data collected between 2013-10-08 and 2019-06-03.
-<a href="https://dsg.ac.upc.edu/sites/default/files/dsg/eReuseDataJun2019_0.html" class="uri">https://dsg.ac.upc.edu/sites/default/files/dsg/eReuseDataJun2019_0.html</a></li>
-</ol>
-</div>
-<div id="open-code" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Open Code</h2>
-<p>The following paragraphs describe from a more technical point of view the respective components that are part of the eReuse system. We indicate the TRL level, license and its link to the code and application.</p>
-<div id="workbench-usb" class="section level3" number="8.2.1">
-<h3><span class="header-section-number">8.2.1</span> Workbench USB</h3>
-<p>Workbench USB (TRL 8-9), AGPL-3.0, a software tool for logging, testing and erasing device data. The Workbench is run via a bootable USB stick and if the device is connected to the internet it sends the result (snapshot) to the Devicehub component (3). The time to perform the registration is less than one minute.
-Code: <a href="https://github.com/eReuse/workbench-live" class="uri">https://github.com/eReuse/workbench-live</a>
-Demo erase and rate: <a href="https://www.usody.com/demo-usody-free/" class="uri">https://www.usody.com/demo-usody-free/</a></p>
-</div>
-<div id="workbench-network" class="section level3" number="8.2.2">
-<h3><span class="header-section-number">8.2.2</span> Workbench network</h3>
-<p>Workbench network VirtualBox</p>
-<p>Workbench network ISO</p>
-</div>
-<div id="workbench-desktop" class="section level3" number="8.2.3">
-<h3><span class="header-section-number">8.2.3</span> Workbench desktop</h3>
-<p>Workbench Desktop (TRL 5), GPL-3.0, is a desktop cross-platform application which extracts details about the hardware of computer devices and submits a snapshot to DeviceHub with the status of functioning and the hours has been in operation. This component has been developed specifically for the DLT4EU as an alternative to using the USB Workbench for end users.
-Code: <a href="https://github.com/eReuse/workbench-desktop" class="uri">https://github.com/eReuse/workbench-desktop</a></p>
-</div>
-<div id="devicehub" class="section level3" number="8.2.4">
-<h3><span class="header-section-number">8.2.4</span> Devicehub</h3>
-<p>Devicehub (TRL8), AGPL-3.0, a cloud-based IT asset disposition and management system where Product Owners and Refurbishers can manage device traceability, tag and exchange devices. Devicehub instances are federated and autonomous. If they want to certify impacts, they can write a timestamp of their data to the DLT (4). Devicehub is implemented as a RESTful Python 3 web application built on the open source micro-framework Teal, part of this Devicehub; built on Flask and uses the PostgreSQL database. The DeviceHub client is a browser application built in Javascript, CSS and HTML in the Angular framework.
-Code: <a href="https://github.com/eReuse/devicehub-teal" class="uri">https://github.com/eReuse/devicehub-teal</a>
-Demo: <a href="https://app.usody.com/login" class="uri">https://app.usody.com/login</a> , user: <a href="mailto:hello@usody.com" class="email">hello@usody.com</a>, pass: usody</p>
-</div>
-<div id="dlt" class="section level3" number="8.2.5">
-<h3><span class="header-section-number">8.2.5</span> DLT</h3>
-<p>DLT (TRL 5), GPL-3.0, A privacy-preserving DLT only storing timestamps of reports. A frontend allows the end user to attach a CSV, create a timestamp and store it in the DLT. To ensure that the data comes from a Devicehub the frontend queries the corresponding Devicehub to check if if the timestamp is valid. If so, it is recorded in the DLT, a Permissioned Ethereum PoA.
-Frontend code, AGPL-3.0: <a href="https://github.com/DSG-UPC/reports-platform" class="uri">https://github.com/DSG-UPC/reports-platform</a>
-Frontend app: <a href="https://dlt.ereuse.org/" class="uri">https://dlt.ereuse.org/</a>
-DLT: <a href="https://github.com/DSG-UPC/eReuse-Blockchain" class="uri">https://github.com/DSG-UPC/eReuse-Blockchain</a></p>
-</div>
-</div>
-<div id="legacy" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Legacy</h2>
-<div id="android-app" class="section level3" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Android APP</h3>
-<p>A smartphone and tablet Android app that has two functionalities.
-Obtain metadata from devices that are not computers, like peripherals or electrical appliances, by scanning their barcodes and taking pictures from them.
-Link devices with tags generated by the eReuse.org tools, like QR codes and NFC chips.</p>
-<p><a href="https://github.com/eReuse/ereuse-android-app" class="uri">https://github.com/eReuse/ereuse-android-app</a>
-<a href="https://github.com/eReuse/ereuse-android-app/releases/latest" class="uri">https://github.com/eReuse/ereuse-android-app/releases/latest</a></p>
+<div id="ecosystem" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Ecosystem</h1>
+<div id="overview" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Overview</h2>
+<p>This section describes the professional roles of the core actors and the relationships between them in an ecosystem.</p>
+<dl>
+<dt>Supplier</dt>
+<dd><p>A role an entity might perform by disposing digital devices. Suppliers have out-of-use devices that may or may not have the potential to be reused. They are usually companies and public administrations that want their devices to be reused and therefore contact refurbishers to do this work. The dispose operation represents a change of ownership from supplier to refurbisher. In cases where the supplier declares the devices as waste then they are considered a waste producer and must provide their producer code and environmental identification number (in Spain this is the NIMA code).</p>
+</dd>
+<dt>Refurbisher</dt>
+<dd><p>A role an entity might perform by collecting, refurbishing and reselling/donating digital devices considered as waste or products. Their main activity is to collect out-of-use devices from suppliers, refurbish or prepare for reuse (if it is e-waste), and redistribute digital devices to Final Users. Refurbishers are mainly classified into two types, those that can deal with devices that are considered as waste and those that can only deal with devices that are considered as products, in the figure <a href="concepts.html#fig:ereuseloops">3.1</a> the professional loop represents the first classification and the citizen loop represents the second classification. Refurbishers classified as waste managers must have a credential that represents them as an authorised waste manager for doing preparation for reuse treatment, in addition to having an environmental identification number (in Spain this is the NIMA code).</p>
+</dd>
+<dt>Recycler</dt>
+<dd><p>A role an entity might perform by recycling digital devices. Like refurbishers, they collect digital devices but unlike refurbishers they do not take actions to promote reuse (repair, upgrade) but only take actions to preserving raw materials such as dismantling and shredding. The recyclers must have a credential that defines the authorisation to do the raw material recovery treatment, as well as the environmental identification number.</p>
+</dd>
+<dt>Managers</dt>
+<dd><p>A role an entity might perform by managing digital devices. In some cases the supplier prefers to transfer ownership to a management entity to promote reuse rather than contacting the refurbishers directly. Managers can or can not receive ownership of the devices and can either transfer ownership to the refurbishers and these to Final Users or keep ownership on comodatum throughout their life cycle.</p>
+</dd>
+<dt>Retailer</dt>
+<dd><p>A role an entity might perform by reselling digital devices to Final Users. In cases where the refurbisher does not have or does not want to have contact with the Final Users, he collaborates with the retailers. Retailers can be web platforms or B2B/B2C companies.</p>
+</dd>
+<dt>Final User</dt>
+<dd><p>A role and entity or individual might perform by using digital devices. Life extension time should only counted when the device is being used by a Final User.</p>
+</dd>
+</dl>
 
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ereuseecosystem"></span>
+<img src="figs/3.png" alt="eReuse Ecosystem overview." width="50%" />
+<p class="caption">
+Figure 4.1: eReuse Ecosystem overview.
+</p>
 </div>
+</div>
+<div id="impact-and-outcomes" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Impact and Outcomes</h2>
+<p>Impact and outcomes are terms used to describe change at different levels. Outcomes – the short- to medium-term effects of an intervention – and eventually impacts.</p>
+<!-- Activities: Actions taken or work performed through which inputs, such as funds, technical assistance and other types of resources, are mobilised to produce specific outputs. -->
+<!-- Outputs: The products, capital goods and services which result from a development intervention; may also include changes resulting from the intervention which are relevant to the achievement of outcomes. -->
+<!-- Outcomes: The likely or achieved short-term and medium-term effects of an intervention’s outputs.  -->
+<!-- Impact: Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.  -->
+<!-- Most organisations understand the key difference between the things they do (activities) and the ultimate changes they wish to help bring about (impact). But the distinction is not always helpful. In order to achieve desired long-term changes, there may be many steps between an organisation’s activities and the desired impact. The results chain (see below) attempts to categorise these steps by  -->
+<!-- breaking them down into manageable stages – inputs,  activities, outputs, outcomes and impact.  -->
+<!-- The preferred solution of the author, in a desire for a less complicated life, is to define outputs as the services or products delivered that are largely within the control of an agency; impact as the lasting or significant changes in people’s lives brought about by an intervention or interventions; and outcomes as everything in between. -->
+<!-- In this results chain, inputs are used in order to carry out activities. Activities lead to services or products delivered (outputs). The outputs start to bring about change (outcomes) and eventually this will (hopefully) contribute to the impact. For example, if an organisation was providing seeds to farmers, the seeds themselves, any transport costs, staff costs etc. would be inputs. Activities  -->
+<!-- undertaken would include travelling to the field to deliver seeds and, possibly, conduct training with farmers. The outputs could be the seeds distributed and the people trained. The outcomes could be that the farmers plant the seeds, the seeds grow into crops, the crops are harvested, and then eaten or sold. This would contribute to the desired impact, which might be a better standard of living  -->
+<!-- in the long-term for farmers and their families. -->
+<!-- Another term that is commonly used is ‘results’. Results is defined by OECD DAC as the “output, outcome or impact (intended or unintended, positive and/or negative) of a development intervention”. ‘Results’ is defined differently by different organisations. Some only use it to describe actual achievements whilst others use it to describe predicted change.  -->
+<blockquote>
+<p>Positive and negative, primary and secondary long-term effects produced by a development intervention, directly or indirectly, intended or unintended.</p>
+</blockquote>
+<p>The intended impact is to extend device lifetime and ensure final recycling. The principle of circular economy is to try extend devices lifetime as long as possible avoiding the premature recycling.Recycling should only take place at the end of their useful life and at that point try to recover as much as possible of the raw materials they contain.</p>
+<p>The intended impact understood as long-term effects produced by our intervention tecnological roadmap and others activities</p>
+<ol style="list-style-type: decimal">
+<li>Increase devices lifetime through increasing durability, reparability, reusability and upgradeability.</li>
+<li>Increase proper recycling.</li>
+</ol>
+<p>The expected outcomes understood as achieved short-term and medium-term effects of an intervention’s outputs:</p>
+<table class="table lightable-classic-2" style="margin-left: auto; margin-right: auto; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<caption>
+<span id="tab:tableoutcomes">Table 4.1: </span>Expected outcomes by groups
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Id
+</th>
+<th style="text-align:left;">
+Outcome
+</th>
+<th style="text-align:left;">
+A
+</th>
+<th style="text-align:left;">
+B
+</th>
+<th style="text-align:left;">
+C
+</th>
+<th style="text-align:left;">
+D
+</th>
+<th style="text-align:left;">
+E
+</th>
+<th style="text-align:left;">
+F
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+o1
+</td>
+<td style="text-align:left;">
+Devices are in use rather that stored
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o2
+</td>
+<td style="text-align:left;">
+Allocation criteria of devices according its service
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o3
+</td>
+<td style="text-align:left;">
+Increase procurement of second-hand devices and product-as-service
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o4
+</td>
+<td style="text-align:left;">
+Criteria for buying devices is more focused on durability and reparability
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o5
+</td>
+<td style="text-align:left;">
+Share data on devices circularity
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o6
+</td>
+<td style="text-align:left;">
+Only dispose for external reuse those devices that are not reusable internally
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o7
+</td>
+<td style="text-align:left;">
+Consumers dispose with impact accountable ITADs/refurbishers
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o8
+</td>
+<td style="text-align:left;">
+Prioritize disposal for reuse rather that disposal for recycling
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o9
+</td>
+<td style="text-align:left;">
+Circular economy accountable
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o10
+</td>
+<td style="text-align:left;">
+Trace refurbished devices until recycling
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o11
+</td>
+<td style="text-align:left;">
+Financially compensated for collecting low reuse potential devices
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o12
+</td>
+<td style="text-align:left;">
+Reduce exporting of non-durable and non-repairable devices
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o13
+</td>
+<td style="text-align:left;">
+Devices easily openable and no software locks
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o14
+</td>
+<td style="text-align:left;">
+Batteries that are easily removable and replaceable without special tools
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o15
+</td>
+<td style="text-align:left;">
+Continued operating system support
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o16
+</td>
+<td style="text-align:left;">
+Spare parts and repair information that are accessible to everyone
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o17
+</td>
+<td style="text-align:left;">
+Repairs affordable and accessible (cost of spare parts)
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o18
+</td>
+<td style="text-align:left;">
+Compare reparability information of devices
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o19
+</td>
+<td style="text-align:left;">
+Devices can be fully disassembled with an standard tool
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o20
+</td>
+<td style="text-align:left;">
+Receive only devices without reuse potential
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o21
+</td>
+<td style="text-align:left;">
+Report final recycling of devices
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+o22
+</td>
+<td style="text-align:left;">
+Reduce costs of dissasembly
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+X
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup></sup> Here is a general comments of the table.
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>1</sup> A: Final Users of type business;
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>2</sup> B: Final Users of type Individuals;
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>3</sup> C: Suppliers disposing for reuse;
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>4</sup> D: Refurbishers/ITADs;
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>5</sup> E: Repairers;
+</td>
+</tr>
+<tr>
+<td style="padding: 0; " colspan="100%">
+<sup>6</sup> F: Recylers;
+</td>
+</tr>
+</tfoot>
+</table>
+
 </div>
 </div>
             </section>
@@ -294,8 +853,8 @@ Link devices with tags generated by the eReuse.org tools, like QR codes and NFC 
           </div>
         </div>
       </div>
-<a href="roadmap-building-blocks-conditions-or-capabilities.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="concepts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="user-stories-and-use-cases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -327,7 +886,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-technology.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-Ecosystem.Rmd",
 "text": "Edit"
 },
 "history": {

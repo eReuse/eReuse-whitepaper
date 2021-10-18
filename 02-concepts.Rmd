@@ -12,18 +12,23 @@ Limiting premature recycling and promoting reuse is not the final solution to ou
 
 The reuse of electronic devices such as desktops, laptops or mobile phones is applied to devices that have already been manufactured and are no longer in use (disposed) and will be recycled unless they are "disposed for reuse" by doing any of the following actions refurbish, recondition, repair, upgrade and used again by the same final user or redistributed to other users.
 
+(ref:ereuseloops) Citizen and professional reuse of digital devices.
 
-```{r figreuseelectronics, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Citizen and professional reuse of digital devices"}
+
+```{r ereuseloops, echo= FALSE, out.width="50%", fig.align='center', fig.cap='(ref:ereuseloops)'}
+# Citizen and professional reuse of digital devices
+
 options(tinytex.verbose = TRUE)
-knitr::include_graphics(file.path(".","figs","27.png"))
+knitr::include_graphics(file.path(".","figs","27-mod1.png"))
 ```
-
 
 We say a device or component is reusable if it has or may have use value for someone:
 
-- If the use value of the device is high enough, it means that there is somewhere a potential user for that device as it is, and only a basic refurbishing processes is required, such as basic repair, erasing data and restoring the operating system (this is represented as citizen reuse loop in figure \@ref(fig:figreuseelectronics).
+- If the use value of the device is high enough, it means that there is somewhere a potential user for that device as it is, and only a basic refurbishing processes is required, such as basic repair, erasing data and restoring the operating system (this is represented as citizen reuse loop in figure \@ref(fig:ereuseloops). 
 
-- If the use value is too low, its use value can be increased through advanced refurbishing processes: repairing, replacing damaged components and updating/ugrading. This is represented as professional reuse loop in the figure.
+- If the use value is too low, its use value can be increased through advanced refurbishing processes: repairing, replacing damaged components and updating/ugrading. This is represented as professional reuse loop in the figure \@ref(fig:ereuseloops). In this loop the device is also considered to be electronic waste[^ewaste-1] and must therefore be treated by a reuse centre authorised to prepare it for reuse.
+
+[^ewaste-1]: Electronic waste (e-waste) refers to electrical and electronic equipment and components that have been discarded as waste by its last owner without the intent for reuse. [@Comission2012]] 
 
 The reuse process ends when after a few years the device or component reaches disposal for recyling state, which means its use value then, or through potential improvements, does not allow its reuse again. The cycle reach recycling to recover (reuse) raw materials and manufacture new components.
 
@@ -37,12 +42,14 @@ The basic concept of a circular economy depicts a production and consumption sys
 
 [^concepts-1]: <https://ec.europa.eu/environment/ecoap/indicators/circular-economy-indicators_en>
 
-Circularity means making self-sufficient system that does not require inputs of raw materials and does not have losses. Losses are: raw materials that ends up mixed in iron or steel (because perform a basic recycling process), non-potentially recoverable materials due to the chemical characteristics of the elements - the entropy backfire, because  its highest Termodynamic Rarity [^concepts-2] or waste that ends up in landfills.
+Circularity means making self-sufficient system that does not require inputs of raw materials and does not have losses. Losses are: raw materials that ends up mixed in iron or steel (because perform a basic recycling process), non-potentially recoverable materials due to the chemical characteristics of the elements - the entropy backfire, because its highest Termodynamic Rarity [^concepts-2] or waste that ends up in landfills.
 
 [^concepts-2]: Thermodynamic rarity (TR) is an indicator, based on exergy, used to measure the critically of raw materials, depending on their scarcity in the earth's crust. Exergy is a property of a system relative to an associated reference state. It is the maximum work a system can deliver as it interacts with another large, but     real, system, namely, a reservoir. Such a reservoir attracts the system toward degradation or entropy creation.
 
+(ref:circulareconomy) Circular Economy of Electronics.
 
-```{r figcirculareconomy, echo= FALSE, out.width="100%", fig.align='center', fig.cap="Circular Economy Challenge"}
+
+```{r figcirculareconomy, echo= FALSE, out.width="100%", fig.align='center', fig.cap='(ref:circulareconomy)'}
 options(tinytex.verbose = TRUE)
 knitr::include_graphics(file.path(".","figs","26.jpg"))
 ```
