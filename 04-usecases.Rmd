@@ -11,7 +11,11 @@
 <!-- Mirar document sobre w3i: Explicar les funcionalitats/requeriments i casos d'us. -->
 
 
-## Definitions
+## Introduction
+
+## Definitions 
+
+### What is a User Story and a Use Case
 
 Is a User Story the same thing as a Use Case? Although there are some similarities between User Stories and Use Cases, User Stories and Use Cases are not interchangeable; both User Stories and Use Cases identify users and they both describe goal, but they serve different purposes.
 
@@ -19,7 +23,7 @@ A **user story** is an informal, natural language description of features of a s
 
 A **Use case** is used to capture user (actor) point of view while describing functional requirements of the system. They describe the step by step process a user goes through to complete that goal using a software system. A Use Case is a description of all the ways an end-user wants to "use" a system. Use Cases capture all the possible ways the user and system can interact that result in the user achieving the goal. They also capture all the things that can go wrong along the way that prevent the user from achieving the goal.
 
-### User Stories vs Use Cases - The Similarity
+### Similarity between User Stories vs Use Cases
 
 If we consider the key component in both approaches:
 
@@ -27,7 +31,7 @@ If we consider the key component in both approaches:
 
 -   Use Cases contain equivalent elements: an actor, flow of events and post conditions respectively
 
-### User Stories vs Use Cases - The Difference
+### Diferences between User Stories vs Use Cases
 
 User Stories are centered on the result and the benefit of the thing you're describing, whereas Use Cases can be more granular, and describe how your system will act. The details of a User Story may not be documented to the same extreme as a Use Case.
 
@@ -38,6 +42,8 @@ User Stories are centered on the result and the benefit of the thing you're desc
 > User stories don't provide the details the development team needs to do their work.
 
 <!-- > In a Use case Who is the lead beneficiary of the solution? Explain the type of users that would benefit from the solution. Explain the solution, what problem does it solve, and what is the intended user experience. For example, you could use the use case from the view of the user, as if it was a testimonial: As a (user) \_\_\_ I Can (action) \_\_\_\_ So that (value for the user) \_\_\_\_ -->
+
+
 
 ## User stories
 
@@ -108,6 +114,7 @@ What questions should we be able to answer?
 -   How they can encourage refurbishers/ITADs to account the impact of reuse and report the final recycling? Is there guidelines that provide a common basis for collecting this data? are there any standarized certification, third-party analyses for concisely communicating social and/or environmental performance? Are there any instruments for facilitating the diligence, assessment, monitoring and reporting of impact?
 -   How can they or third parties know with certainty that a device has been reused and recycled without requiring the actors having to disclose business information or that may penalise them negatively? so how they can verify reuse and finaly recycling.
 
+# Use Cases
 
 ## Certification/Reputation/Credentials
 
