@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2021-10-18" />
+<meta name="date" content="2021-10-19" />
 
 <title>eReuse.org Whitepaper</title>
 
@@ -194,11 +194,15 @@ pre code {
 <h3 class="subtitle">Account and motivate reuse and recycling of digital devices</h3>
 <h4 class="author"><div class="line-block"><span class="math inline">\(^1\)</span>Universitat Politècnica de Catalunya<br />
 David Franquesa 1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Leandro Navarro 1<span class="math inline">\(^1\)</span></div></h4>
-<h4 class="date">2021-10-18</h4>
+<h4 class="date">2021-10-19</h4>
 
 </div>
 
 
+<!-- https://bookdown.org/yihui/rmarkdown/ -->
+<!-- To preview on github https://htmlpreview.github.io/?https://github.com/eReuse/eReuse-whitepaper/blob/main/_book/index.html -->
+<!-- rmarkdown::render(input = file.path(".","index.Rmd"), output_file =  file.path(".","_book","index"), output_format = "pdf_document", envir = new.env()) -->
+<!-- rmarkdown::render(input = file.path(".","index.Rmd"), output_file =  file.path(".","_book","index"), output_format = "bookdown::gitbook", envir = new.env()) -->
 <!-- Put in the console to render all the book in html -->
 <!-- bookdown::render_book('index.Rmd', 'bookdown::gitbook') -->
 <!-- Put in the console to render all the book in pdf. It creates file _main.index in folder _book with an the index -->
@@ -210,13 +214,9 @@ David Franquesa 1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a
 <!-- https://support.rstudio.com/hc/en-us/articles/200532077?version=1.4.1106&mode=desktop -->
 <!-- Connect RStudio to Git and GitHub -->
 <!-- https://happygitwithr.com/rstudio-git-github.html -->
-<!--chapter:end:index.Rmd-->
 <div id="abstract" class="section level1 unnumbered">
 <h1 class="unnumbered">Abstract</h1>
 <p>The eReuse.org federation develops a set of tools and methodologies to bootstrap reuse of digital devices and account its contribution to the circular economy. The intended impact is to extend device lifetime and increase proper recycling at the end of the useful lifetime. In this whitepaper we present the federation, the tecnological roadmap and use cases that create value to consumers, refurbishers and recyclers. In the roadmap we present the conditions and capabilities required for verify traceability and impact accounting while while preserving privacy of consumers and businesses. The aim is to make replication easy for other regions and allow the interoperation with others systems with the purpose of make reuse/recycling and tech industry impact accountable. Ultimately empowering consumers to choose reparable, reusable and durable devices.</p>
-</div>
-<div id="summary" class="section level1">
-<h1>Summary</h1>
 <p><strong>Objectivo: </strong></p>
 <ul>
 <li><p>El del whitepaper es principalmente un documento introductorio para externos aunque también puede servir para colaboradores internos (proyectistas,…) que quieren iniciarse.</p></li>
@@ -241,6 +241,7 @@ David Franquesa 1<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a
 <p>Information systems and tools Circular economy accountability Incentives for circularity</p>
 <p><strong>capitulo VI: Technology</strong></p>
 <p>Por ahora un listado de los repositorios que tenemos propios y legacy.</p>
+<!--chapter:end:index.Rmd-->
 </div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
@@ -1272,13 +1273,14 @@ X
 </ul>
 </div>
 </div>
-</div>
-<div id="use-cases" class="section level1">
-<h1>Use Cases</h1>
-<div id="certificationreputationcredentials" class="section level2">
-<h2>Certification/Reputation/Credentials</h2>
+<div id="use-cases" class="section level2">
+<h2>Use Cases</h2>
+<p>Follow: <a href="https://www.w3.org/TR/vc-use-cases/#user-needs" class="uri">https://www.w3.org/TR/vc-use-cases/#user-needs</a></p>
+<div id="certificationreputationcredentials" class="section level3">
+<h3>Certification/Reputation/Credentials</h3>
 <p>La certificación puede incidir en toda la parte de sistemas de reputación para los usuarios</p>
 <p>In general, in a certification process, a third party is required to carry out an audit process in order to assess whether the data collected and accredited on the performance of the refurbisher has followed the ‘’standard’’. Our proposal is avoid the need of a third party because we benefit from: a set of tools such as secure inventory management systems that automate the process of collecting this data and, a information blockchain technology in order to ensure this data is trustable and verificable.</p>
+</div>
 <div id="what-questions-should-we-be-able-to-answer" class="section level3">
 <h3>What questions should we be able to answer?</h3>
 <p>From the questions that Product Owners ask we can identify which metrics are relevant to them and also answering this kind of questions helps to improve their circularity.</p>

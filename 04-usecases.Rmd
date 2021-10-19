@@ -114,9 +114,12 @@ What questions should we be able to answer?
 -   How they can encourage refurbishers/ITADs to account the impact of reuse and report the final recycling? Is there guidelines that provide a common basis for collecting this data? are there any standarized certification, third-party analyses for concisely communicating social and/or environmental performance? Are there any instruments for facilitating the diligence, assessment, monitoring and reporting of impact?
 -   How can they or third parties know with certainty that a device has been reused and recycled without requiring the actors having to disclose business information or that may penalise them negatively? so how they can verify reuse and finaly recycling.
 
-# Use Cases
+## Use Cases
 
-## Certification/Reputation/Credentials
+Follow: https://www.w3.org/TR/vc-use-cases/#user-needs
+
+
+### Certification/Reputation/Credentials
 
 La certificación puede incidir en toda la parte de sistemas de reputación para los usuarios
 
