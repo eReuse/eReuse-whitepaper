@@ -24,20 +24,19 @@ Recycler
 
 Managers
 
-: A role an entity might perform by managing digital devices. In some cases the supplier prefers to transfer ownership to a management entity to promote reuse rather than contacting the refurbishers directly. Managers can or can not receive ownership of the devices and can either transfer ownership to the refurbishers and these to Final Users or keep ownership on comodatum throughout their life cycle. 
+: A role an entity might perform by managing digital devices. They are the entities that formalize the agreements with the public administrations and act as umbrellas between all the refurbishers of a territory. The managing entities in no case refurbish or resell devices, they only receive the inventories of the suppliers to share them following criteria with the refurbish entities. Managers can or can not receive ownership of the devices and can either transfer ownership to the refurbishers and these to Final Users or keep ownership on comodatum throughout their life cycle. 
 
 Retailer
 
-: A role an entity might perform by reselling digital devices to Final Users. In cases where the refurbisher does not have or does not want to have contact with the Final Users, he collaborates with the retailers. Retailers can be web platforms or B2B/B2C companies. 
+: A role an entity might perform by reselling digital devices to Final Users. In cases where the refurbisher does not have or does not want to have contact with the Final Users they collaborate with the retailers. Retailers can be web platforms or B2B/B2C companies or p. These are entities participate in several ways: i) finding demand and / or ii) with various services, such as hardware and software maintenance, iii) with end-user training services, 4) with various services and collaborations.
 
 Final User
 
 : A role and entity or individual might perform by using digital devices. Life extension time should only counted when the device is being used by a Final User.
 
-
 (ref:ereuseecosystem) eReuse Ecosystem overview.
 
-```{r ereuseecosystem, echo= FALSE, out.width="50%", fig.align='center', fig.cap='(ref:ereuseecosystem)'}
+```{r ereuseecosystem, echo= FALSE, out.width="100%", fig.align='center', fig.cap='(ref:ereuseecosystem)'}
 
 options(tinytex.verbose = TRUE)
 knitr::include_graphics(file.path(".","figs","3.png"))

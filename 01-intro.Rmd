@@ -218,25 +218,9 @@ Everything started with a “what if we opt for reuse rather than recycling”. 
 
 #### Collaborative Circuits
 
-The mission of a collaborative Circuit is to promote cooperation between entities in the reuse sector and the responsible, collaborative and circular use of digital devices. In some circuits there is an entity that manage between the City Council and the reuse centers. This manager entity acts as an umbrella of the reuse centers and can be a zero waste or a close the digital divide and that among its principles is to promote collaboration between reuse centers and final users.  
-
-```{r figparticipants, echo= FALSE, out.width="100%", fig.align='center', fig.cap="General image of the operation of an eReuse circuit"}
-# fig.pos to control the float behavior. The option value !H will prevent any floating within the document.
-
-options(tinytex.verbose = TRUE)
-knitr::include_graphics(file.path(".","figs","3.png"))
-
-```
-
-* **Management entities**: these are the entities that “arbitrate” the circuits; that is, they are the entities that formalize the agreements with the public administrations and act as umbrellas between all the refurbishment entities of a territory. The managing entities in no case refurbish or distribute equipment, they only receive the inventories of the donors to share them following criteria with the refurbish entities. In the case of the Barcelona circuit, it is Pangea.
-
-* **Reuse centers**: these are the entities that refurbish and distribute to Final Users the equipment with quality certification.
-
-* **Retailers and others**: these are entities that give value to the circuit in several ways: i) finding demand and / or ii) with various services, such as hardware and software maintenance, iii) with end-user training services, 4) with various services and collaborations.
+The mission of a collaborative Circuit is to promote cooperation between entities in the reuse sector and the responsible, collaborative and circular use of digital devices. In some circuits there is an entity that manage between the City Council and the reuse centers. This manager entity acts as an umbrella of the reuse centers and can be a zero waste or a close the digital divide and that among its principles is to promote collaboration between reuse centers and final users. Figure \@ref(fig:ereuseecosystem) explains the role of the manager entity and others participating entities of a circuit. 
 
 To make the circuit work, tools, protocols and technology are needed. Thus, open software has been developed that allows entities to manage the registration, inventory and traceability of devices, as well as certify the refurbishment quality. Reuse centers share open data about second-hand computers and their components with the aim of analyzing their life cycle during reuse until final recycling. These data allows to calculate the environmental impact in addition to the hours that have been reused (social impact).
-
-
 
 <!-- * Entitats gestores: són les entitats que “arbitren” els circuits; és a dir, són les entitats que formalitzen els convenis amb les administracions públiques i fan de paraigües entre les totes les entitats reacondicionadores d’un territori. Les entitats gestores en cap cas reacondicionen o distribueixen equipament, només reben els inventaris dels donants per compartir-los seguint uns criteris amb les entitats reacondicionadores. En el cas del circuit de Barcelona, és Pangea.  -->
 
