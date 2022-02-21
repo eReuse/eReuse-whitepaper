@@ -6,8 +6,8 @@
 ]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -82,7 +82,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
@@ -98,7 +98,7 @@
 \subtitle{The Circular Economy of Digital Devices}
 \author{\(^1\)Universitat Politècnica de Catalunya\\
 David Franquesa 1\footnote{Corresponding author: \href{mailto:david.franquesa@upc.edu}{\nolinkurl{david.franquesa@upc.edu}}}, Leandro Navarro 1\(^1\), y todos los que faltan!}
-\date{2021-10-19}
+\date{2022-02-21}
 
 \begin{document}
 \maketitle
@@ -718,8 +718,8 @@ User Stories are centered on the result and the benefit of the thing you're desc
 User stories don't provide the details the development team needs to do their work.
 \end{quote}
 
-\hypertarget{user-stories}{%
-\section{User stories}\label{user-stories}}
+\hypertarget{use-cases}{%
+\section{Use cases}\label{use-cases}}
 
 \begin{quote}
 User Stories contain, with user role, goal and acceptance criteria.
@@ -729,23 +729,23 @@ User Stories contain, with user role, goal and acceptance criteria.
 User Story focuses on what the user needs instead of what the system should deliver
 \end{quote}
 
-\hypertarget{user-story-producer-responsibility-organization---reporting-of-e-waste}{%
-\subsection{User Story: Producer responsibility organization - reporting of e-waste}\label{user-story-producer-responsibility-organization---reporting-of-e-waste}}
+\hypertarget{use-case-producer-responsibility-organization---reporting-of-e-waste}{%
+\subsection{Use Case: Producer responsibility organization - reporting of e-waste}\label{use-case-producer-responsibility-organization---reporting-of-e-waste}}
 
 user roles: supplier, producer responsibility organizations, refurbishers, recycler, Final User, collection point and auditors.
 goals: reporting preparation for reuse and e-waste management, devices are considered ewaste in the supplier
 
 Un \textbf{supplier} (Productor de residuos de (ej: Movistar)) contrata a un \textbf{producer responsibility organizations} (PRO, ej: Ecoasimelec) para la gestión de los dispositivos usados que tiene en propiedad o de sus clientes. Estos dispositivos estan en contenedores ubicados en sus tiendas. El PRO contrata a \textbf{refurbishers} {[}de tipo gestores de preparación para la reutilización{]} autorizadas por las comunidades autónomas. Las \textbf{refurbishers} (ej: Andròmines) recojen los contenedores de las tiendas y hacen un proceso de selección. Los dispositivos reutilizables se reparan/mejoran y venden de segunda mano a \textbf{final users} y los no reutilizables se depositan en contenedores para transferirse a \textbf{recyclers} de tratamiento (ej: electrorecycling), y estos los mandan a las refinerias que recuperan las materias primeras. A los dispositivos de segunda mano se crea un Digital Product Passport con la descripción del producto, los componentes y las pruebas de funcionamiento realizadas. Los \textbf{Final users} (consumidores de segunda mano) deben poder acceder de manera online a este documento generado por las reacondicionadoras y poder verificar que se ha generado con software acreditado. Los dispositivos en reutilización cuando llegan al final de su vida deben terminar en un \textbf{collection point} (punto limpio/verde/deixallería) por lo que los Final Users deben poder transferirlos a una de estas instalaciones. La información del impacto generado en economía circular, la cadena de custodia y las credenciales de sus participantes debe poder verificarse por parte del los participantes y \textbf{auditors} preservando la privacidad.
 
-\hypertarget{user-story-refurbisher---impact-accounting-and-reporting}{%
-\subsection{User Story: Refurbisher - impact accounting and reporting}\label{user-story-refurbisher---impact-accounting-and-reporting}}
+\hypertarget{use-case-refurbisher---impact-accounting-and-reporting}{%
+\subsection{Use Case: Refurbisher - impact accounting and reporting}\label{use-case-refurbisher---impact-accounting-and-reporting}}
 
 user roles: refurbishers, suppliers (of unused devices), recycler, Final User.
 goals: report lifetime extension and final recycling, devices are considered products by the supplier and the refurbisher.
 
 Refurbishers are business collecting used devices, repairing and reselling them.
 
-El \textbf{refurbisher} Andròmines recibe dispositivos usados de un \textbf{supplier} de dispositivos usados (i.e: Ayuntamiento de Barcelona) que quiere que sus dispositivos se reutilizen y reciclen de manera adecuada. El refurbisher recoje y hace un inventario de los dispositivos y los filtra según potencial de reutilización. Los que tienen un potencial de reutilización bajo los mandará a un \textbf{reciclador} que los desmantela y manda a una fundición, los que son reutilizables los venderá/donará a \textbf{Final users} para que sean reutilizados. El objetivo del refurbisher es poder reportar a su supplier el impacto generado en economía circular que principalmente es el tiempo de extensión de vida del dispositivo y su reciclaje final por parte de un reciclador autorizado. En cuanto a contabilizar el impacto la dificultades para el refurbisher son: 1) poder saber si los Final Users después de su reutilización han llevado a un punto autorizado de reciclaje el dispositivo, 2) saber si los recicladores a los que manda lo que no es potencialmente reutilizable estan autorizados por las autoridades competentes y 3) saber durante cuantas horas y años se han reutilizado los dispositivos. Esta información debería ser verificable y auditable por parte del refurbisher, suppliers y auditores a los que el refurbisher se lo permita. Entendemos por verificable la posibilidad de tener la certeza que en una transferencia de dispositivos las dos partes han participado (confirmando) y que se han transferido unos dispositivos con una identidad única.
+El \textbf{refurbisher} Andròmines recibe dispositivos usados de un \textbf{supplier} de dispositivos usados (i.e: Ayuntamiento de Barcelona) que quiere que sus dispositivos se reutilizen y reciclen de manera adecuada. El refurbisher recoje y hace un inventario de los dispositivos y los filtra según potencial de reutilización. Los que tienen un potencial de reutilización bajo los mandará a un \textbf{reciclador} que los desmantela y manda a una fundición, los que son reutilizables los venderá/donará a \textbf{Final users} para que sean reutilizados. El objetivo del refurbisher es poder reportar a su supplier el impacto generado en economía circular (ver annexos - Report on IT deed of assignment - reuse and recycling progress) que principalmente es el tiempo de extensión de vida del dispositivo y su reciclaje final por parte de un reciclador autorizado. En cuanto a contabilizar el impacto la dificultades para el refurbisher son: 1) poder saber si los Final Users después de su reutilización han llevado a un punto autorizado de reciclaje el dispositivo, 2) saber si los recicladores a los que manda lo que no es potencialmente reutilizable estan autorizados por las autoridades competentes y saber si se han reciclado 3) saber durante cuantas horas y años se han reutilizado los dispositivos. Esta información debería ser verificable y auditable por parte del refurbisher, suppliers y auditores a los que el refurbisher se lo permita. Entendemos por verificable la posibilidad de tener la certeza que en una transferencia de dispositivos las dos partes han participado (confirmando) y que se han transferido unos dispositivos con una identidad única.
 
 Testimonials:
 
@@ -771,8 +771,8 @@ Ejemplo: De los 100 dispositivos que el donante me dió puedo saber:
 - 70 se han reutilizado por parte de usuarios finales que han extendido el tiempo de vida en X horas y 30 se han reciclado sin reutilización por tal usuario
 - de 70 reutilizados se tenemos conformidad del reciclaje de 30 de ellos y se han reciclado por estos usuarios (no hace falta que sea anónimo)
 
-\hypertarget{user-story-refurbisher---seller-of-second-hand-devices}{%
-\subsection{User Story : Refurbisher - seller of second-hand devices}\label{user-story-refurbisher---seller-of-second-hand-devices}}
+\hypertarget{use-case-refurbisher---seller-of-second-hand-devices}{%
+\subsection{Use Case : Refurbisher - seller of second-hand devices}\label{use-case-refurbisher---seller-of-second-hand-devices}}
 
 user roles: refurbishers, resellers and Final User.
 goals: report the refurbishment process and quality of second hand devices refurbished
@@ -805,8 +805,8 @@ As a Final User with role (buyer) I can:
   Tener la garantía que la información se ha generado con un software y que no ha sido modificada de manera manual.
 \end{enumerate}
 
-\hypertarget{user-story-supplier---refurbishers-credentialsreputation}{%
-\subsection{User Story: Supplier - Refurbishers credentials/reputation}\label{user-story-supplier---refurbishers-credentialsreputation}}
+\hypertarget{use-case-supplier---refurbishers-credentialsreputation}{%
+\subsection{Use Case: Supplier - Refurbishers credentials/reputation}\label{use-case-supplier---refurbishers-credentialsreputation}}
 
 
 
@@ -851,10 +851,12 @@ El consumidor final quiere llevar sus dispositivos no reutilizables a una instal
 
 TODO: Revisar las user needs que faltan explicadas en las User stories.
 
-\hypertarget{use-cases}{%
-\section{Use Cases}\label{use-cases}}
+\hypertarget{user-stories}{%
+\section{User Stories}\label{user-stories}}
 
-Follow: \url{https://www.w3.org/TR/vc-use-cases/\#user-needs}
+TODO. Poner Trublo
+
+TODO: Update con trublo.
 
 \hypertarget{roadmap-building-blocks-conditions-or-capabilities}{%
 \chapter{Roadmap: building blocks, conditions or capabilities}\label{roadmap-building-blocks-conditions-or-capabilities}}
@@ -918,21 +920,67 @@ interventions required for to implement the above outcomes
 \hypertarget{information-systems-and-tools}{%
 \section{Information systems and tools}\label{information-systems-and-tools}}
 
-\hypertarget{digital-inventory-for-full-lifecycle-traceability-with-digital-twins-instances-and-product-passport}{%
-\subsection{Digital inventory for full-lifecycle traceability with digital twins instances and product passport}\label{digital-inventory-for-full-lifecycle-traceability-with-digital-twins-instances-and-product-passport}}
+\hypertarget{asset-tracking-for-full-lifecycle-traceability}{%
+\subsection{Asset tracking for full-lifecycle traceability}\label{asset-tracking-for-full-lifecycle-traceability}}
 
-Along its lifetime from assembly to recycling, a device may need to move to different operating states, locations and its ownership change. This pose the need to have an up-to-date inventory of devices and to be able to transfer information between owners, from the initial manufacturer to the final recycler.
+Asset tracking refers to the method of tracking physical assets (\url{https://en.wikipedia.org/wiki/Asset_tracking}). Along its lifetime from assembly to recycling, a device may need to move to different operating states, locations and its ownership change. This pose the need to have an up-to-date inventory of devices and to be able to transfer information between owners, from the initial manufacturer to the final recycler.
 
-Digital twins are precise, virtual copies of machines or systems. Driven by data collected from sensors and software in real time. Digital twins instances is data on the description of a physical object; data on components in the present time, information on the processes performed in all time periods, test results, records of repairs, operational data, monitoring parameters, etc\ldots{}
+Types of asset tracking:
 
-Devices move to different locations, and they are reused by different users and organisations. Because of this, devices are registered in different ITAMS and referenced by other systems like GRD or DCP. Synthetic identifiers, like internal database identifiers \citep{Waltermire2011}, cannot be used outside an organisation as they cannot be regenerated if lost, and serial numbers are not always unique {[}ereuse2015{]}. Although they could work in a few cases, that defeats reliable global traceability. eReuse.org proposes a HID to track devices or components. It results from the concatenation of the manufacturer name, the model and serial number of a device, for example acer-aod270-lusga\_0d0242201212c7614. These HIDs are typically attached in stickers or printed on the devices.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Units and weights.
+\item
+  Synthetic identifiers: Basic (Bar code / QR), smart (RFID, Lora,\ldots)
+\item
+  Hardware Fingerprints:
+\item
+  Waste fractions
+\end{enumerate}
 
-The device passport allows refurbishers and their partners (retailers and recyclers) to track the traceability of reused products and to be able to report whether they have been finally recycled in a waste management centre.
+\hypertarget{units-and-weights.}{%
+\subsubsection{Units and weights.}\label{units-and-weights.}}
 
-eReuse consider that a device identifier is candidate for a Digital Product Passport if: 1. standard and globally unique: the ID must be unique and able to interface with systems around the world 2. self-generated on a internal and unmutable device information: it must be able to be generated from internal components with low frequency of replacement and that the concatenation results in a potentially unique identifier 3. is an anonymous id: if you have the device physically and permissions you can generate the id
+Are the simpliest traceability.
 
-\hypertarget{unique-hardware-identifier}{%
-\subsubsection{Unique Hardware Identifier}\label{unique-hardware-identifier}}
+\hypertarget{synthetic-identifiers}{%
+\subsubsection{Synthetic identifiers,}\label{synthetic-identifiers}}
+
+like internal database identifiers \citep{Waltermire2011}, cannot be used outside an organisation as they cannot be regenerated if lost, and serial numbers are not always unique {[}ereuse2015{]}. They are used to report to suppliers or manage traceabilit at internal level.
+
+\hypertarget{fingerprints}{%
+\subsubsection{Fingerprints}\label{fingerprints}}
+
+The hardware fingerprint is information collected about the hardware of a remote computing device for the purpose of identification. For example Microsoft uses to link software licenses to specific hardware. One use case of eReusea is that a Refurbisher can certify a device has been transferred to a recycler. To cope with that, the Refurisher should ask to a recycler to run software to confirm that a device is in recycler's possesion. This property is not given in the case of conventional bar codes tags or wireless tags, because you only can proof you have got the tag, not the device that was attached to it.
+
+In the same way that Microsoft knows that a license is in use by a device or google knows which devices a user is using, eReuse is able to know with certainty:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Possession. a devices is in the possession of a user.
+\item
+  Operating status. A devices has surpassed quality and benchmark tests
+\item
+  Devices specs and components. A devices has specific specs and components.
+\item
+  Data wipe. The hard drives has been data wiped.
+\end{enumerate}
+
+eReuse.org proposes a HID to track devices or components. It results from the concatenation of the manufacturer name, the model and serial number of a device, for example acer-aod270-lusga\_0d0242201212c7614. These HIDs are typically attached in stickers or printed on the devices.
+
+\hypertarget{waste-fractions}{%
+\subsubsection{Waste fractions}\label{waste-fractions}}
+
+\hypertarget{hardware-fingerprint-unique-hardware-identifier}{%
+\subsection{Hardware Fingerprint Unique Hardware Identifier}\label{hardware-fingerprint-unique-hardware-identifier}}
+
+Update with trublo.
+
+eReuse consider that a Hardware Fingerprint is candidate for a Digital Product Passport if: 1. standard and globally unique: the ID must be unique and able to interface with systems around the world 2. self-generated on a internal and unmutable device information: it must be able to be generated from internal components with low frequency of replacement and that the concatenation results in a potentially unique identifier 3. is an anonymous id: if you have the device physically and permissions you can generate the id
 
 eReuse consider a valid process of creating the passport if we can ensure the veracity of the information, that means: 1. the collection of the hardware information has been performed with open software tools 2. the executed software has not been modified
 
@@ -988,10 +1036,18 @@ que sigui fàcilment llegible per als centres de reutilització, les col·labora
 
 Figura 17: Creació del passaport del producte
 
-\hypertarget{data-registries-for-devices-documents-and-organizations}{%
-\subsection{Data registries for devices, documents and organizations}\label{data-registries-for-devices-documents-and-organizations}}
+\hypertarget{auditing-compliance}{%
+\subsection{Auditing compliance}\label{auditing-compliance}}
 
-Traceability relies on sharing good quality data with several derived requirements: a) Trust (for sources) on the precision and reliability of the data provided by sources (about devices, partici- pants, actions). b) Quality (for data) in the precision and detail of the data\footnote{Data quality: ``Data are of high quality if they are fit for their intended uses in operations, decision making, and planning. Data are fit for use if they are free of defects and possess desired features'' \citep{redman2001data}.}. c) Quantity (for data) to generate enough information. d) Cost (for devices) of obtaining enough good quality information (tools can reduce the cost and increase the quality and trust, typically in terms of time). e) Privacy (for participants) in protecting and preserving personal data.
+quality of devices and impact of organizations and products
+
+An audit aims to establish whether information systems are maintaining the integrity of stored and communicated data. There are certain requirements that the refurbishers' system must have in order to allow for this being audited in impact. The requirements are inmutability, verificability and privacy of the data. This is where Distributed Ledger Technology comes into play. In this section we will look at the properties that these technologies provide to justify their use.
+
+Required features for data:
+
+\begin{quote}
+Inmutability, verificability and privacy of the data
+\end{quote}
 
 A verifiable, private and decentralized data registry for devices, documents and organizations
 
@@ -1053,22 +1109,12 @@ Per la verificabilitat fem servir un explorador de blocs de la DLT on es poden c
 
 In this action we justify the need to implement a blockchain and explain the one that has been developed in the framework of the project, as well as the mechanisms followed by reuse centres to self-certify and those undertaken by third parties to carry out auditing processes.
 
-\hypertarget{tools-for-auditing-compliance-quality-of-devices-and-impact-of-organizations-and-products}{%
-\subsection{Tools for auditing compliance, quality of devices and impact of organizations and products}\label{tools-for-auditing-compliance-quality-of-devices-and-impact-of-organizations-and-products}}
+\hypertarget{tools-to-trace}{%
+\subsection{Tools to trace}\label{tools-to-trace}}
 
-An audit aims to establish whether information systems are maintaining the integrity of stored and communicated data. There are certain requirements that the refurbishers' system must have in order to allow for this being audited in impact. The requirements are inmutability, verificability and privacy of the data. This is where Distributed Ledger Technology comes into play. In this section we will look at the properties that these technologies provide to justify their use.
-
-Required features for data:
-
-\begin{quote}
-Inmutability, verificability and privacy of the data
-\end{quote}
-
-\hypertarget{tools-and-sensors-to-update-digital-twins-instances}{%
-\subsection{Tools and sensors to update digital twins instances}\label{tools-and-sensors-to-update-digital-twins-instances}}
-
-\hypertarget{data-compliance-for-devices-data-erasure}{%
-\subsection{Data compliance for devices data erasure}\label{data-compliance-for-devices-data-erasure}}
+TODO
+\#\#\# Data compliance for devices data erasure
+TODO
 
 \hypertarget{circular-economy-accountability}{%
 \section{Circular economy accountability}\label{circular-economy-accountability}}
@@ -1126,7 +1172,7 @@ A certificate is a specific type of standard that can not be applied by the orga
 \subsection{Product accountability on quality, durability and reuse potential}\label{product-accountability-on-quality-durability-and-reuse-potential}}
 
 \hypertarget{incentives-for-circularity}{%
-\section{Incentives for circularity}\label{incentives-for-circularity}}
+\subsection{Incentives for circularity}\label{incentives-for-circularity}}
 
 \hypertarget{technology}{%
 \chapter{Technology}\label{technology}}
@@ -1273,7 +1319,7 @@ In conclusion having this certification diferentiate refurbishers federated to e
 \hypertarget{quality-of-refurbishment}{%
 \subsection{Quality of refurbishment}\label{quality-of-refurbishment}}
 
-Per a incentivar el consum de segona mà dels dispositius digitals cal promoure l'excel·lència del procés de reacondicionat dut a terme pels centres de reutilització. La taula de la figura 1, presenta la informació que els consumidors volen tenir alhora de comprar un dispositiu de egona mà. Per ordre de prioritats del tercer al cinquè lloc, el consumidor vol estar informat en ``3: classificació'', ``4:Informació del procés de reacondicionat, i''5: Certificat de qualitat". En termes generals el consumidor ha de poder confiar en que la informació del dispositiu que ofereix el centre de reutilització ha estat generada de manera segura i no ha estat alterada. La informació a mostrar ha de complir amb els següents requisits: 1. Generació: Les dades han estat generades de manera automàtica i segura amb un programari que s'ha executat al dispositiu reacondicionat. El resultat de l'execució del programari es publica directament al web del dispositiu. 2. Modificació: Les dades no són modificables manualment. En el cas que la qualitat del dispositiu o algun dels seus components hagi variat, s'hauria de tornar a executar el programari pel punt anterior. 3. Accés obert: Les dades han de ser accessibles via un enllaç web que no ha de requerir un usuari i clau, a més també s'hauria de permetre accedir via un codi QR adherit al dispositiu que enllaça a la web del dispositiu. A mode d'exemple, a la següent pàgina web consta un dispositiu que ha estat reacondicionat per un centre de reutilització. La informació inclou els tres aspectes que formen part de la descripció de la qualitat del reacondicionat, que són: 1.1: Especificacions, 1.2: Classificació i 1.3: Procés de reacondicionat. A més el centre compleix amb els tres requisits de generació, modificació i accés obert:
+Per a incentivar el consum de segona mà dels dispositius digitals cal promoure l'excel·lència del procés de reacondicionat dut a terme pels centres de reutilització. La taula de la figura 1, presenta la informació que els consumidors volen tenir alhora de comprar un dispositiu de egona mà. Per ordre de prioritats del tercer al cinquè lloc, el consumidor vol estar informat en ``3: classificació'', ``4:Informació del procés de reacondicionat, i''5: Certificat de qualitat''. En termes generals el consumidor ha de poder confiar en que la informació del dispositiu que ofereix el centre de reutilització ha estat generada de manera segura i no ha estat alterada. La informació a mostrar ha de complir amb els següents requisits: 1. Generació: Les dades han estat generades de manera automàtica i segura amb un programari que s'ha executat al dispositiu reacondicionat. El resultat de l'execució del programari es publica directament al web del dispositiu. 2. Modificació: Les dades no són modificables manualment. En el cas que la qualitat del dispositiu o algun dels seus components hagi variat, s'hauria de tornar a executar el programari pel punt anterior. 3. Accés obert: Les dades han de ser accessibles via un enllaç web que no ha de requerir un usuari i clau, a més també s'hauria de permetre accedir via un codi QR adherit al dispositiu que enllaça a la web del dispositiu. A mode d'exemple, a la següent pàgina web consta un dispositiu que ha estat reacondicionat per un centre de reutilització. La informació inclou els tres aspectes que formen part de la descripció de la qualitat del reacondicionat, que són: 1.1: Especificacions, 1.2: Classificació i 1.3: Procés de reacondicionat. A més el centre compleix amb els tres requisits de generació, modificació i accés obert:
 
 A mode d'exemple, a la següent pàgina web consta un dispositiu que ha estat reacondicionat per un centre de reutilització. La informació inclou els tres aspectes que formen part de la descripció de la qualitat del reacondicionat, que són: 1.1: Especificacions, 1.2: Classificació i 1.3: Procés de reacondicionat. A més el centre compleix amb els tres requisits de generació, modificació i accés obert:
 

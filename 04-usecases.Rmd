@@ -42,27 +42,27 @@ User Stories are centered on the result and the benefit of the thing you're desc
 
 
 
-## User stories
+## Use cases
 
 > User Stories contain, with user role, goal and acceptance criteria.
 
 > User Story focuses on what the user needs instead of what the system should deliver
 
-### User Story: Producer responsibility organization - reporting of e-waste
+### Use Case: Producer responsibility organization - reporting of e-waste
 
 user roles: supplier, producer responsibility organizations, refurbishers, recycler, Final User, collection point and auditors.
 goals: reporting preparation for reuse and e-waste management, devices are considered ewaste in the supplier
 
 Un **supplier** (Productor de residuos de (ej: Movistar)) contrata a un **producer responsibility organizations** (PRO, ej: Ecoasimelec) para la gestión de los dispositivos usados que tiene en propiedad o de sus clientes. Estos dispositivos estan en contenedores ubicados en sus tiendas. El PRO contrata a **refurbishers** [de tipo gestores de preparación para la reutilización] autorizadas por las comunidades autónomas. Las **refurbishers** (ej: Andròmines) recojen los contenedores de las tiendas y hacen un proceso de selección. Los dispositivos reutilizables se reparan/mejoran y venden de segunda mano a **final users** y los no reutilizables se depositan en contenedores para transferirse a **recyclers** de tratamiento (ej: electrorecycling), y estos los mandan a las refinerias que recuperan las materias primeras. A los dispositivos de segunda mano se crea un Digital Product Passport con la descripción del producto, los componentes y las pruebas de funcionamiento realizadas. Los **Final users** (consumidores de segunda mano) deben poder acceder de manera online a este documento generado por las reacondicionadoras y poder verificar que se ha generado con software acreditado.  Los dispositivos en reutilización cuando llegan al final de su vida deben terminar en un **collection point** (punto limpio/verde/deixallería) por lo que los Final Users deben poder transferirlos a una de estas instalaciones. La información del impacto generado en economía circular, la cadena de custodia y las credenciales de sus participantes debe poder verificarse por parte del los participantes y **auditors** preservando la privacidad.
 
-### User Story: Refurbisher - impact accounting and reporting
+### Use Case: Refurbisher - impact accounting and reporting
 
 user roles: refurbishers, suppliers (of unused devices), recycler, Final User.
 goals: report lifetime extension and final recycling, devices are considered products by the supplier and the refurbisher.
 
 Refurbishers are business collecting used devices, repairing and reselling them.
 
-El **refurbisher** Andròmines recibe dispositivos usados de un **supplier** de dispositivos usados (i.e: Ayuntamiento de Barcelona) que quiere que sus dispositivos se reutilizen y reciclen de manera adecuada. El refurbisher recoje y hace un inventario de los dispositivos y los filtra según potencial de reutilización. Los que tienen un potencial de reutilización bajo los mandará a un **reciclador** que los desmantela y manda a una fundición, los que son reutilizables los venderá/donará a **Final users** para que sean reutilizados. El objetivo del refurbisher es poder reportar a su supplier el impacto generado en economía circular que principalmente es el tiempo de extensión de vida del dispositivo y su reciclaje final por parte de un reciclador autorizado. En cuanto a contabilizar el impacto la dificultades para el refurbisher son: 1) poder saber si los Final Users después de su reutilización han llevado a un punto autorizado de reciclaje el dispositivo, 2) saber si los recicladores a los que manda lo que no es potencialmente reutilizable estan autorizados por las autoridades competentes y 3) saber durante cuantas horas y años se han reutilizado los dispositivos. Esta información debería ser verificable  y auditable por parte del refurbisher, suppliers y auditores a los que el refurbisher se lo permita. Entendemos por verificable la posibilidad de tener la certeza que en una transferencia de dispositivos las dos partes han participado (confirmando) y que se han transferido unos dispositivos con una identidad única. 
+El **refurbisher** Andròmines recibe dispositivos usados de un **supplier** de dispositivos usados (i.e: Ayuntamiento de Barcelona) que quiere que sus dispositivos se reutilizen y reciclen de manera adecuada. El refurbisher recoje y hace un inventario de los dispositivos y los filtra según potencial de reutilización. Los que tienen un potencial de reutilización bajo los mandará a un **reciclador** que los desmantela y manda a una fundición, los que son reutilizables los venderá/donará a **Final users** para que sean reutilizados. El objetivo del refurbisher es poder reportar a su supplier el impacto generado en economía circular (ver annexos - Report on IT deed of assignment - reuse and recycling progress) que principalmente es el tiempo de extensión de vida del dispositivo y su reciclaje final por parte de un reciclador autorizado. En cuanto a contabilizar el impacto la dificultades para el refurbisher son: 1) poder saber si los Final Users después de su reutilización han llevado a un punto autorizado de reciclaje el dispositivo, 2) saber si los recicladores a los que manda lo que no es potencialmente reutilizable estan autorizados por las autoridades competentes y saber si se han reciclado 3) saber durante cuantas horas y años se han reutilizado los dispositivos. Esta información debería ser verificable y auditable por parte del refurbisher, suppliers y auditores a los que el refurbisher se lo permita. Entendemos por verificable la posibilidad de tener la certeza que en una transferencia de dispositivos las dos partes han participado (confirmando) y que se han transferido unos dispositivos con una identidad única. 
 
 Testimonials:
 
@@ -83,7 +83,7 @@ Ejemplo: De los 100 dispositivos que el donante me dió puedo saber:
     -   de 70 reutilizados se tenemos conformidad del reciclaje de 30 de ellos y se han reciclado por estos usuarios (no hace falta que sea anónimo)
 
 
-### User Story : Refurbisher - seller of second-hand devices
+### Use Case : Refurbisher - seller of second-hand devices
 
 user roles: refurbishers, resellers and Final User.
 goals: report the refurbishment process and quality of second hand devices refurbished
@@ -106,7 +106,7 @@ As a Final User with role (buyer) I can:
 
 2. Tener la garantía que la información se ha generado con un software y que no ha sido modificada de manera manual.
 
-### User Story: Supplier - Refurbishers credentials/reputation  
+### Use Case: Supplier - Refurbishers credentials/reputation  
 
 (ref:userstorysupplier) Citizen and professional reuse of digital devices.
 
@@ -146,13 +146,9 @@ El consumidor final quiere llevar sus dispositivos no reutilizables a una instal
 TODO: Revisar las user needs que faltan explicadas en las User stories.
 
 
-## Use Cases
+## User Stories
 
-Follow: https://www.w3.org/TR/vc-use-cases/#user-needs
-
-
-
-
+TODO. Poner Trublo 
 
 
 

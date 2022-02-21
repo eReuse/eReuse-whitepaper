@@ -4,6 +4,8 @@ output:
   pdf_document: default
 ---
 
+TODO: Update con trublo.
+
 # Roadmap: building blocks, conditions or capabilities
 
 All actions will be described in detail in the following sections of this chapter. We divide the actions into two types, transversal and vertical actions. The transversal actions, which we also call building blocks, are a basic unit or component from which vertical actions are built up. Vertical actions or requirements are what we want the participants of the ecosystem to be able to do.
@@ -68,19 +70,44 @@ c. Incentives for circularity
 
 ## Information systems and tools
 
-### Digital inventory for full-lifecycle traceability with digital twins instances and product passport
+### Asset tracking for full-lifecycle traceability
 
-Along its lifetime from assembly to recycling, a device may need to move to different operating states, locations and its ownership change. This pose the need to have an up-to-date inventory of devices and to be able to transfer information between owners, from the initial manufacturer to the final recycler. 
+Asset tracking refers to the method of tracking physical assets (https://en.wikipedia.org/wiki/Asset_tracking). Along its lifetime from assembly to recycling, a device may need to move to different operating states, locations and its ownership change. This pose the need to have an up-to-date inventory of devices and to be able to transfer information between owners, from the initial manufacturer to the final recycler. 
 
-Digital twins are precise, virtual copies of machines or systems. Driven by data collected from sensors and software in real time. Digital twins instances is data on the description of a physical object; data on components in the present time, information on the processes performed in all time periods, test results, records of repairs, operational data, monitoring parameters, etc...
+Types of asset tracking:
 
-Devices move to different locations, and they are reused by different users and organisations. Because of this, devices are registered in different ITAMS and referenced by other systems like GRD or DCP. Synthetic identifiers, like internal database identifiers [@Waltermire2011], cannot be used outside an organisation as they cannot be regenerated if lost, and serial numbers are not always unique [ereuse2015]. Although they could work in a few cases, that defeats reliable global traceability. eReuse.org proposes a HID to track devices or components. It results from the concatenation of the manufacturer name, the model and serial number of a device, for example acer-aod270-lusga_0d0242201212c7614. These HIDs are typically attached in stickers or printed on the devices.
+1. Units and weights.
+2. Synthetic identifiers: Basic (Bar code / QR), smart (RFID, Lora,...)
+3. Hardware Fingerprints:
+4. Waste fractions
 
-The device passport allows refurbishers and their partners (retailers and recyclers) to track the traceability of reused products and to be able to report whether they have been finally recycled in a waste management centre.
+#### Units and weights. 
 
-eReuse consider that a device identifier is candidate for a Digital Product Passport if: 1. standard and globally unique: the ID must be unique and able to interface with systems around the world 2. self-generated on a internal and unmutable device information: it must be able to be generated from internal components with low frequency of replacement and that the concatenation results in a potentially unique identifier 3. is an anonymous id: if you have the device physically and permissions you can generate the id
+Are the simpliest traceability.
 
-#### Unique Hardware Identifier
+#### Synthetic identifiers, 
+
+like internal database identifiers [@Waltermire2011], cannot be used outside an organisation as they cannot be regenerated if lost, and serial numbers are not always unique [ereuse2015]. They are used to report to suppliers or manage traceabilit at internal level. 
+
+#### Fingerprints
+The hardware fingerprint is information collected about the hardware of a remote computing device for the purpose of identification. For example Microsoft uses to link software licenses to specific hardware. One use case of eReusea is that a Refurbisher can certify a device has been transferred to a recycler. To cope with that, the Refurisher should ask to a recycler to run software to confirm that a device is in recycler's possesion. This property is not given in the case of conventional bar codes tags or wireless tags, because you only can proof you have got the tag, not the device that was attached to it. 
+
+In the same way that Microsoft knows that a license is in use by a device or google knows which devices a user is using, eReuse is able to know with certainty:
+
+1. Possession. a devices is in the possession of a user.
+2. Operating status. A devices has surpassed quality and benchmark tests
+3. Devices specs and components. A devices has specific specs and components.
+4. Data wipe.  The hard drives has been data wiped.
+
+eReuse.org proposes a HID to track devices or components. It results from the concatenation of the manufacturer name, the model and serial number of a device, for example acer-aod270-lusga_0d0242201212c7614. These HIDs are typically attached in stickers or printed on the devices.
+
+#### Waste fractions
+
+### Hardware Fingerprint Unique Hardware Identifier
+
+Update with trublo.
+
+eReuse consider that a Hardware Fingerprint is candidate for a Digital Product Passport if: 1. standard and globally unique: the ID must be unique and able to interface with systems around the world 2. self-generated on a internal and unmutable device information: it must be able to be generated from internal components with low frequency of replacement and that the concatenation results in a potentially unique identifier 3. is an anonymous id: if you have the device physically and permissions you can generate the id
 
 eReuse consider a valid process of creating the passport if we can ensure the veracity of the information, that means: 1. the collection of the hardware information has been performed with open software tools 2. the executed software has not been modified
 
@@ -131,12 +158,15 @@ que sigui fàcilment llegible per als centres de reutilització, les col·labora
 Figura 17: Creació del passaport del producte
 
 
-### Data registries for devices, documents and organizations
+### Auditing compliance
 
-Traceability relies on sharing good quality data with several derived requirements: a) Trust (for sources) on the precision and reliability of the data provided by sources (about devices, partici- pants, actions). b) Quality (for data) in the precision and detail of the data[^roadmap-1]. c) Quantity (for data) to generate enough information. d) Cost (for devices) of obtaining enough good quality information (tools can reduce the cost and increase the quality and trust, typically in terms of time). e) Privacy (for participants) in protecting and preserving personal data.
+quality of devices and impact of organizations and products
 
-[^roadmap-1]: Data quality: "Data are of high quality if they are fit for their intended uses in operations, decision making, and planning. Data are fit for use if they are free of defects and possess desired features" [@redman2001data].
+An audit aims to establish whether information systems are maintaining the integrity of stored and communicated data. There are certain requirements that the refurbishers' system must have in order to allow for this being audited in impact. The requirements are inmutability, verificability and privacy of the data. This is where Distributed Ledger Technology comes into play. In this section we will look at the properties that these technologies provide to justify their use.
 
+Required features for data:
+
+> Inmutability, verificability and privacy of the data
 
 A verifiable, private and decentralized data registry for devices, documents and organizations
 
@@ -187,21 +217,10 @@ Per la verificabilitat fem servir un explorador de blocs de la DLT on es poden c
 
 In this action we justify the need to implement a blockchain and explain the one that has been developed in the framework of the project, as well as the mechanisms followed by reuse centres to self-certify and those undertaken by third parties to carry out auditing processes.
 
-
-
-### Tools for auditing compliance, quality of devices and impact of organizations and products
-
-An audit aims to establish whether information systems are maintaining the integrity of stored and communicated data. There are certain requirements that the refurbishers' system must have in order to allow for this being audited in impact. The requirements are inmutability, verificability and privacy of the data. This is where Distributed Ledger Technology comes into play. In this section we will look at the properties that these technologies provide to justify their use.
-
-Required features for data:
-
-> Inmutability, verificability and privacy of the data
-
-
-### Tools and sensors to update digital twins instances
-
+### Tools to trace 
+TODO
 ### Data compliance for devices data erasure
-
+TODO
 
 ## Circular economy accountability
 
@@ -239,12 +258,11 @@ Standards are metrics that have gone a certain degree of scrutiny and testing, a
 
 A certificate is a specific type of standard that can not be applied by the organisation itself but requires a third party to assess whether the company's performance has been according to a certain standard. They usually result in a product label being issued by the third party.
 
-
 ### Consumption accountability on lifetime extension and recycling
     
 ### Reuse and recycling accountability
     
 ### Product accountability on quality, durability and reuse potential
 
-## Incentives for circularity
+### Incentives for circularity
 
